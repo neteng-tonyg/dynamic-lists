@@ -205,13 +205,6 @@
     },
     {
       "action" : "allow",
-      "ports" : "443",
-      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
-      "protocol" : "tcp",
-      "remote-domains" : "fortinet.com"
-    },
-    {
-      "action" : "allow",
       "ports" : "3478",
       "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
       "protocol" : "tcp",
@@ -230,27 +223,6 @@
       "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
       "protocol" : "tcp",
       "remote-domains" : "fullmatch.us"
-    },
-    {
-      "action" : "allow",
-      "ports" : "443",
-      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
-      "protocol" : "tcp",
-      "remote-domains" : "githubassets.com"
-    },
-    {
-      "action" : "allow",
-      "ports" : "80",
-      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
-      "protocol" : "tcp",
-      "remote-domains" : "madamhost.com"
-    },
-    {
-      "action" : "allow",
-      "ports" : "443",
-      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
-      "protocol" : "tcp",
-      "remote-domains" : "madamhost.com"
     },
     {
       "action" : "allow",
