@@ -1,2 +1,2 @@
-# dynamic-lists-
+# dynamic-lists
 dynamic update lists for some apps
