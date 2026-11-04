@@ -1,6 +1,6 @@
 {
-  "description" : "Firefox-default-rules",
-  "name" : "export-Firefox",
+  "description" : "Brave-browser-default-rules",
+  "name" : "Brave-browser-default-rules",
   "rules" : [
     {
       "notes":"0.Default deny quic",
