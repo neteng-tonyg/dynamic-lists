@@ -7,7 +7,7 @@
 	  "action" : "deny",
       "ports" : "443",
       "priority" : "high",
-      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "process" : "/Applications/LibreWolf.app",
       "protocol" : "udp",
       "remote" : "any"
     },
@@ -15,7 +15,7 @@
 	 "notes":"0.Default deny WWW/443",
       "action" : "deny",
       "ports" : "443",
-      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "process" : "/Applications/LibreWolf.app",
       "protocol" : "tcp",
       "remote-domains" : 
 	  ["facebook.com",
@@ -29,7 +29,7 @@
 	"notes":"2.Mozilla.com Domains 443",
       "action" : "allow",
       "ports" : "443",
-      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "process" : "/Applications/LibreWolf.app",
       "protocol" : "tcp",
       "remote-domains" : 
 	  ["mozilla.com",
@@ -44,7 +44,7 @@
 	"notes":"3.Mozilla.org Domains 443",
       "action" : "allow",
       "ports" : "443",
-      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "process" : "/Applications/LibreWolf.app",
       "protocol" : "tcp",
        "remote-domains" : 
 	[   "addons.mozilla.org",
@@ -59,7 +59,7 @@
 	"notes":"4.Firefox Domains 443",
       "action" : "allow",
       "ports" : "443",
-      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "process" : "/Applications/LibreWolf.app",
       "protocol" : "tcp",
       "remote-domains" : 
 		[
@@ -72,7 +72,7 @@
 	"notes":"11.default port 80",
       "action" : "allow",
       "ports" : "80",
-      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "process" : "/Applications/LibreWolf.app",
       "protocol" : "tcp",
       "remote-domains" : "mozilla.com"
     },
@@ -80,21 +80,21 @@
       "notes": "Github",
       "action": "allow",
       "ports": "443",
-      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "process" : "/Applications/LibreWolf.app",
       "remote-domains": ["atl-paas.net","atlassian.com","atlassian.net","atlassian.io","bitbucket.org","bytebucket.org","jira.com","valiantys.com"]
     },
     {
       "notes": "Terraform",
       "action": "allow",
       "ports": "443",
-      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "process" : "/Applications/LibreWolf.app",
       "remote-domains": ["terraform.net","terraform.com",""]
     },
     {
       "notes": "Atlassian",
       "action": "allow",
       "ports": "443",
-      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "process" : "/Applications/LibreWolf.app",
       "remote-domains": ["atl-paas.net","atlassian.com","atlassian.net",
       "atlassian.io","bitbucket.org","bytebucket.org","jira.com","valiantys.com"]
     },
@@ -102,7 +102,7 @@
 	    "notes":"Cloudflare port 80",
       "action" : "allow",
       "ports" : "80",
-      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "process" : "/Applications/LibreWolf.app",
       "protocol" : "tcp",
       "remote-domains" : [
           "cloudflare-dns.com",
@@ -118,7 +118,7 @@
 	  "notes":"Cloudflare port 443",
         "action" : "allow",
         "ports" : "443",
-        "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+        "process" : "/Applications/LibreWolf.app",
         "protocol" : "tcp",
         "remote-domains" : [
           "cloudflare-dns.com",
@@ -133,7 +133,7 @@
     {
       "action" : "allow",
       "ports" : "443",
-      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "process" : "/Applications/LibreWolf.app",
       "protocol" : "tcp",
       "remote-hosts" :	  [
       "api.premierleague.com","resources.premierleague.com","www.premierleague.com"]
@@ -141,28 +141,28 @@
     {
       "action" : "allow",
       "ports" : "443",
-      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "process" : "/Applications/LibreWolf.app",
       "protocol" : "tcp",
       "remote-hosts" : "image8.pubmatic.com"
     },
     {
       "action" : "allow",
       "ports" : "80",
-      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "process" : "/Applications/LibreWolf.app",
       "protocol" : "tcp",
       "remote-domains" : "carpart.com"
     },
     {
       "action" : "allow",
       "ports" : "443",
-      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "process" : "/Applications/LibreWolf.app",
       "protocol" : "tcp",
       "remote-domains" : "duck.ai"
     },
     {
       "action" : "allow",
       "ports" : "443",
-      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "process" : "/Applications/LibreWolf.app",
       "protocol" : "tcp",
       "remote-domains" : [
 		"filen-1.net", "file-2.net", "filen-3.net"
@@ -171,105 +171,105 @@
     {
       "action" : "allow",
       "ports" : "443",
-      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "process" : "/Applications/LibreWolf.app",
       "protocol" : "tcp",
       "remote-domains" : "filesusr.com"
     },
     {
       "action" : "allow",
       "ports" : "443",
-      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "process" : "/Applications/LibreWolf.app",
       "protocol" : "tcp",
       "remote-domains" : "firebaseapp.com"
     },
     {
       "action" : "allow",
       "ports" : "80",
-      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "process" : "/Applications/LibreWolf.app",
       "protocol" : "tcp",
       "remote-domains" : "firefox-portal-detection.com"
     },
     {
       "action" : "allow",
       "ports" : "443",
-      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "process" : "/Applications/LibreWolf.app",
       "protocol" : "tcp",
       "remote-domains" : "flashtalking.com"
     },
     {
       "action" : "allow",
       "ports" : "443",
-      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "process" : "/Applications/LibreWolf.app",
       "protocol" : "tcp",
       "remote-domains" : "forter.com"
     },
     {
       "action" : "allow",
       "ports" : "443",
-      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "process" : "/Applications/LibreWolf.app",
       "protocol" : "tcp",
       "remote-domains" : "fortinet.com"
     },
     {
       "action" : "allow",
       "ports" : "3478",
-      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "process" : "/Applications/LibreWolf.app",
       "protocol" : "tcp",
       "remote-domains" : "fpjs.io"
     },
     {
       "action" : "allow",
       "ports" : "443",
-      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "process" : "/Applications/LibreWolf.app",
       "protocol" : "tcp",
       "remote-domains" : "freedownloadmanager.org"
     },
     {
       "action" : "allow",
       "ports" : "80",
-      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "process" : "/Applications/LibreWolf.app",
       "protocol" : "tcp",
       "remote-domains" : "fullmatch.us"
     },
     {
       "action" : "allow",
       "ports" : "443",
-      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "process" : "/Applications/LibreWolf.app",
       "protocol" : "tcp",
       "remote-domains" : "githubassets.com"
     },
     {
       "action" : "allow",
       "ports" : "80",
-      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "process" : "/Applications/LibreWolf.app",
       "protocol" : "tcp",
       "remote-domains" : "madamhost.com"
     },
     {
       "action" : "allow",
       "ports" : "443",
-      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "process" : "/Applications/LibreWolf.app",
       "protocol" : "tcp",
       "remote-domains" : "madamhost.com"
     },
     {
       "action" : "allow",
       "ports" : "443",
-      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "process" : "/Applications/LibreWolf.app",
       "protocol" : "tcp",
       "remote-domains" : "microsoft365.com"
     },
     {
       "action" : "allow",
       "ports" : "443",
-      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "process" : "/Applications/LibreWolf.app",
       "protocol" : "tcp",
       "remote-domains" : "mizuhosi.com"
     },
     {
       "action" : "allow",
       "ports" : "443",
-      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "process" : "/Applications/LibreWolf.app",
       "protocol" : "tcp",
       "remote-domains" : "momentjs.com"
     },
@@ -277,7 +277,7 @@
 		"notes":"Cloudflare UDP",
       "action" : "allow",
       "ports" : "3478",
-      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "process" : "/Applications/LibreWolf.app",
       "protocol" : "udp",
       "remote-domains" : "cloudflare.com"
     },
@@ -285,7 +285,7 @@
 		"notes":"Firewall WWW ",
       "action" : "allow",
       "ports" : "443",
-      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "process" : "/Applications/LibreWolf.app",
       "protocol" : "tcp",
       "remote-domains" : [
         "paloaltonetworks.co.uk",
@@ -296,7 +296,7 @@
     {
       "action" : "allow",
       "ports" : "443",
-      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "process" : "/Applications/LibreWolf.app",
       "protocol" : "tcp",
       "remote-domains" : [
         "stripe.com",
@@ -307,7 +307,7 @@
 		"notes":"Domains Personal 2096",
       "action" : "allow",
       "ports" : "2096",
-      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "process" : "/Applications/LibreWolf.app",
       "protocol" : "tcp",
       "remote-domains" : [
         "audaxum.me",
@@ -319,7 +319,7 @@
 	"notes":"Github 443",
       "action" : "allow",
       "ports" : "443",
-      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "process" : "/Applications/LibreWolf.app",
       "protocol" : "tcp",
       "remote-domains" : [
         "avatars.githubusercontent.com",
@@ -336,7 +336,7 @@
 		"notes":"Domains Personal 2083",
       "action" : "allow",
       "ports" : "2083",
-      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "process" : "/Applications/LibreWolf.app",
       "protocol" : "tcp",
       "remote-domains" : [
         "audaxum.me",
