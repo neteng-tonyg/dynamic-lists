@@ -88,8 +88,7 @@
            "central.github.com",
            "githubusercontent.com",
            "github.com",
-           "github.io",
-
+           "github.io"
          ]
        },
          {
@@ -139,7 +138,7 @@
         "paloaltonetworks.co.uk",
         "paloaltonetworks.com",
   	"fortinet.com",
-  	"firewall.com",
+  	"firewall.com"
       ]
     },
     {
@@ -202,9 +201,9 @@
         "mp.microsoft.com",
 	"microsoft.com",
         "store-images.s-microsoft.com",
-        "edge.microsoftapp.net"
+        "edge.microsoftapp.net",
         "microsoft365.com",
-        "my.microsoftpersonalcontent.com",
+        "my.microsoftpersonalcontent.com"
       ]
     },
     {
@@ -221,7 +220,7 @@
         "us-api.asm.skype.com",
         "skype.com",
         "msauth.net",
-        "msfauth.net",
+        "msfauth.net"
       ]
     },
     {
