@@ -64,7 +64,7 @@
   		[
           "accounts.firefox.com",
           "firefox.com",
-		  "firefox.org"
+	"firefox.org"
         ]
       },
       {
@@ -73,9 +73,11 @@
         "ports" : "80",
            "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
         "protocol" : "tcp",
-        "remote-domains" : "mozilla.com",
+        "remote-domains" : [
+		"mozilla.com",
 		"ads-img.mozilla.org",
-		          "firefox-portal-detection.com"
+		"firefox-portal-detection.com"
+		]
       },
       {
     "notes":"Github Domains 443",
@@ -112,15 +114,6 @@
            "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
 	  "protocol" : "tcp",
       "remote-domains": ["atl-paas.net","atlassian.com","atlassian.net",      	"atlassian.io","atlassian.com","atlassian.net","bitbucket.org","bytebucket.org","jira.com","valiantys.com"]
-    },
-    {
-      "notes": "Atlassian",
-      "action": "allow",
-      "ports": "443",
-             "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
-	         "protocol" : "tcp",
-      "remote-domains": ["atl-paas.net","atlassian.com","atlassian.net",
-      "atlassian.io","atlassian.com","atlassian.net","bitbucket.org","bytebucket.org","jira.com","valiantys.com"]
     },
     {
       "notes": "Terraform",
@@ -221,7 +214,7 @@
         "msfauth.net",
         "onedrive.akadns.net",
         "us-api.asm.skype.com",
-		"static2.sharepointonline.com",
+	"static2.sharepointonline.com",
         "skype.com",
         "msauth.net",
         "msfauth.net"
