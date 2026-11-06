@@ -108,7 +108,7 @@
       "notes": "Atlassian",
       "action": "allow",
       "ports": "443",
-      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+           "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
 	  "protocol" : "tcp",
       "remote-domains": ["atl-paas.net","atlassian.com","atlassian.net",      	"atlassian.io","atlassian.com","atlassian.net","bitbucket.org","bytebucket.org","jira.com","valiantys.com"]
     },
@@ -195,17 +195,16 @@
          "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
       "protocol": "tcp",
       "remote-domains": [
-        "onedrive.com",
-        "msauth.net",
-        "msfauth.net",
-        "office.net",
-        "onecdn.static.microsoft",
+        "onecdn.static.microsoft.com",
         "office.com",
+	"office.net",
         "delivery.mp.microsoft.com",
         "mp.microsoft.com",
-        "us-api.asm.skype.com",
-        "skype.com",
+	"microsoft.com",
+        "store-images.s-microsoft.com",
         "edge.microsoftapp.net"
+        "microsoft365.com",
+        "my.microsoftpersonalcontent.com",
       ]
     },
     {
@@ -214,14 +213,15 @@
          "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
       "protocol": "tcp",
       "remote-domains": [
+	  "onedrive.com",
         "outlook.com",
-        "onedrive.akadns.net",
-        "microsoft365.com",
-        "my.microsoftpersonalcontent.com",
-        "store-images.s-microsoft.com",
         "msauth.net",
         "msfauth.net",
-        "office.net"
+        "onedrive.akadns.net",
+        "us-api.asm.skype.com",
+        "skype.com",
+        "msauth.net",
+        "msfauth.net",
       ]
     },
     {

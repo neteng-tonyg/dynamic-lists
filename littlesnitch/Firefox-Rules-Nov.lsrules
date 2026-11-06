@@ -79,7 +79,7 @@
     "notes":"Github Domains 443",
          "action" : "allow",
          "ports" : "443",
-        "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
+        "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
          "protocol" : "tcp",
          "remote-domains" : [
            "avatars.githubusercontent.com",
@@ -96,7 +96,7 @@
        "notes":"Gitlab Domains 443",
             "action" : "allow",
             "ports" : "443",
-           "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
+           "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
             "protocol" : "tcp",
             "remote-domains" : [
   	"malware-filter.gitlab.io",	  
@@ -180,41 +180,41 @@
     "textmate.org"
       ]
     },
-    {
-      "action": "allow",
-      "ports": "443",
-   "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
-      "protocol": "tcp",
-      "remote-domains": [
-        "onedrive.com",
-        "msauth.net",
-        "msfauth.net",
-        "office.net",
-        "onecdn.static.microsoft",
-        "office.com",
-        "delivery.mp.microsoft.com",
-        "mp.microsoft.com",
-        "us-api.asm.skype.com",
-        "skype.com",
-        "edge.microsoftapp.net"
-      ]
-    },
-    {
-      "action": "allow",
-      "ports": "443",
-   "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
-      "protocol": "tcp",
-      "remote-domains": [
-        "outlook.com",
-        "onedrive.akadns.net",
-        "microsoft365.com",
-        "my.microsoftpersonalcontent.com",
-        "store-images.s-microsoft.com",
-        "msauth.net",
-        "msfauth.net",
-        "office.net"
-      ]
-    },
+   {
+     "action": "allow",
+     "ports": "443",
+        "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+     "protocol": "tcp",
+     "remote-domains": [
+       "onecdn.static.microsoft.com",
+       "office.com",
+"office.net",
+       "delivery.mp.microsoft.com",
+       "mp.microsoft.com",
+"microsoft.com",
+       "store-images.s-microsoft.com",
+       "edge.microsoftapp.net"
+       "microsoft365.com",
+       "my.microsoftpersonalcontent.com",
+     ]
+   },
+   {
+     "action": "allow",
+     "ports": "443",
+        "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+     "protocol": "tcp",
+     "remote-domains": [
+  "onedrive.com",
+       "outlook.com",
+       "msauth.net",
+       "msfauth.net",
+       "onedrive.akadns.net",
+       "us-api.asm.skype.com",
+       "skype.com",
+       "msauth.net",
+       "msfauth.net",
+     ]
+   },
     {
       "action": "allow",
       "ports": "443",
