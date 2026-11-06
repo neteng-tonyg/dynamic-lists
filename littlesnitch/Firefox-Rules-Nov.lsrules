@@ -64,7 +64,8 @@
   		[
           "accounts.firefox.com",
           "firefox-portal-detection.com",
-          "firefox.com"
+          "firefox.com",
+		  "firefox.org"
         ]
       },
       {
