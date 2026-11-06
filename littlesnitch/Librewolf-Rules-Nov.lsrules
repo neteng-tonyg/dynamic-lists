@@ -75,32 +75,42 @@
         "protocol" : "tcp",
         "remote-domains" : "mozilla.com"
       },
-    {
-  "notes":"Github Domains 443",
-       "action" : "allow",
-       "ports" : "443",
-      "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
-       "protocol" : "tcp",
-       "remote-domains" : [
-         "avatars.githubusercontent.com",
-  	"githubassets.com",
-         "cafe.github.com",
-         "central.github.com",
-         "githubusercontent.com",
-         "github.com",
-         "github.io",
-         "gitlab.com",
-         "gitlab.io"
-       ]
-     },
+      {
+    "notes":"Github Domains 443",
+         "action" : "allow",
+         "ports" : "443",
+        "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
+         "protocol" : "tcp",
+         "remote-domains" : [
+           "avatars.githubusercontent.com",
+    	"githubassets.com",
+           "cafe.github.com",
+           "central.github.com",
+           "githubusercontent.com",
+           "github.com",
+           "github.io",
+
+         ]
+       },
+         {
+       "notes":"Gitlab Domains 443",
+            "action" : "allow",
+            "ports" : "443",
+           "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
+            "protocol" : "tcp",
+            "remote-domains" : [
+  	"malware-filter.gitlab.io",	  
+              "gitlab.com",
+              "gitlab.io"
+            ]
+          },
     {
       "notes": "Atlassian",
       "action": "allow",
       "ports": "443",
-     "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
-	 "protocol" : "tcp",
-      "remote-domains": ["atl-paas.net","atlassian.com","atlassian.net",
-      "atlassian.io","atlassian.com","atlassian.net","bitbucket.org","bytebucket.org","jira.com","valiantys.com"]
+      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+	  "protocol" : "tcp",
+      "remote-domains": ["atl-paas.net","atlassian.com","atlassian.net",      	"atlassian.io","atlassian.com","atlassian.net","bitbucket.org","bytebucket.org","jira.com","valiantys.com"]
     },
     {
       "notes": "Terraform",

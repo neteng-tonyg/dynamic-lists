@@ -75,24 +75,35 @@
         "protocol" : "tcp",
         "remote-domains" : "mozilla.com"
       },
-  {
-"notes":"Github Domains 443",
-     "action" : "allow",
-     "ports" : "443",
-  "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
-     "protocol" : "tcp",
-     "remote-domains" : [
-       "avatars.githubusercontent.com",
-	"githubassets.com",
-       "cafe.github.com",
-       "central.github.com",
-       "githubusercontent.com",
-       "github.com",
-       "github.io",
-       "gitlab.com",
-       "gitlab.io"
-     ]
-   },
+    {
+  "notes":"Github Domains 443",
+       "action" : "allow",
+       "ports" : "443",
+      "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
+       "protocol" : "tcp",
+       "remote-domains" : [
+         "avatars.githubusercontent.com",
+  	"githubassets.com",
+         "cafe.github.com",
+         "central.github.com",
+         "githubusercontent.com",
+         "github.com",
+         "github.io",
+
+       ]
+     },
+       {
+     "notes":"Gitlab Domains 443",
+          "action" : "allow",
+          "ports" : "443",
+         "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
+          "protocol" : "tcp",
+          "remote-domains" : [
+	"malware-filter.gitlab.io",	  
+            "gitlab.com",
+            "gitlab.io"
+          ]
+        },
   {
     "notes": "Atlassian",
     "action": "allow",
