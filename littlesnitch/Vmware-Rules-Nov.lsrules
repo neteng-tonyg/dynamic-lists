@@ -15,7 +15,7 @@
  "notes":"0.Default deny WWW/443",
     "action" : "deny",
     "ports" : "443",
-"process" : "/Applications/VMware Fusion.app"
+"process" : "/Applications/VMware Fusion.app",
     "protocol" : "tcp",
     "remote-domains" : 
   ["facebook.com",
@@ -29,7 +29,7 @@
     	"notes":"GoogleDomains 443",
           "action" : "allow",
           "ports" : "443",
-  "process" : "/Applications/VMware Fusion.app"
+  "process" : "/Applications/VMware Fusion.app",
           "protocol" : "tcp",
           "remote-domains" : 
     	  ["googlevideo.com",
@@ -40,16 +40,15 @@
 		  "googletagmanager.com",
 		  "gogleanalytics.com",
 		  "googleapis.com",
-		  "withgoogle,com",
-		  "gstatic.com",
-    		
+		  "withgoogle.com",
+		  "gstatic.com"
         ]
     },
       {
   	"notes":"Mozilla.com Domains 443",
         "action" : "allow",
         "ports" : "443",
-"process" : "/Applications/VMware Fusion.app"
+"process" : "/Applications/VMware Fusion.app",
         "protocol" : "tcp",
         "remote-domains" : 
   	  ["mozilla.com",
@@ -64,7 +63,7 @@
   	"notes":"Mozilla.org Domains 443",
         "action" : "allow",
         "ports" : "443",
-"process" : "/Applications/VMware Fusion.app"
+"process" : "/Applications/VMware Fusion.app",
         "protocol" : "tcp",
          "remote-domains" : [   
   	"addons.mozilla.org",
@@ -78,7 +77,7 @@
   	"notes":"Firefox Domains 443",
         "action" : "allow",
         "ports" : "443",
-"process" : "/Applications/VMware Fusion.app"
+"process" : "/Applications/VMware Fusion.app",
         "protocol" : "tcp",
         "remote-domains" : 
   		[
@@ -92,11 +91,13 @@
   	"notes":"Mozilla port 80",
         "action" : "allow",
         "ports" : "80",
-"process" : "/Applications/VMware Fusion.app"
+"process" : "/Applications/VMware Fusion.app",
         "protocol" : "tcp",
-        "remote-domains" : "mozilla.com",
+        "remote-domains" : [
+		"mozilla.com",
 		"firefox-portal-detection.com"
-      },
+      ]
+	  },
       {
     "notes":"Github Domains 443",
          "action" : "allow",
@@ -117,7 +118,7 @@
        "notes":"Gitlab Domains 443",
             "action" : "allow",
             "ports" : "443",
-"process" : "/Applications/VMware Fusion.app"
+"process" : "/Applications/VMware Fusion.app",
             "protocol" : "tcp",
             "remote-domains" : [
   	"malware-filter.gitlab.io",	  
@@ -129,7 +130,7 @@
       "notes": "Atlassian",
       "action": "allow",
       "ports": "443",
-"process" : "/Applications/VMware Fusion.app"
+"process" : "/Applications/VMware Fusion.app",
 	  "protocol" : "tcp",
       "remote-domains": ["atl-paas.net","atlassian.com","atlassian.net",      	"atlassian.io","atlassian.com","atlassian.net","bitbucket.org","bytebucket.org","jira.com","valiantys.com"]
     },
@@ -137,7 +138,7 @@
       "notes": "Atlassian",
       "action": "allow",
       "ports": "443",
-  "process" : "/Applications/VMware Fusion.app"
+  "process" : "/Applications/VMware Fusion.app",
 	         "protocol" : "tcp",
       "remote-domains": ["atl-paas.net","atlassian.com","atlassian.net",
       "atlassian.io","atlassian.com","atlassian.net","bitbucket.org","bytebucket.org","jira.com","valiantys.com"]
@@ -146,7 +147,7 @@
       "notes": "Terraform",
       "action": "allow",
       "ports": "443",
-  "process" : "/Applications/VMware Fusion.app"
+  "process" : "/Applications/VMware Fusion.app",
 	      "protocol" : "tcp",
       "remote-domains": ["terraform.net","terraform.com",""]
     },
@@ -154,7 +155,7 @@
   	"notes":"Firewall WWW ",
       "action" : "allow",
       "ports" : "443",
-  "process" : "/Applications/VMware Fusion.app"
+  "process" : "/Applications/VMware Fusion.app",
       "protocol" : "tcp",
       "remote-domains" : [
         "paloaltonetworks.co.uk",
@@ -167,7 +168,7 @@
   	"notes":"Domains Personal 2083",
       "action" : "allow",
       "ports" : "2083",
-  "process" : "/Applications/VMware Fusion.app"
+  "process" : "/Applications/VMware Fusion.app",
       "protocol" : "tcp",
       "remote-domains" : [
         "audaxum.me",
@@ -180,7 +181,7 @@
   	"notes":"Domains Personal 2096",
       "action" : "allow",
       "ports" : "2096",
-  "process" : "/Applications/VMware Fusion.app"
+  "process" : "/Applications/VMware Fusion.app",
       "protocol" : "tcp",
       "remote-domains" : [
         "audaxum.me",
@@ -192,7 +193,7 @@
     {
       "action" : "allow",
       "ports" : "443",
-  "process" : "/Applications/VMware Fusion.app"
+  "process" : "/Applications/VMware Fusion.app",
       "protocol" : "tcp",
       "remote-domains" : [
   	"filen-1.net", "filen-2.net", "filen-3.net","filen-4.net","filen-5.net"
