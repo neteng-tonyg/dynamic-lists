@@ -63,7 +63,6 @@
         "remote-domains" : 
   		[
           "accounts.firefox.com",
-          "firefox-portal-detection.com",
           "firefox.com",
 		  "firefox.org"
         ]
@@ -74,7 +73,9 @@
         "ports" : "80",
            "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
         "protocol" : "tcp",
-        "remote-domains" : "mozilla.com"
+        "remote-domains" : "mozilla.com",
+		"ads-img.mozilla.org",
+		          "firefox-portal-detection.com"
       },
       {
     "notes":"Github Domains 443",
@@ -201,6 +202,7 @@
         "delivery.mp.microsoft.com",
         "mp.microsoft.com",
 	"microsoft.com",
+	"onecdn.static.microsoft",
         "store-images.s-microsoft.com",
         "edge.microsoftapp.net",
         "microsoft365.com",
@@ -219,6 +221,7 @@
         "msfauth.net",
         "onedrive.akadns.net",
         "us-api.asm.skype.com",
+		"static2.sharepointonline.com",
         "skype.com",
         "msauth.net",
         "msfauth.net"
