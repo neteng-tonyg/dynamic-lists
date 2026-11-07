@@ -12,6 +12,15 @@
     "remote" : "any"
   },
   {
+    "notes":"0.Allow nat-stunUDP",
+  "action" : "deny",
+    "ports" : "3478",
+    "priority" : "high",
+   "process" : "/Applications/VMware Fusion.app",
+    "protocol" : "udp",
+    "remote" : "any"
+  },
+  {
  "notes":"0.Default deny WWW/443",
     "action" : "deny",
     "ports" : "443",
@@ -41,6 +50,8 @@
 		  "gogleanalytics.com",
 		  "googleapis.com",
 		  "withgoogle.com",
+		  "fonts.gstatic.com",
+		  "www.gstatic.com",
 		  "gstatic.com"
         ]
     },
@@ -70,7 +81,8 @@
         "aus5.mozilla.org",
         "download.mozilla.org",
         "telemetry.mozilla.org",
-        "vpn.mozilla.org"
+        "vpn.mozilla.org",
+	"ads-img.mozlla.org"
   	      ]
       },
       {
@@ -84,7 +96,7 @@
           "accounts.firefox.com",
           "firefox-portal-detection.com",
           "firefox.com",
-		  "firefox.org"
+	"firefox.org"
         ]
       },
       {
