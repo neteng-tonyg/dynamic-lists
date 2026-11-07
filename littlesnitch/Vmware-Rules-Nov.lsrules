@@ -13,7 +13,7 @@
   },
   {
     "notes":"0.Allow nat-stunUDP",
-  "action" : "deny",
+  "action" : "allow",
     "ports" : "3478",
     "priority" : "high",
    "process" : "/Applications/VMware Fusion.app",
@@ -146,15 +146,7 @@
 	  "protocol" : "tcp",
       "remote-domains": ["atl-paas.net","atlassian.com","atlassian.net",      	"atlassian.io","atlassian.com","atlassian.net","bitbucket.org","bytebucket.org","jira.com","valiantys.com"]
     },
-    {
-      "notes": "Atlassian",
-      "action": "allow",
-      "ports": "443",
-  "process" : "/Applications/VMware Fusion.app",
-	         "protocol" : "tcp",
-      "remote-domains": ["atl-paas.net","atlassian.com","atlassian.net",
-      "atlassian.io","atlassian.com","atlassian.net","bitbucket.org","bytebucket.org","jira.com","valiantys.com"]
-    },
+
     {
       "notes": "Terraform",
       "action": "allow",
