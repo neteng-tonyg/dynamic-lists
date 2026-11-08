@@ -48,6 +48,9 @@
 		  "googleusercontent.com",
 		  "googletagmanager.com",
 		  "gogleanalytics.com",
+		  "google-analytics.com",
+		  "googlesyndication.com",
+		  "googletagservices.com",
 		  "googleapis.com",
 		  "withgoogle.com",
 		  "fonts.gstatic.com",
@@ -55,7 +58,8 @@
 		  "gstatic.com",
 			"c.youtube.com",
 			"accounts.youtube.com",
-			"youtube.com"
+			"youtube.com",
+			"youtube.be"
         ]
 		},
       {
