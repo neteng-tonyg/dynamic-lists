@@ -34,14 +34,14 @@
       "static.doubleclick.net"
   ]
   },
-        {
-    	"notes":"Google/ Youtube Domains 443",
-          "action" : "allow",
-          "ports" : "443",
+    {
+    "notes":"Google/ Youtube Domains 443",
+     "action" : "allow",
+     "ports" : "443",
      "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
           "protocol" : "tcp",
-          "remote-domains" : 
-    	  ["googlevideo.com",
+          "remote-domains" : [
+		  "googlevideo.com",
 		  "dl.google.com",
 		  "accounts.google.com",
 		  "googleapps.com",
@@ -62,14 +62,14 @@
   	"notes":"Mozilla.com Domains 443",
         "action" : "allow",
         "ports" : "443",
-   "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
+   		"process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
         "protocol" : "tcp",
-        "remote-domains" : 
-  	  ["mozilla.com",
+        "remote-domains" : [
+        "mozilla.com",
   		"mozilla.net", 
   		"mozgcp.net",        
   	  	"classify-services.mozilla.com",
-          	"firefox.settings.services.mozilla.com",  
+        "firefox.settings.services.mozilla.com",  
   		"mozilla-ohttp.fastly-edge.com"
       ]
   },
@@ -77,43 +77,42 @@
   	"notes":"Mozilla.org Domains 443",
         "action" : "allow",
         "ports" : "443",
-   "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
+   		"process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
         "protocol" : "tcp",
-         "remote-domains" : [   
-  	"addons.mozilla.org",
+        "remote-domains" : [   
+  		"addons.mozilla.org",
         "aus5.mozilla.org",
         "download.mozilla.org",
         "telemetry.mozilla.org",
         "vpn.mozilla.org",
-	"ads-img.mozlla.org"
+		"ads-img.mozlla.org"
   	      ]
       },
       {
   	"notes":"Firefox Domains 443",
         "action" : "allow",
         "ports" : "443",
-   "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
+   		"process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
         "protocol" : "tcp",
-        "remote-domains" : 
-  		[
+        "remote-domains" : [
           "accounts.firefox.com",
           "firefox-portal-detection.com",
           "firefox.com",
-	"firefox.org"
+			"firefox.org"
         ]
       },
       {
   	"notes":"Mozilla port 80",
         "action" : "allow",
         "ports" : "80",
-   "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
+   		"process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
         "protocol" : "tcp",
         "remote-domains" : [
 		"mozilla.com",
 		"firefox-portal-detection.com",
-			"ads-img.mozlla.org"
+		"ads-img.mozlla.org"
       ]
-	  },
+	},
       {
     "notes":"Github Domains 443",
          "action" : "allow",
