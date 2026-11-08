@@ -35,7 +35,7 @@
   ]
   },
         {
-    	"notes":"GoogleDomains 443",
+    	"notes":"Google/ Youtube Domains 443",
           "action" : "allow",
           "ports" : "443",
      "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
@@ -52,7 +52,10 @@
 		  "withgoogle.com",
 		  "fonts.gstatic.com",
 		  "www.gstatic.com",
-		  "gstatic.com"
+		  "gstatic.com",
+			"c.youtube.com",
+			"accounts.youtube.com",
+			"youtube.com"
         ]
     },
       {
