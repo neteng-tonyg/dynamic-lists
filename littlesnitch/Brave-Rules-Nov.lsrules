@@ -110,7 +110,8 @@
         "remote-domains" : [
 		"mozilla.com",
 		"firefox-portal-detection.com",
-		"ads-img.mozilla.org"
+		"ads-img.mozilla.org",
+		"ads.mozilla.org"
       ]
 	},
       {
@@ -286,7 +287,7 @@
         "redditspace.com",
         "redditstatic.com",
         "Redditmedia.com",
-        "Reddit.com"
+	"preview.redd.it"
       ]
     },
     {

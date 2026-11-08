@@ -104,7 +104,8 @@
         "remote-domains" : [
 		"mozilla.com",
 		"firefox-portal-detection.com",
-		"ads-img.mozilla.org"
+		"ads-img.mozilla.org",
+		"ads.mozilla.org"
       ]
  	  },
       {
@@ -141,7 +142,7 @@
       "ports": "443",
       "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
 	  "protocol" : "tcp",
-      "remote-domains": ["atl-paas.net","atlassian.com","atlassian.net",      	"atlassian.io","atlassian.com","atlassian.net","bitbucket.org","bytebucket.org","jira.com","valiantys.com"]
+      "remote-domains": ["atl-paas.net", 	"atlassian.io","atlassian.com","atlassian.net","bitbucket.org","bytebucket.org","jira.com","valiantys.com"]
     },
     {
       "notes": "Terraform",
@@ -286,7 +287,8 @@
         "redditspace.com",
         "redditstatic.com",
         "Redditmedia.com",
-        "Reddit.com"
+        "Reddit.com",
+		"preview.redd.it"
       ]
     },
     {
