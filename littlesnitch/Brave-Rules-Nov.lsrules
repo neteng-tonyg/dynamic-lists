@@ -165,7 +165,10 @@
         "paloaltonetworks.co.uk",
         "paloaltonetworks.com",
   	"fortinet.com",
-  	"firewall.com"
+  	"firewall.com",
+	"firewall.net"
+	"zscaler.com",
+	"cisco.com"	
       ]
     },
     {
@@ -234,11 +237,14 @@
       ]
     },
     {
+	 	"notes":"MS Office Domains",
       "action": "allow",
       "ports": "443",
        "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
       "protocol": "tcp",
       "remote-domains": [
+		"sharepointonline.net",
+		"sharepointonline.com",
 	  "onedrive.com",
         "outlook.com",
         "msauth.net",
