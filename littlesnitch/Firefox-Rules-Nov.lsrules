@@ -156,9 +156,8 @@
       "ports": "443",
 "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
 	      "protocol" : "tcp",
-      "remote-domains": ["terraform.net","terraform.com",""]
+      "remote-domains": ["terraform.net","terraform.com"]
     },
-    {
     {
   	"notes":"Firewall WWW ",
       "action" : "allow",
@@ -170,7 +169,7 @@
         "paloaltonetworks.com",
   	"fortinet.com",
   	"firewall.com",
-	"firewall.net"
+	"firewall.net",
 	"zscaler.com",
 	"cisco.com"	
       ]

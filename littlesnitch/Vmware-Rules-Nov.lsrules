@@ -156,7 +156,7 @@
       "ports": "443",
       "process" : "\/Applications\/VMware Fusion.app\/Contents\/MacOS\/VMware Fusion",
 	      "protocol" : "tcp",
-      "remote-domains": ["terraform.net","terraform.com",""]
+      "remote-domains": ["terraform.net","terraform.com"]
     },
     {
   	"notes":"Firewall WWW ",
@@ -169,7 +169,7 @@
         "paloaltonetworks.com",
   	"fortinet.com",
   	"firewall.com",
-	"firewall.net"
+	"firewall.net",
 	"zscaler.com",
 	"cisco.com"	
       ]
