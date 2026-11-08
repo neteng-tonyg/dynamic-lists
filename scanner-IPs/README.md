@@ -10,6 +10,12 @@ The data is provided in the following formats:
 
 Stretchoid is an internet-wide reconnaissance and port-scanning platform rather than a malicious botnet. It operates using rotating IP addresses—frequently hosted on cloud providers like Microsoft Azure or DigitalOcean. They do have an [opt-out page](https://stretchoid.com/) for anyone who thinks they'll stop. My list is composed of IPs I gathered from my own Palo logs and may be incomplete.
 
+### Vision Height
+
+They run a controlled, ethical internet scanning program across the public IPv4 address space to collect public service metadata, banner information, and TLS certificates, according to [their web site](https://www.visionheight.com/scan). 
+
+https://www.visionheight.com/scan#ips  ![Vision Height IPs](screen-VH-IPs.png)
+
 ### Infrawat.ch
 
 An internet-wide intelligence and scanning platform that maps public-facing hosts, residential proxies, VPN endpoints, and adversary infrastructure (such as Cobalt Strike or EvilNginx) in real time.
