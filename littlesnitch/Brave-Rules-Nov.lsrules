@@ -110,7 +110,8 @@
         "protocol" : "tcp",
         "remote-domains" : [
 		"mozilla.com",
-		"firefox-portal-detection.com"
+		"firefox-portal-detection.com",
+			"ads-img.mozlla.org"
       ]
 	  },
       {
