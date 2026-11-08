@@ -29,7 +29,7 @@
   	"notes":"Google/ Youtube Domains 443",
         "action" : "allow",
         "ports" : "443",
-   "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
+ "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
         "protocol" : "tcp",
         "remote-domains" : 
   	  ["googlevideo.com",
@@ -147,7 +147,7 @@
   	"notes":"Firewall WWW ",
       "action" : "allow",
       "ports" : "443",
-     "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
+   "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
       "protocol" : "tcp",
       "remote-domains" : [
         "paloaltonetworks.co.uk",
@@ -228,7 +228,7 @@
 	 	"notes":"MS Office Domains",
       "action": "allow",
       "ports": "443",
-       "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
+     "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
       "protocol": "tcp",
       "remote-domains": [
 		"sharepointonline.net",

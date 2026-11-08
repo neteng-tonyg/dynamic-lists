@@ -38,7 +38,7 @@
     	"notes":"Google/ Youtube Domains 443",
           "action" : "allow",
           "ports" : "443",
-     "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
+      "process" : "\/Applications\/VMware Fusion.app\/Contents\/MacOS\/VMware Fusion",
           "protocol" : "tcp",
           "remote-domains" : 
     	  ["googlevideo.com",
@@ -57,7 +57,7 @@
 			"accounts.youtube.com",
 			"youtube.com"
         ]
-    },
+		},
       {
   	"notes":"Mozilla.com Domains 443",
         "action" : "allow",
@@ -147,7 +147,7 @@
       "ports": "443",
     "process" : "\/Applications\/VMware Fusion.app\/Contents\/MacOS\/VMware Fusion",
 	  "protocol" : "tcp",
-      "remote-domains": ["atl-paas.net","atlassian.com","atlassian.net",      	"atlassian.io","atlassian.com","atlassian.net","bitbucket.org","bytebucket.org","jira.com","valiantys.com"]
+      "remote-domains": ["atl-paas.net","atlassian.com","atlassian.net",      	"atlassian.io","bitbucket.org","bytebucket.org","jira.com","valiantys.com"]
     },
 
     {
@@ -162,7 +162,7 @@
   	"notes":"Firewall WWW ",
       "action" : "allow",
       "ports" : "443",
-     "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
+      "process" : "\/Applications\/VMware Fusion.app\/Contents\/MacOS\/VMware Fusion",
       "protocol" : "tcp",
       "remote-domains" : [
         "paloaltonetworks.co.uk",
@@ -243,7 +243,7 @@
 	 	"notes":"MS Office Domains",
       "action": "allow",
       "ports": "443",
-       "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
+        "process" : "\/Applications\/VMware Fusion.app\/Contents\/MacOS\/VMware Fusion",
       "protocol": "tcp",
       "remote-domains": [
 		"sharepointonline.net",
