@@ -1,6 +1,6 @@
 {
-  "name": "Fusion-Rules-Nov",
-  "description": "Standard app traffic from Fusion",
+  "name": "VMware-Rules-Nov",
+  "description": "Standard app traffic from WMware",
   "rules": [
   {
     "notes":"0.Default deny quic",
@@ -16,7 +16,7 @@
   "action" : "allow",
     "ports" : "3478",
     "priority" : "high",
-       "process" : "\/Applications\/VMware Fusion.app\/Contents\/MacOS\/VMware Fusion",
+     "process" : "\/Applications\/VMware Fusion.app\/Contents\/MacOS\/VMware Fusion",
     "protocol" : "udp",
     "remote" : "any"
   },
@@ -110,7 +110,8 @@
         "protocol" : "tcp",
         "remote-domains" : [
 		"mozilla.com",
-		"firefox-portal-detection.com"
+		"firefox-portal-detection.com",
+		"ads-img.mozlla.org"
       ]
 	  },
       {

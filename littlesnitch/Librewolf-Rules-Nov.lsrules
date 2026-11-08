@@ -25,80 +25,88 @@
       "static.doubleclick.net"
   ]
   },
-      {
-  	"notes":"Google/ Youtube Domains 443",
-        "action" : "allow",
-        "ports" : "443",
- "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
-        "protocol" : "tcp",
-        "remote-domains" : 
-  	  ["googlevideo.com",
-	  "dl.google.com",
 	  "accounts.google.com",
-	  "googleapps.com",
-	  "googleusercontent.com",
-	  "googletagmanager.com",
-	  "gogleanalytics.com",
-	  "googleapis.com",
-	  "withgoogle.com",
-	  "fonts.gstatic.com",
-	  "www.gstatic.com",
-	  "gstatic.com",
-		"c.youtube.com",
-		"accounts.youtube.com",
-		"youtube.com"
+         {
+     	"notes":"Google/ Youtube Domains 443",
+           "action" : "allow",
+           "ports" : "443",
+  "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
+           "protocol" : "tcp",
+           "remote-domains" : 
+     	  ["googlevideo.com",
+ 		  "dl.google.com",
+ 		  "accounts.google.com",
+ 		  "googleapps.com",
+ 		  "googleusercontent.com",
+ 		  "googletagmanager.com",
+ 		  "gogleanalytics.com",
+ 		  "googleapis.com",
+ 		  "withgoogle.com",
+ 		  "fonts.gstatic.com",
+ 		  "www.gstatic.com",
+ 		  "gstatic.com",
+ 			"c.youtube.com",
+ 			"accounts.youtube.com",
+ 			"youtube.com"
+         ]
+     },
+       {
+   	"notes":"Mozilla.com Domains 443",
+         "action" : "allow",
+         "ports" : "443",
+  "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
+         "protocol" : "tcp",
+         "remote-domains" : 
+   	  ["mozilla.com",
+   		"mozilla.net", 
+   		"mozgcp.net",        
+   	  	"classify-services.mozilla.com",
+           	"firefox.settings.services.mozilla.com",  
+   		"mozilla-ohttp.fastly-edge.com"
+       ]
+   },
+       {
+   	"notes":"Mozilla.org Domains 443",
+         "action" : "allow",
+         "ports" : "443",
+  "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
+         "protocol" : "tcp",
+          "remote-domains" : [   
+   	"addons.mozilla.org",
+         "aus5.mozilla.org",
+         "download.mozilla.org",
+         "telemetry.mozilla.org",
+         "vpn.mozilla.org",
+ 	"ads-img.mozlla.org"
+   	      ]
+       },
+       {
+   	"notes":"Firefox Domains 443",
+         "action" : "allow",
+         "ports" : "443",
+  "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
+         "protocol" : "tcp",
+         "remote-domains" : 
+   		[
+           "accounts.firefox.com",
+           "firefox-portal-detection.com",
+           "firefox.com",
+ 	"firefox.org"
+         ]
+       },
+       {
+   	"notes":"Mozilla port 80",
+         "action" : "allow",
+         "ports" : "80",
+  "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
+         "protocol" : "tcp",
+        "protocol" : "tcp",
+        "remote-domains" : [
+		"mozilla.com",
+		"firefox-portal-detection.com",
+		"ads-img.mozlla.org"
       ]
-  },
-      {
-  	"notes":"Mozilla.com Domains 443",
-        "action" : "allow",
-        "ports" : "443",
-        "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
-        "protocol" : "tcp",
-        "remote-domains" : 
-  	  ["mozilla.com",
-  		"mozilla.net", 
-  		"mozgcp.net",        
-  	  	"classify-services.mozilla.com",
-          	"firefox.settings.services.mozilla.com",  
-  		"mozilla-ohttp.fastly-edge.com"
-      ]
-  },
-      {
-  	"notes":"Mozilla.org Domains 443",
-        "action" : "allow",
-        "ports" : "443",
-        "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
-        "protocol" : "tcp",
-         "remote-domains" : [   
-  	"addons.mozilla.org",
-        "aus5.mozilla.org",
-        "download.mozilla.org",
-        "telemetry.mozilla.org",
-        "vpn.mozilla.org"
-  	      ]
-      },
-      {
-  	"notes":"Firefox Domains 443",
-        "action" : "allow",
-        "ports" : "443",
-        "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
-        "protocol" : "tcp",
-        "remote-domains" : 
-  		[
-          "accounts.firefox.com",
-          "firefox-portal-detection.com",
-          "firefox.com"
-        ]
-      },
-      {
-  	"notes":"Mozilla port 80",
-        "action" : "allow",
-        "ports" : "80",
-        "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
-        "protocol" : "tcp",
-        "remote-domains" : "mozilla.com"
-      },
+ 	  },
       {
     "notes":"Github Domains 443",
          "action" : "allow",
