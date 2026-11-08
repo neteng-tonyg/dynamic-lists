@@ -26,6 +26,30 @@
   ]
   },
       {
+  	"notes":"Google/ Youtube Domains 443",
+        "action" : "allow",
+        "ports" : "443",
+   "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
+        "protocol" : "tcp",
+        "remote-domains" : 
+  	  ["googlevideo.com",
+	  "dl.google.com",
+	  "accounts.google.com",
+	  "googleapps.com",
+	  "googleusercontent.com",
+	  "googletagmanager.com",
+	  "gogleanalytics.com",
+	  "googleapis.com",
+	  "withgoogle.com",
+	  "fonts.gstatic.com",
+	  "www.gstatic.com",
+	  "gstatic.com",
+		"c.youtube.com",
+		"accounts.youtube.com",
+		"youtube.com"
+      ]
+  },
+      {
   	"notes":"Mozilla.com Domains 443",
         "action" : "allow",
         "ports" : "443",
@@ -112,33 +136,19 @@
       "remote-domains": ["atl-paas.net","atlassian.com","atlassian.net",      	"atlassian.io","atlassian.com","atlassian.net","bitbucket.org","bytebucket.org","jira.com","valiantys.com"]
     },
     {
-      "notes": "Atlassian",
-      "action": "allow",
-      "ports": "443",
-     "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
-	         "protocol" : "tcp",
-      "remote-domains": ["atl-paas.net","atlassian.com","atlassian.net",
-      "atlassian.io","atlassian.com","atlassian.net","bitbucket.org","bytebucket.org","jira.com","valiantys.com"]
-    },
-    {
-      "notes": "Terraform",
-      "action": "allow",
-      "ports": "443",
-     "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
-	      "protocol" : "tcp",
-      "remote-domains": ["terraform.net","terraform.com",""]
-    },
-    {
   	"notes":"Firewall WWW ",
       "action" : "allow",
       "ports" : "443",
-     "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
+     "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
       "protocol" : "tcp",
       "remote-domains" : [
         "paloaltonetworks.co.uk",
         "paloaltonetworks.com",
   	"fortinet.com",
-  	"firewall.com"
+  	"firewall.com",
+	"firewall.net"
+	"zscaler.com",
+	"cisco.com"	
       ]
     },
     {
@@ -207,11 +217,14 @@
       ]
     },
     {
+	 	"notes":"MS Office Domains",
       "action": "allow",
       "ports": "443",
-  "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
+       "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
       "protocol": "tcp",
       "remote-domains": [
+		"sharepointonline.net",
+		"sharepointonline.com",
 	  "onedrive.com",
         "outlook.com",
         "msauth.net",
