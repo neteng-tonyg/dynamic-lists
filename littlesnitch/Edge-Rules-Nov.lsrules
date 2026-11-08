@@ -25,14 +25,14 @@
       "static.doubleclick.net"
   ]
   },
-        {
-    	"notes":"Google/ Youtube Domains 443",
-          "action" : "allow",
-          "ports" : "443",
-   "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
+    {
+    "notes":"Google/ Youtube Domains 443",
+     "action" : "allow",
+     "ports" : "443",
+      "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
           "protocol" : "tcp",
-          "remote-domains" : 
-    	  ["googlevideo.com",
+          "remote-domains" : [
+		  "googlevideo.com",
 		  "dl.google.com",
 		  "accounts.google.com",
 		  "googleapps.com",
@@ -53,14 +53,14 @@
   	"notes":"Mozilla.com Domains 443",
         "action" : "allow",
         "ports" : "443",
-   "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
+   		 "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
         "protocol" : "tcp",
-        "remote-domains" : 
-  	  ["mozilla.com",
+        "remote-domains" : [
+        "mozilla.com",
   		"mozilla.net", 
   		"mozgcp.net",        
   	  	"classify-services.mozilla.com",
-          	"firefox.settings.services.mozilla.com",  
+        "firefox.settings.services.mozilla.com",  
   		"mozilla-ohttp.fastly-edge.com"
       ]
   },
@@ -68,37 +68,42 @@
   	"notes":"Mozilla.org Domains 443",
         "action" : "allow",
         "ports" : "443",
-   "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
+   		 "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
         "protocol" : "tcp",
-         "remote-domains" : [   
-  	"addons.mozilla.org",
+        "remote-domains" : [   
+  		"addons.mozilla.org",
         "aus5.mozilla.org",
         "download.mozilla.org",
         "telemetry.mozilla.org",
-        "vpn.mozilla.org"
+        "vpn.mozilla.org",
+		"ads-img.mozlla.org"
   	      ]
       },
       {
   	"notes":"Firefox Domains 443",
         "action" : "allow",
         "ports" : "443",
-   "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
+   		 "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
         "protocol" : "tcp",
-        "remote-domains" : 
-  		[
+        "remote-domains" : [
           "accounts.firefox.com",
           "firefox-portal-detection.com",
-          "firefox.com"
+          "firefox.com",
+			"firefox.org"
         ]
       },
       {
   	"notes":"Mozilla port 80",
         "action" : "allow",
         "ports" : "80",
-   "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
+   		 "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
         "protocol" : "tcp",
-        "remote-domains" : "mozilla.com"
-      },
+        "remote-domains" : [
+		"mozilla.com",
+		"firefox-portal-detection.com",
+		"ads-img.mozlla.org"
+      ]
+	},
       {
     "notes":"Github Domains 443",
          "action" : "allow",
@@ -133,7 +138,8 @@
       "ports": "443",
     "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
 	  "protocol" : "tcp",
-      "remote-domains": ["atl-paas.net","atlassian.com","atlassian.net",      	"atlassian.io","bitbucket.org","bytebucket.org","jira.com","valiantys.com"]
+      "remote-domains": ["atl-paas.net","atlassian.com","atlassian.net",      	
+	  "atlassian.io","bitbucket.org","bytebucket.org","jira.com","valiantys.com"]
     },
     {
   	"notes":"Firewall WWW ",
