@@ -104,7 +104,7 @@
         "remote-domains" : [
 		"mozilla.com",
 		"firefox-portal-detection.com",
-		"ads-img.mozlla.org"
+		"ads-img.mozilla.org"
       ]
  	  },
       {
