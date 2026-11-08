@@ -1,9 +1,6 @@
 # Internet based scanning orgs
 List of IPs belonging to common internet-wide scanning organizations.
 
-The data is provided in the following formats:
-- nftables
-- cidr
 
 
 ### Stretchoid
@@ -14,7 +11,9 @@ Stretchoid is an internet-wide reconnaissance and port-scanning platform rather 
 
 They run a controlled, ethical internet scanning program across the public IPv4 address space to collect public service metadata, banner information, and TLS certificates, according to [their web site].  They also have [an opt-out email address](optout@visionheight.com).
 
-  [![alt text]<img src="screen-VH-IPs.png" width = "50%">](https://www.visionheight.com/scan#ips)
+
+  [<img src="screen-VH-IPs.png" width = "50%">](https://www.visionheight.com/scan#ips)
+
 
 ### Infrawat.ch
 
