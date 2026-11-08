@@ -12,7 +12,7 @@ Stretchoid is an internet-wide reconnaissance and port-scanning platform rather 
 
 ### Vision Height
 
-They run a controlled, ethical internet scanning program across the public IPv4 address space to collect public service metadata, banner information, and TLS certificates, according to [their web site](https://www.visionheight.com/scan). 
+They run a controlled, ethical internet scanning program across the public IPv4 address space to collect public service metadata, banner information, and TLS certificates, according to [their web site].  They also have [an opt-out email address](optout@visionheight.com).
 
   ![Vision Height IPs](screen-VH-IPs.png)(https://www.visionheight.com/scan#ips)
 
