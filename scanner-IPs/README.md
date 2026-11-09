@@ -5,7 +5,8 @@ List of IPs belonging to common internet-wide scanning organizations.
 
 ### Stretchoid
 
-Stretchoid is an internet-wide reconnaissance and port-scanning platform rather than a malicious botnet. It operates using rotating IP addresses—frequently hosted on cloud providers like Microsoft Azure or DigitalOcean. They do have an [opt-out page](https://stretchoid.com/) for anyone who thinks they'll stop. My list is composed of IPs I gathered from my own Palo logs and may be incomplete.
+Stretchoid is an internet-wide reconnaissance and port-scanning platform - not a malicious botnet. It  uses rotating IP addresses—frequently hosted on cloud providers like Microsoft Azure or DigitalOcean - and they don't disclose what CIDRs they use, so monitoring them is tricky. I update my lsit peridically depending on how many new IPs my Palo catches in one of its rulesets.
+They do have an [opt-out page](https://stretchoid.com/) for anyone who thinks they'll stop. My list is composed of IPs I gathered from my own Palo logs and may be incomplete.
 
 ### Vision Height
 
