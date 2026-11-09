@@ -18,11 +18,11 @@
         "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
     "protocol" : "tcp",
     "remote-domains" : 
-  ["facebook.com",
-  "facebook.net",
-  "tiktokcdn.com",
-"g.doubleclick.net",
-      "static.doubleclick.net"
+  [ "facebook.com",
+    "facebook.net",
+    "tiktokcdn.com",
+    "g.doubleclick.net",
+    "static.doubleclick.net"
   ]
   },
 	  "accounts.google.com",
