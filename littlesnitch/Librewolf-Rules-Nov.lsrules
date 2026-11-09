@@ -7,7 +7,16 @@
   "action" : "deny",
     "ports" : "443",
     "priority" : "high",
-   "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
+  "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
+    "protocol" : "udp",
+    "remote" : "any"
+  },
+  {
+    "notes":"0.Allow nat-stunUDP",
+  "action" : "allow",
+    "ports" : "3478",
+    "priority" : "high",
+  "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
     "protocol" : "udp",
     "remote" : "any"
   },
@@ -15,91 +24,94 @@
  "notes":"0.Default deny WWW/443",
     "action" : "deny",
     "ports" : "443",
-        "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
+ "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
     "protocol" : "tcp",
     "remote-domains" : 
-  [ "facebook.com",
-    "facebook.net",
-    "tiktokcdn.com",
-    "g.doubleclick.net",
-    "static.doubleclick.net"
+  ["facebook.com",
+  "facebook.net",
+  "tiktokcdn.com",
+"g.doubleclick.net",
+      "static.doubleclick.net"
   ]
   },
-	  "accounts.google.com",
-         {
-     	"notes":"Google/ Youtube Domains 443",
-           "action" : "allow",
-           "ports" : "443",
-  "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
-           "protocol" : "tcp",
-           "remote-domains" : 
-     	  ["googlevideo.com",
- 		  "dl.google.com",
- 		  "accounts.google.com",
- 		  "googleapps.com",
- 		  "googleusercontent.com",
- 		  "googletagmanager.com",
- 		  "gogleanalytics.com",
- 		  "googleapis.com",
- 		  "withgoogle.com",
- 		  "fonts.gstatic.com",
- 		  "www.gstatic.com",
- 		  "gstatic.com",
- 			"c.youtube.com",
- 			"accounts.youtube.com",
- 			"youtube.com"
-         ]
-     },
-       {
-   	"notes":"Mozilla.com Domains 443",
-         "action" : "allow",
-         "ports" : "443",
-  "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
-         "protocol" : "tcp",
-         "remote-domains" : 
-   	  ["mozilla.com",
-   		"mozilla.net", 
-   		"mozgcp.net",        
-   	  	"classify-services.mozilla.com",
-           	"firefox.settings.services.mozilla.com",  
-   		"mozilla-ohttp.fastly-edge.com"
-       ]
-   },
-       {
-   	"notes":"Mozilla.org Domains 443",
-         "action" : "allow",
-         "ports" : "443",
-  "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
-         "protocol" : "tcp",
-          "remote-domains" : [   
-   	"addons.mozilla.org",
-         "aus5.mozilla.org",
-         "download.mozilla.org",
-         "telemetry.mozilla.org",
-         "vpn.mozilla.org",
- 	"ads-img.mozlla.org"
-   	      ]
-       },
-       {
-   	"notes":"Firefox Domains 443",
-         "action" : "allow",
-         "ports" : "443",
-  "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
-         "protocol" : "tcp",
-         "remote-domains" : 
-   		[
-           "accounts.firefox.com",
-           "firefox-portal-detection.com",
-           "firefox.com",
- 	"firefox.org"
-         ]
-       },
-       {
-   	"notes":"Mozilla port 80",
-         "action" : "allow",
-         "ports" : "80",
-  "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
-         "protocol" : "tcp",
+    {
+    "notes":"Google/ Youtube Domains 443",
+     "action" : "allow",
+     "ports" : "443",
+       "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
+          "protocol" : "tcp",
+          "remote-domains" : [
+		  "googlevideo.com",
+		  "dl.google.com",
+		  "accounts.google.com",
+		  "googleapps.com",
+		  "googleusercontent.com",
+		  "googletagmanager.com",
+		  "gogleanalytics.com",
+		  "google-analytics.com",
+		  "googlesyndication.com",
+		  "googletagservices.com",
+		  "googleapis.com",
+		  "withgoogle.com",
+		  "fonts.gstatic.com",
+		  "www.gstatic.com",
+		  "gstatic.com",
+			"c.youtube.com",
+			"accounts.youtube.com",
+			"youtube.com",
+			"youtube.be"
+        ]
+		},
+      {
+  	"notes":"Mozilla.com Domains 443",
+        "action" : "allow",
+        "ports" : "443",
+   		  "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
+        "protocol" : "tcp",
+        "remote-domains" : [
+        "mozilla.com",
+  		"mozilla.net", 
+  		"mozgcp.net",        
+  	  	"classify-services.mozilla.com",
+        "firefox.settings.services.mozilla.com",  
+  		"mozilla-ohttp.fastly-edge.com",
+  		"ohttp-merino.mozilla.fastly-edge.com",
+  		"mozilla.fastly-edge.com"
+      ]
+  },
+      {
+  	"notes":"Mozilla.org Domains 443",
+        "action" : "allow",
+        "ports" : "443",
+   		  "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
+        "protocol" : "tcp",
+        "remote-domains" : [   
+  		"addons.mozilla.org",
+        "aus5.mozilla.org",
+        "download.mozilla.org",
+        "telemetry.mozilla.org",
+        "vpn.mozilla.org",
+		"ads-img.mozilla.org"
+  	      ]
+      },
+      {
+  	"notes":"Firefox Domains 443",
+        "action" : "allow",
+        "ports" : "443",
+   		  "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
+        "protocol" : "tcp",
+        "remote-domains" : [
+          "accounts.firefox.com",
+          "firefox-portal-detection.com",
+          "firefox.com",
+			"firefox.org"
+        ]
+      },
+      {
+  	"notes":"Mozilla port 80",
+        "action" : "allow",
+        "ports" : "80",
+   		  "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
         "protocol" : "tcp",
         "remote-domains" : [
 		"mozilla.com",
@@ -107,12 +119,12 @@
 		"ads-img.mozilla.org",
 		"ads.mozilla.org"
       ]
- 	  },
+	},
       {
     "notes":"Github Domains 443",
          "action" : "allow",
          "ports" : "443",
-   "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
+  "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
          "protocol" : "tcp",
          "remote-domains" : [
            "avatars.githubusercontent.com",
@@ -128,7 +140,7 @@
        "notes":"Gitlab Domains 443",
             "action" : "allow",
             "ports" : "443",
-      "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
+ "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
             "protocol" : "tcp",
             "remote-domains" : [
   	"malware-filter.gitlab.io",	  
@@ -140,15 +152,16 @@
       "notes": "Atlassian",
       "action": "allow",
       "ports": "443",
-      "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
+ "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
 	  "protocol" : "tcp",
-      "remote-domains": ["atl-paas.net", 	"atlassian.io","atlassian.com","atlassian.net","bitbucket.org","bytebucket.org","jira.com","valiantys.com"]
+      "remote-domains": ["atl-paas.net","atlassian.com","atlassian.net",      	"atlassian.io","bitbucket.org","bytebucket.org","jira.com","valiantys.com"]
     },
+
     {
       "notes": "Terraform",
       "action": "allow",
       "ports": "443",
-          "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
+ "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
 	      "protocol" : "tcp",
       "remote-domains": ["terraform.net","terraform.com"]
     },
@@ -156,7 +169,7 @@
   	"notes":"Firewall WWW ",
       "action" : "allow",
       "ports" : "443",
-   "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
+ "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
       "protocol" : "tcp",
       "remote-domains" : [
         "paloaltonetworks.co.uk",
@@ -172,7 +185,7 @@
   	"notes":"Domains Personal 2083",
       "action" : "allow",
       "ports" : "2083",
-          "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
+ "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
       "protocol" : "tcp",
       "remote-domains" : [
         "audaxum.me",
@@ -185,7 +198,7 @@
   	"notes":"Domains Personal 2096",
       "action" : "allow",
       "ports" : "2096",
-          "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
+ "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
       "protocol" : "tcp",
       "remote-domains" : [
         "audaxum.me",
@@ -197,7 +210,7 @@
     {
       "action" : "allow",
       "ports" : "443",
-          "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
+ "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
       "protocol" : "tcp",
       "remote-domains" : [
   	"filen-1.net", "filen-2.net", "filen-3.net","filen-4.net","filen-5.net"
@@ -206,7 +219,7 @@
     {
       "action": "allow",
       "ports": "443",
-   "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
+  "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
       "protocol": "tcp",
       "remote-domains": [
         "ip-lookup.com",
@@ -218,18 +231,22 @@
     {
       "action": "allow",
       "ports": "443",
-    "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
+   "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
       "protocol": "tcp",
       "remote-domains": [
         "onecdn.static.microsoft.com",
         "office.com",
-	"office.net",
+	    "office.net",
+	    "onedrive.live.com",
+	    "excel.officeapps.live.com",
+	    "oauth.officeapps.live.com",
         "delivery.mp.microsoft.com",
         "mp.microsoft.com",
-	"microsoft.com",
+	    "microsoft.com",
         "store-images.s-microsoft.com",
         "edge.microsoftapp.net",
         "microsoft365.com",
+        "login.microsoftonline.com",
         "my.microsoftpersonalcontent.com"
       ]
     },
@@ -237,12 +254,12 @@
 	 	"notes":"MS Office Domains",
       "action": "allow",
       "ports": "443",
-     "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
+ "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
       "protocol": "tcp",
       "remote-domains": [
 		"sharepointonline.net",
 		"sharepointonline.com",
-	  "onedrive.com",
+	    "onedrive.com",
         "outlook.com",
         "msauth.net",
         "msfauth.net",
@@ -256,7 +273,7 @@
     {
       "action": "allow",
       "ports": "443",
-    "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
+   "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
       "protocol": "tcp",
       "remote-domains": [
         "sublimetext.com",
@@ -268,7 +285,7 @@
     {
       "action": "deny",
       "ports": "443",
-    "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
+   "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
       "protocol": "udp",
       "remote-addresses": [
         "173.194.219.*",
@@ -281,20 +298,20 @@
     {
       "action": "allow",
       "ports": "443",
-    "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
+   "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
       "protocol": "tcp",
       "remote-domains": [
         "redditspace.com",
         "redditstatic.com",
         "Redditmedia.com",
-        "Reddit.com",
-		"preview.redd.it"
+ "Reddit.com",
+"preview.redd.it"
       ]
     },
     {
       "action": "allow",
       "ports": "443",
-    "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
+   "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
       "protocol": "tcp",
       "remote-domains": [
         "duck.ai",
@@ -308,7 +325,7 @@
     {
       "action": "allow",
       "ports": "443",
-    "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
+   "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
       "protocol": "tcp",
       "remote-domains": [
         "download.bitdefender.com",
@@ -323,7 +340,7 @@
 		    "notes":"Cloudflare port 80",
       "action": "allow",
       "ports": "80",
-    "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
+   "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
       "protocol": "tcp",
       "remote-domains": [
         "cloudflare.com",
@@ -337,7 +354,7 @@
     {
       "action": "allow",
       "ports": "443",
-    "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
+   "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
       "protocol": "tcp",
       "remote-domains": [
         "cloudflare.com",
@@ -351,7 +368,7 @@
     {
       "action": "allow",
       "ports": "443",
-    "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
+   "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
       "protocol": "tcp",
       "remote-domains": [
         "bluehost.com",
@@ -363,7 +380,7 @@
     {
       "action": "allow",
       "ports": "443",
-    "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
+   "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
       "protocol": "tcp",
       "remote-domains": [
         "lucid.app",

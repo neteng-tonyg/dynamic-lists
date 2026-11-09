@@ -74,7 +74,9 @@
   		"mozgcp.net",        
   	  	"classify-services.mozilla.com",
         "firefox.settings.services.mozilla.com",  
-  		"mozilla-ohttp.fastly-edge.com"
+  		"mozilla-ohttp.fastly-edge.com",
+  		"ohttp-merino.mozilla.fastly-edge.com",
+  		"mozilla.fastly-edge.com"
       ]
   },
       {
@@ -89,7 +91,7 @@
         "download.mozilla.org",
         "telemetry.mozilla.org",
         "vpn.mozilla.org",
-		"ads-img.mozlla.org"
+		"ads-img.mozilla.org"
   	      ]
       },
       {
@@ -234,13 +236,17 @@
       "remote-domains": [
         "onecdn.static.microsoft.com",
         "office.com",
-	"office.net",
+	    "office.net",
+	    "onedrive.live.com",
+	    "excel.officeapps.live.com",
+	    "oauth.officeapps.live.com",
         "delivery.mp.microsoft.com",
         "mp.microsoft.com",
-	"microsoft.com",
+	    "microsoft.com",
         "store-images.s-microsoft.com",
         "edge.microsoftapp.net",
         "microsoft365.com",
+        "login.microsoftonline.com",
         "my.microsoftpersonalcontent.com"
       ]
     },
@@ -253,7 +259,7 @@
       "remote-domains": [
 		"sharepointonline.net",
 		"sharepointonline.com",
-	  "onedrive.com",
+	    "onedrive.com",
         "outlook.com",
         "msauth.net",
         "msfauth.net",

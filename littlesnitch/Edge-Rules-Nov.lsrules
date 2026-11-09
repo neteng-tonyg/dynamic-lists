@@ -11,6 +11,15 @@
     "protocol" : "udp",
     "remote" : "any"
   },
+    {
+    "notes":"0.Allow nat-stunUDP",
+  "action" : "allow",
+    "ports" : "3478",
+    "priority" : "high",
+ "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+    "protocol" : "udp",
+    "remote" : "any"
+  },
   {
  "notes":"0.Default deny WWW/443",
     "action" : "deny",
@@ -49,41 +58,43 @@
 			"youtube.com"
         ]
 		},
-      {
+        {
   	"notes":"Mozilla.com Domains 443",
         "action" : "allow",
         "ports" : "443",
-   		 "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
+   		 "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
         "protocol" : "tcp",
         "remote-domains" : [
         "mozilla.com",
-  		"mozilla.net", 
-  		"mozgcp.net",        
+  		"mozilla.net",
+  		"mozgcp.net",
   	  	"classify-services.mozilla.com",
-        "firefox.settings.services.mozilla.com",  
-  		"mozilla-ohttp.fastly-edge.com"
+        "firefox.settings.services.mozilla.com",
+  		"mozilla-ohttp.fastly-edge.com",
+  		"ohttp-merino.mozilla.fastly-edge.com",
+  		"mozilla.fastly-edge.com"
       ]
   },
       {
   	"notes":"Mozilla.org Domains 443",
         "action" : "allow",
         "ports" : "443",
-   		 "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
+   		 "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
         "protocol" : "tcp",
-        "remote-domains" : [   
+        "remote-domains" : [
   		"addons.mozilla.org",
         "aus5.mozilla.org",
         "download.mozilla.org",
         "telemetry.mozilla.org",
         "vpn.mozilla.org",
-		"ads-img.mozlla.org"
+		"ads-img.mozilla.org"
   	      ]
       },
       {
   	"notes":"Firefox Domains 443",
         "action" : "allow",
         "ports" : "443",
-   		 "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
+   		 "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
         "protocol" : "tcp",
         "remote-domains" : [
           "accounts.firefox.com",
@@ -96,7 +107,7 @@
   	"notes":"Mozilla port 80",
         "action" : "allow",
         "ports" : "80",
-   		 "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
+   		 "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
         "protocol" : "tcp",
         "remote-domains" : [
 		"mozilla.com",
