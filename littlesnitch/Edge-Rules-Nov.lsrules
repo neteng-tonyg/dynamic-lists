@@ -16,7 +16,7 @@
   "action" : "allow",
     "ports" : "3478",
     "priority" : "high",
- "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+  "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
     "protocol" : "udp",
     "remote" : "any"
   },
@@ -62,7 +62,7 @@
   	"notes":"Mozilla.com Domains 443",
         "action" : "allow",
         "ports" : "443",
-   		 "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+   		  "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
         "protocol" : "tcp",
         "remote-domains" : [
         "mozilla.com",
@@ -79,7 +79,7 @@
   	"notes":"Mozilla.org Domains 443",
         "action" : "allow",
         "ports" : "443",
-   		 "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+   		  "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
         "protocol" : "tcp",
         "remote-domains" : [
   		"addons.mozilla.org",
@@ -94,7 +94,7 @@
   	"notes":"Firefox Domains 443",
         "action" : "allow",
         "ports" : "443",
-   		 "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+   		  "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
         "protocol" : "tcp",
         "remote-domains" : [
           "accounts.firefox.com",
@@ -107,7 +107,7 @@
   	"notes":"Mozilla port 80",
         "action" : "allow",
         "ports" : "80",
-   		 "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+   		  "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
         "protocol" : "tcp",
         "remote-domains" : [
 		"mozilla.com",
