@@ -11,12 +11,12 @@
     "protocol" : "udp",
     "remote" : "any"
   },
-    {
+  {
     "notes":"0.Allow nat-stunUDP",
   "action" : "allow",
     "ports" : "3478",
     "priority" : "high",
-  "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
+ "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
     "protocol" : "udp",
     "remote" : "any"
   },
@@ -24,30 +24,34 @@
  "notes":"0.Default deny WWW/443",
     "action" : "deny",
     "ports" : "443",
-   "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
+ "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
     "protocol" : "tcp",
     "remote-domains" : 
   ["facebook.com",
   "facebook.net",
   "tiktokcdn.com",
-"g.doubleclick.net",
-      "static.doubleclick.net"
+  "g.doubleclick.net",
+  "static.doubleclick.net"
   ]
   },
     {
     "notes":"Google/ Youtube Domains 443",
      "action" : "allow",
      "ports" : "443",
-      "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
+    "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
           "protocol" : "tcp",
           "remote-domains" : [
 		  "googlevideo.com",
+		  "google.com",
 		  "dl.google.com",
 		  "accounts.google.com",
 		  "googleapps.com",
 		  "googleusercontent.com",
 		  "googletagmanager.com",
 		  "gogleanalytics.com",
+		  "google-analytics.com",
+		  "googlesyndication.com",
+		  "googletagservices.com",
 		  "googleapis.com",
 		  "withgoogle.com",
 		  "fonts.gstatic.com",
@@ -55,33 +59,34 @@
 		  "gstatic.com",
 			"c.youtube.com",
 			"accounts.youtube.com",
-			"youtube.com"
-        ]
+			"youtube.com",
+			"youtube.be"
+            ]
 		},
-        {
+      {
   	"notes":"Mozilla.com Domains 443",
         "action" : "allow",
         "ports" : "443",
-   		  "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
+   		 "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
         "protocol" : "tcp",
         "remote-domains" : [
         "mozilla.com",
-  		"mozilla.net",
-  		"mozgcp.net",
+  		"mozilla.net", 
+  		"mozgcp.net",        
   	  	"classify-services.mozilla.com",
-        "firefox.settings.services.mozilla.com",
+        "firefox.settings.services.mozilla.com",  
   		"mozilla-ohttp.fastly-edge.com",
   		"ohttp-merino.mozilla.fastly-edge.com",
   		"mozilla.fastly-edge.com"
-      ]
-  },
+            ]
+        },
       {
   	"notes":"Mozilla.org Domains 443",
         "action" : "allow",
         "ports" : "443",
-   		  "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
+   		 "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
         "protocol" : "tcp",
-        "remote-domains" : [
+        "remote-domains" : [   
   		"addons.mozilla.org",
         "aus5.mozilla.org",
         "download.mozilla.org",
@@ -94,7 +99,7 @@
   	"notes":"Firefox Domains 443",
         "action" : "allow",
         "ports" : "443",
-   		  "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
+   		 "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
         "protocol" : "tcp",
         "remote-domains" : [
           "accounts.firefox.com",
@@ -107,7 +112,7 @@
   	"notes":"Mozilla port 80",
         "action" : "allow",
         "ports" : "80",
-   		  "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
+   		 "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
         "protocol" : "tcp",
         "remote-domains" : [
 		"mozilla.com",
@@ -136,7 +141,7 @@
        "notes":"Gitlab Domains 443",
             "action" : "allow",
             "ports" : "443",
-    "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
+ "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
             "protocol" : "tcp",
             "remote-domains" : [
   	"malware-filter.gitlab.io",	  
@@ -148,20 +153,30 @@
       "notes": "Atlassian",
       "action": "allow",
       "ports": "443",
-    "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
+      "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
 	  "protocol" : "tcp",
-      "remote-domains": ["atl-paas.net","atlassian.com","atlassian.net",      	
-	  "atlassian.io","bitbucket.org","bytebucket.org","jira.com","valiantys.com"]
+      "remote-domains": [
+        "atl-paas.net","atlassian.com","atlassian.net",
+        "atlassian.io","bitbucket.org","bytebucket.org","jira.com","valiantys.com"
+        ]
+    },
+    {
+      "notes": "Terraform",
+      "action": "allow",
+      "ports": "443",
+    "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
+	      "protocol" : "tcp",
+      "remote-domains": ["terraform.net","terraform.com"]
     },
     {
   	"notes":"Firewall WWW ",
       "action" : "allow",
       "ports" : "443",
-   "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
+    "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
       "protocol" : "tcp",
       "remote-domains" : [
-        "paloaltonetworks.co.uk",
-        "paloaltonetworks.com",
+     "paloaltonetworks.co.uk",
+     "paloaltonetworks.com",
   	"fortinet.com",
   	"firewall.com",
 	"firewall.net",
@@ -173,7 +188,7 @@
   	"notes":"Domains Personal 2083",
       "action" : "allow",
       "ports" : "2083",
-     "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
+"process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
       "protocol" : "tcp",
       "remote-domains" : [
         "audaxum.me",
@@ -186,7 +201,7 @@
   	"notes":"Domains Personal 2096",
       "action" : "allow",
       "ports" : "2096",
-     "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
+"process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
       "protocol" : "tcp",
       "remote-domains" : [
         "audaxum.me",
@@ -194,16 +209,30 @@
         "nixihost.com"
       ]
     },
-  
     {
+     "notes":"Filen and Seedbox ",
       "action" : "allow",
       "ports" : "443",
-     "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
+"process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
       "protocol" : "tcp",
       "remote-domains" : [
-  	"filen-1.net", "filen-2.net", "filen-3.net","filen-4.net","filen-5.net"
+  	"filen-1.net", "filen-2.net", "filen-3.net","filen-4.net","filen-5.net",
+  	"filen.com",
+  	"seedbox.io",
   	]
     },
+    {
+     "notes":"Brave ",
+      "action" : "allow",
+      "ports" : "443",
+"process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
+      "protocol" : "tcp",
+      "remote-domains" : [
+  	"brave.com",
+  	"bravesoftware.com",
+  	"variations.brave.com"
+  	    ]
+  	},
     {
       "action": "allow",
       "ports": "443",
@@ -211,7 +240,7 @@
       "protocol": "tcp",
       "remote-domains": [
         "ip-lookup.com",
-      "whatismyipaddress.com",
+        "whatismyipaddress.com",
     	"sublimetext.com",
     	"textmate.org"
       ]
@@ -219,18 +248,22 @@
     {
       "action": "allow",
       "ports": "443",
-  "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
+"process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
       "protocol": "tcp",
       "remote-domains": [
         "onecdn.static.microsoft.com",
         "office.com",
-	"office.net",
+	    "office.net",
+	    "onedrive.live.com",
+	    "excel.officeapps.live.com",
+	    "oauth.officeapps.live.com",
         "delivery.mp.microsoft.com",
         "mp.microsoft.com",
-	"microsoft.com",
+	    "microsoft.com",
         "store-images.s-microsoft.com",
         "edge.microsoftapp.net",
         "microsoft365.com",
+        "login.microsoftonline.com",
         "my.microsoftpersonalcontent.com"
       ]
     },
@@ -238,12 +271,12 @@
 	 	"notes":"MS Office Domains",
       "action": "allow",
       "ports": "443",
-     "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
+"process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
       "protocol": "tcp",
       "remote-domains": [
 		"sharepointonline.net",
 		"sharepointonline.com",
-	  "onedrive.com",
+	    "onedrive.com",
         "outlook.com",
         "msauth.net",
         "msfauth.net",
@@ -257,7 +290,7 @@
     {
       "action": "allow",
       "ports": "443",
-  "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
+"process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
       "protocol": "tcp",
       "remote-domains": [
         "sublimetext.com",
@@ -269,7 +302,7 @@
     {
       "action": "deny",
       "ports": "443",
-  "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
+"process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
       "protocol": "udp",
       "remote-addresses": [
         "173.194.219.*",
@@ -282,20 +315,21 @@
     {
       "action": "allow",
       "ports": "443",
-  "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
+"process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
       "protocol": "tcp",
       "remote-domains": [
         "redditspace.com",
         "redditstatic.com",
         "Redditmedia.com",
-        "Reddit.com",
-		"preview.redd.it"
+        "reddit.com",
+        "preview.redd.it",
+        "redd.it"
       ]
     },
     {
       "action": "allow",
       "ports": "443",
-  "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
+      "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
       "protocol": "tcp",
       "remote-domains": [
         "duck.ai",
@@ -309,7 +343,7 @@
     {
       "action": "allow",
       "ports": "443",
-  "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
+"process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
       "protocol": "tcp",
       "remote-domains": [
         "download.bitdefender.com",
@@ -324,7 +358,7 @@
 		    "notes":"Cloudflare port 80",
       "action": "allow",
       "ports": "80",
-  "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
+    "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
       "protocol": "tcp",
       "remote-domains": [
         "cloudflare.com",
@@ -338,7 +372,7 @@
     {
       "action": "allow",
       "ports": "443",
-  "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
+    "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
       "protocol": "tcp",
       "remote-domains": [
         "cloudflare.com",
@@ -352,7 +386,7 @@
     {
       "action": "allow",
       "ports": "443",
-  "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
+    "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
       "protocol": "tcp",
       "remote-domains": [
         "bluehost.com",
@@ -364,7 +398,7 @@
     {
       "action": "allow",
       "ports": "443",
-  "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
+    "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
       "protocol": "tcp",
       "remote-domains": [
         "lucid.app",

@@ -16,7 +16,7 @@
   "action" : "allow",
     "ports" : "3478",
     "priority" : "high",
-      "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
+    "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
     "protocol" : "udp",
     "remote" : "any"
   },
@@ -38,16 +38,20 @@
     "notes":"Google/ Youtube Domains 443",
      "action" : "allow",
      "ports" : "443",
-     "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
+   "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
           "protocol" : "tcp",
           "remote-domains" : [
 		  "googlevideo.com",
+		  "google.com",
 		  "dl.google.com",
 		  "accounts.google.com",
 		  "googleapps.com",
 		  "googleusercontent.com",
 		  "googletagmanager.com",
 		  "gogleanalytics.com",
+		  "google-analytics.com",
+		  "googlesyndication.com",
+		  "googletagservices.com",
 		  "googleapis.com",
 		  "withgoogle.com",
 		  "fonts.gstatic.com",
@@ -55,8 +59,9 @@
 		  "gstatic.com",
 			"c.youtube.com",
 			"accounts.youtube.com",
-			"youtube.com"
-        ]
+			"youtube.com",
+			"youtube.be"
+            ]
 		},
       {
   	"notes":"Mozilla.com Domains 443",
@@ -146,9 +151,12 @@
       "notes": "Atlassian",
       "action": "allow",
       "ports": "443",
-   "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
+     "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
 	  "protocol" : "tcp",
-      "remote-domains": ["atl-paas.net","atlassian.com","atlassian.net",      	"atlassian.io","bitbucket.org","bytebucket.org","jira.com","valiantys.com"]
+      "remote-domains": [
+        "atl-paas.net","atlassian.com","atlassian.net",
+        "atlassian.io","bitbucket.org","bytebucket.org","jira.com","valiantys.com"
+        ]
     },
     {
       "notes": "Terraform",
@@ -196,16 +204,32 @@
         "nixihost.com"
       ]
     },
-  
     {
+     "notes":"Filen and Seedbox ",
       "action" : "allow",
       "ports" : "443",
-     "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
+ "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
       "protocol" : "tcp",
       "remote-domains" : [
-  	"filen-1.net", "filen-2.net", "filen-3.net","filen-4.net","filen-5.net"
+  	"filen-1.net", "filen-2.net", "filen-3.net","filen-4.net","filen-5.net",
+  	"filen.com",
+  	"seedbox.io",
   	]
     },
+        {
+     "notes":"Brave ",
+      "action" : "allow",
+      "ports" : "443",
+ "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
+      "protocol" : "tcp",
+      "remote-domains" : [
+  	"brave.com",
+  	"bravesoftware.com",
+  	"variations.brave.com",
+  	"seedbox.io",
+
+  	    ]
+  	},
     {
       "action": "allow",
       "ports": "443",
@@ -221,28 +245,35 @@
     {
       "action": "allow",
       "ports": "443",
-       "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",  
+ "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
       "protocol": "tcp",
       "remote-domains": [
         "onecdn.static.microsoft.com",
         "office.com",
-	"office.net",
+	    "office.net",
+	    "onedrive.live.com",
+	    "excel.officeapps.live.com",
+	    "oauth.officeapps.live.com",
         "delivery.mp.microsoft.com",
         "mp.microsoft.com",
-	"microsoft.com",
+	    "microsoft.com",
         "store-images.s-microsoft.com",
         "edge.microsoftapp.net",
         "microsoft365.com",
+        "login.microsoftonline.com",
         "my.microsoftpersonalcontent.com"
       ]
     },
     {
+	 	"notes":"MS Office Domains",
       "action": "allow",
       "ports": "443",
-       "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
+ "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
       "protocol": "tcp",
       "remote-domains": [
-	  "onedrive.com",
+		"sharepointonline.net",
+		"sharepointonline.com",
+	    "onedrive.com",
         "outlook.com",
         "msauth.net",
         "msfauth.net",
