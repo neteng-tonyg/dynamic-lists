@@ -43,7 +43,9 @@
           "remote-domains" : [
 		  "googlevideo.com",
 		  "dl.google.com",
+		  "www.google.com",
 		  "accounts.google.com",
+		  "play.google.com",
 		  "googleapps.com",
 		  "googleusercontent.com",
 		  "googletagmanager.com",
@@ -132,6 +134,7 @@
            "cafe.github.com",
            "central.github.com",
            "githubusercontent.com",
+           "raw.githubusercontent.com",
            "github.com",
            "github.io"
          ]
@@ -213,7 +216,13 @@
 "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
       "protocol" : "tcp",
       "remote-domains" : [
-  	"filen-1.net", "filen-2.net", "filen-3.net","filen-4.net","filen-5.net"
+  	"filen-1.net",
+  	"filen-2.net",
+  	"filen-3.net",
+  	"filen-4.net",
+  	"filen-5.net",
+  	"ext.to",
+  	"seedbox.io"
   	]
     },
     {
@@ -238,8 +247,10 @@
         "office.com",
 	    "office.net",
 	    "onedrive.live.com",
+	    "officeapps.live.com",
 	    "excel.officeapps.live.com",
 	    "oauth.officeapps.live.com",
+	    "collabrtc.officeapps.live.com",
         "delivery.mp.microsoft.com",
         "mp.microsoft.com",
 	    "microsoft.com",
@@ -257,6 +268,7 @@
 "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
       "protocol": "tcp",
       "remote-domains": [
+        "edgesuite.net",
 		"sharepointonline.net",
 		"sharepointonline.com",
 	    "onedrive.com",
@@ -265,9 +277,8 @@
         "msfauth.net",
         "onedrive.akadns.net",
         "us-api.asm.skype.com",
-        "skype.com",
-        "msauth.net",
-        "msfauth.net"
+        "skype.com"
+
       ]
     },
     {
@@ -304,8 +315,8 @@
         "redditspace.com",
         "redditstatic.com",
         "Redditmedia.com",
- "Reddit.com",
-"preview.redd.it"
+        "Reddit.com",
+        "preview.redd.it"
       ]
     },
     {
@@ -345,6 +356,7 @@
       "remote-domains": [
         "cloudflare.com",
         "cloudflare-dns.com",
+        "static.cloudflareinsights.com",
         "digicert.com",
         "sectigo.com",
         "cloudflare.net",
