@@ -16,7 +16,7 @@
   "action" : "allow",
     "ports" : "3478",
     "priority" : "high",
-      "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
+    "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
     "protocol" : "udp",
     "remote" : "any"
   },
@@ -38,7 +38,7 @@
     "notes":"Google/ Youtube Domains 443",
      "action" : "allow",
      "ports" : "443",
-    "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
+   "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
           "protocol" : "tcp",
           "remote-domains" : [
 		  "googlevideo.com",
@@ -151,7 +151,7 @@
       "notes": "Atlassian",
       "action": "allow",
       "ports": "443",
-      "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
+     "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
 	  "protocol" : "tcp",
       "remote-domains": [
         "atl-paas.net","atlassian.com","atlassian.net",
@@ -208,7 +208,7 @@
      "notes":"Filen and Seedbox ",
       "action" : "allow",
       "ports" : "443",
-"process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
+ "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
       "protocol" : "tcp",
       "remote-domains" : [
   	"filen-1.net", "filen-2.net", "filen-3.net","filen-4.net","filen-5.net",
@@ -220,7 +220,7 @@
      "notes":"Brave ",
       "action" : "allow",
       "ports" : "443",
-"process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
+ "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
       "protocol" : "tcp",
       "remote-domains" : [
   	"brave.com",
@@ -245,7 +245,7 @@
     {
       "action": "allow",
       "ports": "443",
-"process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
+ "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
       "protocol": "tcp",
       "remote-domains": [
         "onecdn.static.microsoft.com",
@@ -268,7 +268,7 @@
 	 	"notes":"MS Office Domains",
       "action": "allow",
       "ports": "443",
-"process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
+ "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
       "protocol": "tcp",
       "remote-domains": [
 		"sharepointonline.net",
