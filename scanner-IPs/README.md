@@ -40,6 +40,7 @@ CIDRs from [ASN22168](https://ipinfo.io/AS22168) for The Shadowserver Foundation
 [Hurricane Electric ASN6939](https://bgp.he.net/AS6939).
 
 The EDL I have comes from scans on my own firewall and match up closely to [this list on Gihub](https://github.com/Connie-Wild/scanner-ip-list/blob/main/shadowserver.txt)
+
 but there's also a more extensive list, and more recent, on [Github here](https://github.com/MikeCaldera/security/blob/main/shadowserver.txt).
 I've not, as of today, compared the newer list to AS22168.
 
