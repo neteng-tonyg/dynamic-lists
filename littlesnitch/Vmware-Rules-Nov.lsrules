@@ -23,7 +23,7 @@
     "remote" : "any"
   },
   {
- "notes":"0.Default deny WWW/443",
+ "notes":"0.Default deny WWW/443/stuff",
     "action" : "deny",
     "owner" : "system",
     "ports" : "443",
@@ -40,7 +40,7 @@
         {
     	"notes":"Google/ Youtube Domains 443",
           "action" : "allow",
-    "owner" : "system",
+        "owner" : "system",
           "ports" : "443",
       "process" : "\/Applications\/VMware Fusion.app\/Contents\/MacOS\/VMware Fusion",
           "protocol" : "tcp",

@@ -54,8 +54,8 @@
     "notes":"Google/ Youtube Domains 443",
      "action" : "allow",
      "ports" : "443",
- "process" : "any",
-       "owner" : "me",
+     "process" : "any",
+     "owner" : "me",
           "protocol" : "tcp",
           "remote-domains" : [
 		  "googlevideo.com",
@@ -87,8 +87,7 @@
        "owner" : "me",
         "action" : "allow",
         "ports" : "443",
-   		 "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
-        "protocol" : "tcp",
+   	    "protocol" : "tcp",
         "remote-domains" : [
         "mozilla.com",
   		"mozilla.net",
