@@ -5,6 +5,7 @@
   {
     "notes":"0.Default deny quic",
   "action" : "deny",
+    "owner" : "system",
     "ports" : "443",
     "priority" : "high",
     "process" : "\/Applications\/VMware Fusion.app\/Contents\/MacOS\/VMware Fusion",
@@ -14,6 +15,7 @@
   {
     "notes":"0.Allow nat-stunUDP",
   "action" : "allow",
+    "owner" : "system",
     "ports" : "3478",
     "priority" : "high",
      "process" : "\/Applications\/VMware Fusion.app\/Contents\/MacOS\/VMware Fusion",
@@ -23,6 +25,7 @@
   {
  "notes":"0.Default deny WWW/443",
     "action" : "deny",
+    "owner" : "system",
     "ports" : "443",
     "process" : "\/Applications\/VMware Fusion.app\/Contents\/MacOS\/VMware Fusion",
     "protocol" : "tcp",
@@ -30,13 +33,14 @@
   ["facebook.com",
   "facebook.net",
   "tiktokcdn.com",
-"g.doubleclick.net",
-      "static.doubleclick.net"
+  "g.doubleclick.net",
+  "static.doubleclick.net"
   ]
   },
         {
     	"notes":"Google/ Youtube Domains 443",
           "action" : "allow",
+    "owner" : "system",
           "ports" : "443",
       "process" : "\/Applications\/VMware Fusion.app\/Contents\/MacOS\/VMware Fusion",
           "protocol" : "tcp",
