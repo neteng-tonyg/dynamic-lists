@@ -141,6 +141,13 @@
       ]
     }
   ]
-}
+},
+    {
+     "description" : "All",
+  "name" : "Allow-All",
+      "action" : "allow",
+      "ports" : "any",
+      "protocol" : "any"
+    }
   ]
 }
