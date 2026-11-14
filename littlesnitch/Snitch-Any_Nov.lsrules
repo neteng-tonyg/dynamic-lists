@@ -12,11 +12,11 @@
     "protocol" : "udp",
     "remote" : "any"
   },
-        {
+    {
       "action": "allow",
-            "owner": "me",
-      "process": "any",
+      "owner": "me",
       "ports": "443",
+      "process": "any",
       "protocol": "tcp",
       "remote-domains": [
         "lucid.app",
@@ -25,31 +25,45 @@
         "lucidchart.net"
       ]
     },
-     {
-    "notes":"0.Allow nat-stunUDP",
-  "action" : "allow",
-    "ports" : "3478",
-    "priority" : "high",
- "process" : "any",
-       "owner" : "me",
-    "protocol" : "udp",
-    "remote" : "any"
-  },
-  {
- "notes":"0.Default deny WWW/443",
-    "action" : "deny",
-    "ports" : "443",
- "process" : "any",
-       "owner" : "me",
-    "protocol" : "tcp",
-    "remote-domains" :
-  ["facebook.com",
-  "facebook.net",
-  "tiktokcdn.com",
-"g.doubleclick.net",
-      "static.doubleclick.net"
-  ]
-  },
+    {
+      "action": "allow",
+      "notes": "Allow nat-stunUDP-3478",
+      "owner": "me",
+      "ports": "3478",
+      "priority": "high",
+      "process": "any",
+      "protocol": "udp",
+      "remote": "any"
+    },
+    {
+      "action": "deny",
+      "notes": "Default deny WWW/443",
+      "owner": "me",
+      "ports": "443",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": [
+        "facebook.com",
+        "facebook.net",
+        "tiktokcdn.com",
+        "g.doubleclick.net",
+        "static.doubleclick.net"
+      ]
+    },
+    {
+  "description" : "Plex",
+  "name" : "Plex-subs-e-tal",
+      "action" : "allow",
+      "ports" : "443",
+      "protocol" : "tcp",
+      "remote-domains" : [
+	  "clients.plex.tv",
+	  "community.plex.tv",
+	  "provider.plex.tv",
+	  "pubsub.plex.tv",
+	  "together.plex.tv"
+	  ]
+    },
     {
     "notes":"Google/ Youtube Domains 443",
      "action" : "allow",
