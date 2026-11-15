@@ -163,6 +163,12 @@
         "download.mozilla.org",
         "telemetry.mozilla.org",
         "vpn.mozilla.org",
+        "classify-services.mozilla.com",
+        "services.mozilla.com",
+        "firefox.settings.services.mozilla.com",
+  		"mozilla-ohttp.fastly-edge.com",
+  		"ohttp-merino.mozilla.fastly-edge.com",
+  		"mozilla.fastly-edge.com",
 		"ads-img.mozilla.org",
           "ads.mozilla.org"
           ]
