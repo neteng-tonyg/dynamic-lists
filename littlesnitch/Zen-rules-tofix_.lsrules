@@ -1,0 +1,32 @@
+{
+  "description" : "",
+  "name" : "Zen-rules-tofix_",
+  "rules" : [
+    {
+      "action" : "deny",
+      "ports" : "443",
+      "process" : "\/Applications\/Zen.app\/Contents\/MacOS\/zen",
+      "protocol" : "tcp",
+      "remote-addresses" : [
+	  "64.233.177.0/24",
+	  "173.194.219.0/24",
+	  "142.250.105.0/24",
+	  "74.125.21.157"
+	  ]
+    },
+    {
+      "action" : "deny",
+      "ports" : "443",
+      "process" : "\/Applications\/Zen.app\/Contents\/MacOS\/zen",
+      "protocol" : "tcp",
+      "remote-domains" : [
+	  "i.doubleclick.net",
+	  "g.doubleclick.net",
+	  "pubads.g.doubleclick.net",
+	  "pagead2.googlesyndication.com",
+	  "googleads4.g.doubleclick.net",
+	  "ep1.adtrafficquality.google"
+	  ]
+    },
+  ]
+}
