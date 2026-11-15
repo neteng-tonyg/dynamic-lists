@@ -62,20 +62,28 @@
       "protocol": "tcp",
       "remote-domains": [
         "cisco.com",
+        "meraki.com",
+        "meraki.net",
         "scroller.com",
         "wikipedia.com",
         "wikihow.com",
         "wikimedia.net",
         "wikimedia.org",
-        "whaismyipaddress.com",
+        "whatismyipaddress.com",
+        "iplookup.com",
+        "noip.com",
         "brave.com",
+        "bravesoftware.com",
         "bing.com",
         "duckduckgo.com",
         "dogpile.com",
         "lifewire.com",
         "supermedia.com",
         "obdev.net",
-        "googleapis.com"
+        "dropbox.com",
+        "costco.com",
+        "ublockorigin.pages.dev"
+
       ]
     },
       {
@@ -121,6 +129,7 @@
   		"mozilla.net",
   		"mozgcp.net",
   	  	"classify-services.mozilla.com",
+        "services.mozilla.com",
         "firefox.settings.services.mozilla.com",
   		"mozilla-ohttp.fastly-edge.com",
   		"ohttp-merino.mozilla.fastly-edge.com",
@@ -165,8 +174,9 @@
       "protocol": "tcp",
       "remote-domains": [
         "cloudflare.com",
+        "cloudflarecaptcha.com",,
         "cloudflare-dns.com",
-        "static.cloudflareinsights.com",
+        "cloudflareinsights.com",
         "digicert.com",
         "sectigo.com",
         "cloudflare.net",
@@ -285,6 +295,7 @@
         "remote-domains": [
         "lucid.app",
         "excalidraw.com",
+        "excalidraw.net",
         "lucidcdn.net",
         "lucidchart.net"
           ]
