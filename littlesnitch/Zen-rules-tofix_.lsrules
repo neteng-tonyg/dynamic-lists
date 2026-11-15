@@ -21,7 +21,9 @@
       "process" : "\/Applications\/Zen.app\/Contents\/MacOS\/zen",
       "protocol" : "tcp",
       "remote-domains" : [
-	  "gogleadservices.com",
+	  "googleadservices.com",
+	  "googlesyndication.com",
+	   "www.googleadservices.com",
 	  "doubleclick.net",
 		"adtrafficquality.google.com"
 	  ]
