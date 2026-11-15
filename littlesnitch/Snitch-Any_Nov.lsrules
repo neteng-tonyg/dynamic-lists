@@ -76,6 +76,7 @@
         "bravesoftware.com",
         "bing.com",
         "duckduckgo.com",
+        "duck.ai",
         "dogpile.com",
         "lifewire.com",
         "supermedia.com",
@@ -174,7 +175,7 @@
       "protocol": "tcp",
       "remote-domains": [
         "cloudflare.com",
-        "cloudflarecaptcha.com",,
+        "cloudflarecaptcha.com",
         "cloudflare-dns.com",
         "cloudflareinsights.com",
         "digicert.com",
@@ -254,7 +255,8 @@
           "onedrive.com",
           "outlook.com",
           "skype.com",
-          "windows.com"
+          "windows.com",
+          "blob.core.windows.net"
             ]
         },
         {
