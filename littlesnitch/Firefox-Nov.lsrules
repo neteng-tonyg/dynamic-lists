@@ -337,6 +337,19 @@
 	"goethals.us"
       ]
     },
+        {
+     "notes":"Filen and Seedbox ",
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "protocol" : "tcp",
+      "remote-domains" : [
+  	"filen-1.net", "filen-2.net", "filen-3.net","filen-4.net","filen-5.net",
+  	"filen.com",
+  	"seedbox.io",
+	"extto.com"
+  	]
+    },
     {
       "action": "allow",
       "ports": "443",

@@ -26,21 +26,72 @@
     "ports" : "443",
  "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
     "protocol" : "tcp",
-    "remote-domains" : 
-  ["facebook.com",
-  "facebook.net",
-  "tiktokcdn.com",
-  "g.doubleclick.net",
+    "remote-domains" :
+    [
+    "facebook.com",
+    "facebook.net",
+    "tiktokcdn.com",
+    "g.doubleclick.net",
     "static.doubleclick.net"
   ]
   },
     {
-    "notes":"Google/ Youtube Domains 443",
-     "action" : "allow",
-     "ports" : "443",
-       "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
-          "protocol" : "tcp",
-          "remote-domains" : [
+      "description" : "Plex",
+      "name" : "Plex-subs-et-al",
+      "action" : "allow",
+      "ports" : "443",
+         "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
+      "protocol" : "tcp",
+      "remote-hostnames" : [
+	  "clients.plex.tv",
+      "features.plex.tv",
+	  "community.plex.tv",
+	  "provider.plex.tv",
+	  "pubsub.plex.tv",
+	  "together.plex.tv"
+	    ]
+    },
+    {
+      "notes": "Major Domains 443",
+      "action": "allow",
+      "ports": "443",
+     "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
+      "protocol": "tcp",
+      "remote-domains": [
+        "cisco.com",
+        "meraki.com",
+        "meraki.net",
+        "scroller.com",
+        "wikipedia.com",
+        "wikihow.com",
+        "wikimedia.net",
+        "wikimedia.org",
+        "whatismyipaddress.com",
+        "iplookup.com",
+        "noip.com",
+		"check-host.net",
+        "brave.com",
+        "bravesoftware.com",
+        "bing.com",
+        "duckduckgo.com",
+        "duck.ai",
+        "dogpile.com",
+        "lifewire.com",
+        "supermedia.com",
+        "obdev.net",
+        "dropbox.com",
+        "costco.com",
+        "ublockorigin.pages.dev"
+      ]
+    },
+      {
+        "notes":"Google/ Youtube Domains 443",
+      "action" : "allow",
+      "ports" : "443",
+     "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
+      "owner" : "me",
+      "protocol" : "tcp",
+      "remote-domains" : [
 		  "googlevideo.com",
 		  "dl.google.com",
 		  "accounts.google.com",
@@ -60,8 +111,27 @@
 			"accounts.youtube.com",
 			"youtube.com",
 			"youtube.be"
-        ]
-		},
+            ]
+      },
+            {
+        "notes":"Google/ Youtube Hosts 443",
+      "action" : "allow",
+      "ports" : "443",
+     "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
+      "owner" : "me",
+      "protocol" : "tcp",
+      "remote-hostnames" : [
+		  "dl.google.com",
+		  "www.google.com",
+          "i.google.com",
+		  "stun1.l.google.com",
+		  "accounts.google.com",
+		  "play.google.com",
+		  "fonts.gstatic.com",
+			"c.youtube.com",
+			"accounts.youtube.com"
+            ]
+      },
       {
   	"notes":"Mozilla.com Domains 443",
         "action" : "allow",
@@ -70,274 +140,156 @@
         "protocol" : "tcp",
         "remote-domains" : [
         "mozilla.com",
-  		"mozilla.net", 
-  		"mozgcp.net",        
-  	  	"classify-services.mozilla.com",
-        "firefox.settings.services.mozilla.com",  
-  		"mozilla-ohttp.fastly-edge.com",
-  		"ohttp-merino.mozilla.fastly-edge.com",
-  		"mozilla.fastly-edge.com"
-      ]
-  },
+  		"mozilla.net",
+  		"mozgcp.net",
+  		  "firefox.com",
+          "firefox.org"
+          ]
+      },
       {
-  	"notes":"Mozilla.org Domains 443",
+  	    "notes":"Mozilla Hostnames 443",
         "action" : "allow",
         "ports" : "443",
-   		  "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
+   		   "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
+   		"owner" :"me",
         "protocol" : "tcp",
-        "remote-domains" : [   
+        "remote-hostnames" : [
+        "classify-services.mozilla.com",
+        "services.mozilla.com",
+        "firefox.settings.services.mozilla.com",
+  		"mozilla-ohttp.fastly-edge.com",
+  		"ohttp-merino.mozilla.fastly-edge.com",
+  		"mozilla.fastly-edge.com",
   		"addons.mozilla.org",
         "aus5.mozilla.org",
         "download.mozilla.org",
         "telemetry.mozilla.org",
         "vpn.mozilla.org",
-		"ads-img.mozilla.org"
-  	      ]
+        "classify-services.mozilla.com",
+        "services.mozilla.com",
+        "firefox.settings.services.mozilla.com",
+  		"mozilla-ohttp.fastly-edge.com",
+  		"ohttp-merino.mozilla.fastly-edge.com",
+  		"mozilla.fastly-edge.com",
+		"ads-img.mozilla.org",
+		  "accounts.firefox.com",
+          "firefox-portal-detection.com",
+          "ads.mozilla.org"
+          ]
       },
       {
-  	"notes":"Firefox Domains 443",
+      "action": "allow",
+      "notes": "Cloudflare/ 80",
+      "ports": "80",
+     "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
+      "protocol": "tcp",
+      "remote-domains": [
+        "cloudflare.com",
+        "cloudflarecaptcha.com",
+        "cloudflare-dns.com",
+        "cloudflareinsights.com",
+        "digicert.com",
+        "sectigo.com",
+        "cloudflare.net",
+        "sectigo.net"
+          ]
+      },
+      {
+      "notes" : "Cloudflare/ 443",
+      "action": "allow",
+      "ports": "443",
+     "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
+      "protocol": "tcp",
+      "remote-domains": [
+        "cloudflare.com",
+        "cloudflare-dns.com",
+        "digicert.com",
+        "sectigo.com",
+        "cloudflare.net",
+        "sectigo.net"
+          ]
+      },
+      {
+        "notes":"Git Domains 443",
+        "owner" : "me",
         "action" : "allow",
         "ports" : "443",
-   		  "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
+       "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
         "protocol" : "tcp",
         "remote-domains" : [
-          "accounts.firefox.com",
-          "firefox-portal-detection.com",
-          "firefox.com",
-			"firefox.org"
-        ]
-      },
-      {
-  	"notes":"Mozilla port 80",
-        "action" : "allow",
-        "ports" : "80",
-   		  "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
-        "protocol" : "tcp",
-        "remote-domains" : [
-		"mozilla.com",
-		"firefox-portal-detection.com",
-		"ads-img.mozilla.org",
-		"ads.mozilla.org"
-      ]
-	},
-      {
-    "notes":"Github Domains 443",
-         "action" : "allow",
-         "ports" : "443",
-         "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
-         "protocol" : "tcp",
-         "remote-domains" : [
-           "avatars.githubusercontent.com",
-           "githubcopilot.com",,
-    	   "githubassets.com",
-           "cafe.github.com",
-           "central.github.com",
+    	    "githubassets.com",
+              "gitlab.com",
+              "gitlab.dev",
+              "gitlab.io",
            "githubusercontent.com",
            "github.com",
-           "github.io"
-         ]
+           "github.dev",
+           "github.io",
+           "homebrew.sh"
+            ]
        },
          {
-       "notes":"Gitlab Domains 443",
+            "notes":"Git Hosts 443",
+            "owner" : "me",
             "action" : "allow",
             "ports" : "443",
-            "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
+           "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
             "protocol" : "tcp",
-            "remote-domains" : [
-              "malware-filter.gitlab.io",
-              "gitlab.com",
-              "gitlab.io"
-            ]
+            "remote-hostnames" : [
+            "raw.githubusercontent.com",
+  	        "malware-filter.gitlab.io",
+            "avatars.githubusercontent.com",
+            "cafe.github.com",
+            "central.github.com"
+               ]
           },
-    {
-      "notes": "Atlassian",
-      "action": "allow",
-      "ports": "443",
-      "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
-	  "protocol" : "tcp",
-      "remote-domains": [
-        "atl-paas.net","atlassian.com","atlassian.net",
-        "atlassian.io",
-        "bitbucket.org","bytebucket.org",
-        "jira.com","valiantys.com"
-      ]
-    },
-
-    {
-      "notes": "Terraform",
-      "action": "allow",
-      "ports": "443",
-      "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
-      "protocol" : "tcp",
-      "remote-domains": [
-        "terraform.net","terraform.com"
-      ]
-    },
-    {
-  	"notes":"Firewall WWW ",
-      "action" : "allow",
-      "ports" : "443",
-      "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
-      "protocol" : "tcp",
-      "remote-domains" : [
-        "paloaltonetworks.co.uk",
-        "paloaltonetworks.com",
-  	"fortinet.com",
-  	"firewall.com",
-	"firewall.net",
-	"zscaler.com",
-	"cisco.com"	
-      ]
-    },
-    {
-  	"notes":"Domains Personal 2083",
-      "action" : "allow",
-      "ports" : "2083",
-      "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
-      "protocol" : "tcp",
-      "remote-domains" : [
-        "audaxum.me",
-        "bluehost.com",
-        "goethals.us",
-        "nixihost.com"
-      ]
-    },
-  {	
-  	"notes":"Domains Personal 2096",
-      "action" : "allow",
-      "ports" : "2096",
-      "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
-      "protocol" : "tcp",
-      "remote-domains" : [
-        "audaxum.me",
-        "goethals.us",
-        "nixihost.com"
-      ]
-    },
-  
-    {
-      "action" : "allow",
-      "ports" : "443",
-      "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
-      "protocol" : "tcp",
-      "remote-domains" : [
-  	  "filen-1.net", "filen-2.net",
-        "filen-3.net","filen-4.net",
-        "filen-5.net"
-  	    ]
-    },
-    {
-      "action": "allow",
-      "ports": "443",
-      "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
-      "protocol": "tcp",
-      "remote-domains": [
-        "ip-lookup.com",
-        "whatismyipaddress.com",
-    	"sublimetext.com",
-    	"textmate.org"
-      ]
-    },
-    {
-      "action": "allow",
-      "ports": "443",
-   "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
-      "protocol": "tcp",
-      "remote-domains": [
-        "onecdn.static.microsoft.com",
-        "office.com",
-	    "office.net",
-	    "onedrive.live.com",
-	    "excel.officeapps.live.com",
-	    "oauth.officeapps.live.com",
-        "delivery.mp.microsoft.com",
-        "mp.microsoft.com",
-	    "microsoft.com",
-        "store-images.s-microsoft.com",
-        "edge.microsoftapp.net",
-        "microsoft365.com",
-        "login.microsoftonline.com",
-        "my.microsoftpersonalcontent.com"
-      ]
-    },
-    {
-	 	"notes":"MS Office Domains",
-      "action": "allow",
-      "ports": "443",
+        {
+        "description": "Microsoft-related domains",
+        "name": "Microsoft",
+        "action": "allow",
        "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
-      "protocol": "tcp",
-      "remote-domains": [
-		"sharepointonline.net",
-		"sharepointonline.com",
-	    "onedrive.com",
-        "outlook.com",
-        "msauth.net",
-        "msfauth.net",
-        "onedrive.akadns.net",
-        "us-api.asm.skype.com",
-        "skype.com",
-        "msauth.net",
-        "msfauth.net"
-      ]
-    },
-    {
-      "action": "allow",
-      "ports": "443",
-      "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
-      "protocol": "tcp",
-      "remote-domains": [
-        "sublimetext.com",
-        "textmate.org",
-        "pypi.org",
-        "pythonhosted.com"
-      ]
-    },
-    {
-      "action": "deny",
-      "ports": "443",
-      "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
-      "protocol": "udp",
-      "remote-addresses": [
-        "173.194.219.*",
-        "52.108.*.*",
-        "13.107.139.*",
-        "142.250.9.*",
-        "64.233.176.*"
-      ]
-    },
-    {
-      "action": "allow",
-      "ports": "443",
-      "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
-      "protocol": "tcp",
-      "remote-domains": [
+        "owner": "me",
+        "remote-domains": [
+          "azurewebsites.net",
+          "bing.com",
+          "hockeyapp.net",
+          "live.com",
+          "live.net",
+          "microsoft.com",
+          "microsoftonline.com",
+          "msedge.net",
+          "oaspapps.com",
+          "office.com",
+          "office.net",
+          "office365.com",
+          "onedrive.com",
+          "outlook.com",
+          "skype.com",
+          "windows.com",
+          "blob.core.windows.net"
+            ]
+        },
+        {
+        "description": "Reddit WWW",
+        "name": "Reddit",
+        "action": "allow",
+       "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
+        "owner": "me",
+        "remote-domains": [
         "redditspace.com",
         "redditstatic.com",
         "Redditmedia.com",
         "Reddit.com",
         "preview.redd.it"
-      ]
-    },
-    {
+          ]
+      },
+      {
+      "description": "Bitdefender WWW",
       "action": "allow",
       "ports": "443",
-      "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
+     "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
       "protocol": "tcp",
-      "remote-domains": [
-        "duck.ai",
-		"urboscribe.ai",
-		"factors.ai",
-		"engagement.ai",
-		"reco.ai",
-		"hybrid.ai"
-      ]
-    },
-    {
-      "action": "allow",
-      "ports": "443",
-   "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
-      "protocol": "tcp",
-      "remote-domains": [
+      "remote-hostnames": [
         "download.bitdefender.com",
         "securepass-auth.bitdefender.com",
         "cdn.bitdefender.net",
@@ -355,9 +307,11 @@
       "remote-domains": [
         "cloudflare.com",
         "cloudflare-dns.com",
+        "static.cloudflareinsights.com",
         "digicert.com",
         "sectigo.com",
         "cloudflare.net",
+        "cloudfront.net",
         "sectigo.net"
       ]
     },
@@ -387,6 +341,19 @@
 	"goethals.us"
       ]
     },
+        {
+     "notes":"Filen and Seedbox ",
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",    
+      "protocol" : "tcp",
+      "remote-domains" : [
+  	"filen-1.net", "filen-2.net", "filen-3.net","filen-4.net","filen-5.net",
+  	"filen.com",
+  	"seedbox.io",
+	"extto.com"
+  	]
+    },
     {
       "action": "allow",
       "ports": "443",
@@ -395,6 +362,7 @@
       "remote-domains": [
         "lucid.app",
         "excalidraw.com",
+        "excalidraw.net",
         "lucidcdn.net",
         "lucidchart.net"
       ]
