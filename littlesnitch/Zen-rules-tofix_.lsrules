@@ -26,6 +26,7 @@
 		"adtrafficquality.google.com"
 	  ]
     },
+    {
       "action" : "deny",
       "ports" : "443",
       "process" : "\/Applications\/Zen.app\/Contents\/MacOS\/zen",
@@ -55,6 +56,6 @@
 	  "azurefed.net",
 	  "azurefed.com"
 	  ]
-    },
+    }
   ]
 }
