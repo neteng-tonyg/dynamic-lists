@@ -96,11 +96,7 @@
       "protocol" : "tcp",
       "remote-domains" : [
 		  "googlevideo.com",
-		  "dl.google.com",
 		  "www.google.com",
-          "i.google.com",
-		  "accounts.google.com",
-		  "play.google.com",
 		  "googleapps.com",
 		  "googleusercontent.com",
 		  "googletagmanager.com",
@@ -110,17 +106,32 @@
 		  "googletagservices.com",
 		  "googleapis.com",
 		  "withgoogle.com",
-		  "fonts.gstatic.com",
 		  "www.gstatic.com",
 		  "gstatic.com",
-			"c.youtube.com",
-			"accounts.youtube.com",
 			"youtube.com",
 			"youtube.be"
             ]
       },
+            {
+        "notes":"Google/ Youtube Hosts 443",
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "any",
+      "owner" : "me",
+      "protocol" : "tcp",
+      "remote-hostnames" : [
+		  "dl.google.com",
+		  "www.google.com",
+          "i.google.com",
+		  "accounts.google.com",
+		  "play.google.com",
+		  "fonts.gstatic.com",
+			"c.youtube.com",
+			"accounts.youtube.com"
+            ]
+      },
       {
-  	    "notes":"Mozilla.com Domains 443",
+  	    "notes":"Mozilla Domains 443",
         "action" : "allow",
         "ports" : "443",
    		"process" : "any",
@@ -129,22 +140,24 @@
         "mozilla.com",
   		"mozilla.net",
   		"mozgcp.net",
-  	  	"classify-services.mozilla.com",
-        "services.mozilla.com",
-        "firefox.settings.services.mozilla.com",
-  		"mozilla-ohttp.fastly-edge.com",
-  		"ohttp-merino.mozilla.fastly-edge.com",
-  		"mozilla.fastly-edge.com"
+  		  "firefox.com",
+          "firefox.org"
           ]
       },
       {
-  	    "notes":"Mozilla.org Domains 443",
+  	    "notes":"Mozilla Hostnames 443",
         "action" : "allow",
         "ports" : "443",
    		"process" : "any",
    		"owner" :"me",
         "protocol" : "tcp",
-        "remote-domains" : [
+        "remote-hostnames" : [
+        "classify-services.mozilla.com",
+        "services.mozilla.com",
+        "firefox.settings.services.mozilla.com",
+  		"mozilla-ohttp.fastly-edge.com",
+  		"ohttp-merino.mozilla.fastly-edge.com",
+  		"mozilla.fastly-edge.com",
   		"addons.mozilla.org",
         "aus5.mozilla.org",
         "download.mozilla.org",
