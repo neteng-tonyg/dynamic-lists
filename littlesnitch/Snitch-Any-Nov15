@@ -1,0 +1,306 @@
+{
+  "name": "Snitch-Any-Process-15",
+  "description": "Standard app traffic from Snitch",
+  "rules": [
+    {
+      "name": "Ruleset-Any-Process-05",
+      "description": "Standard app traffic for all browsers",
+    "notes ": "Default Deny Quic",
+    "action": "deny",
+    "owner": "me",
+    "ports": "443",
+    "priority": "high",
+    "process": "any",
+    "protocol": "udp",
+    "remote": "any"
+    },
+    {
+      "notes": "Allow nat-stun-UDP-3478",
+      "action": "allow",
+      "owner": "me",
+      "ports": "3478",
+      "priority": "high",
+      "process": "any",
+      "protocol": "udp",
+      "remote": "any"
+    },
+    {
+      "action": "deny",
+      "notes": "Default deny WWW/443",
+      "owner": "me",
+      "ports": "443",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": [
+        "facebook.com",
+        "facebook.net",
+        "tiktokcdn.com",
+        "g.doubleclick.net",
+        "static.doubleclick.net"
+          ]
+    },
+    {
+      "description" : "Plex",
+      "name" : "Plex-subs-et-al",
+      "action" : "allow",
+      "ports" : "443",
+      "protocol" : "tcp",
+      "remote-domains" : [
+	  "clients.plex.tv",
+        "features.plex.tv",
+	  "community.plex.tv",
+	  "provider.plex.tv",
+	  "pubsub.plex.tv",
+	  "together.plex.tv"
+	    ]
+    },
+    {
+      "notes": "Major Domains 443",
+      "action": "allow",
+      "ports": "443",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": [
+        "cisco.com",
+        "meraki.com",
+        "meraki.net",
+        "scroller.com",
+        "wikipedia.com",
+        "wikihow.com",
+        "wikimedia.net",
+        "wikimedia.org",
+        "whatismyipaddress.com",
+        "iplookup.com",
+        "noip.com",
+        "brave.com",
+        "bravesoftware.com",
+        "bing.com",
+        "duckduckgo.com",
+        "duck.ai",
+        "dogpile.com",
+        "lifewire.com",
+        "supermedia.com",
+        "obdev.net",
+        "dropbox.com",
+        "costco.com",
+        "ublockorigin.pages.dev"
+
+      ]
+    },
+      {
+        "notes":"Google/ Youtube Domains 443",
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "any",
+      "owner" : "me",
+      "protocol" : "tcp",
+      "remote-domains" : [
+		  "googlevideo.com",
+		  "dl.google.com",
+		  "www.google.com",
+          "i.google.com",
+		  "accounts.google.com",
+		  "play.google.com",
+		  "googleapps.com",
+		  "googleusercontent.com",
+		  "googletagmanager.com",
+		  "gogleanalytics.com",
+		  "google-analytics.com",
+		  "googlesyndication.com",
+		  "googletagservices.com",
+		  "googleapis.com",
+		  "withgoogle.com",
+		  "fonts.gstatic.com",
+		  "www.gstatic.com",
+		  "gstatic.com",
+			"c.youtube.com",
+			"accounts.youtube.com",
+			"youtube.com",
+			"youtube.be"
+            ]
+      },
+      {
+  	    "notes":"Mozilla.com Domains 443",
+        "action" : "allow",
+        "ports" : "443",
+   		"process" : "any",
+        "protocol" : "tcp",
+        "remote-domains" : [
+        "mozilla.com",
+  		"mozilla.net",
+  		"mozgcp.net",
+  	  	"classify-services.mozilla.com",
+        "services.mozilla.com",
+        "firefox.settings.services.mozilla.com",
+  		"mozilla-ohttp.fastly-edge.com",
+  		"ohttp-merino.mozilla.fastly-edge.com",
+  		"mozilla.fastly-edge.com"
+          ]
+      },
+      {
+  	    "notes":"Mozilla.org Domains 443",
+        "action" : "allow",
+        "ports" : "443",
+   		"process" : "any",
+   		"owner" :"me",
+        "protocol" : "tcp",
+        "remote-domains" : [
+  		"addons.mozilla.org",
+        "aus5.mozilla.org",
+        "download.mozilla.org",
+        "telemetry.mozilla.org",
+        "vpn.mozilla.org",
+		"ads-img.mozilla.org",
+          "ads.mozilla.org"
+          ]
+      },
+      {
+  	    "notes":"Firefox Domains 443",
+        "action" : "allow",
+        "ports" : "443",
+        "process" : "any",
+        "protocol" : "tcp",
+        "remote-domains" : [
+          "accounts.firefox.com",
+          "firefox-portal-detection.com",
+          "firefox.com",
+          "firefox.org"
+        ]
+      },
+      {
+      "action": "allow",
+      "notes": "Cloudflare/ 80",
+      "ports": "80",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": [
+        "cloudflare.com",
+        "cloudflarecaptcha.com",
+        "cloudflare-dns.com",
+        "cloudflareinsights.com",
+        "digicert.com",
+        "sectigo.com",
+        "cloudflare.net",
+        "sectigo.net"
+          ]
+      },
+      {
+      "notes" : "Cloudflare/ 443",
+      "action": "allow",
+      "ports": "443",
+      "process" : "any",
+      "protocol": "tcp",
+      "remote-domains": [
+        "cloudflare.com",
+        "cloudflare-dns.com",
+        "digicert.com",
+        "sectigo.com",
+        "cloudflare.net",
+        "sectigo.net"
+          ]
+      },
+      {
+        "notes":"Github Domains 443",
+        "owner" : "me",
+        "action" : "allow",
+        "ports" : "443",
+        "process": "any",
+        "protocol" : "tcp",
+        "remote-domains" : [
+           "avatars.githubusercontent.com",
+    	    "githubassets.com",
+           "cafe.github.com",
+           "central.github.com",
+           "githubusercontent.com",
+           "raw.githubusercontent.com",
+           "github.com",
+           "github.dev",
+           "github.io",
+           "homebrew.sh"
+            ]
+       },
+         {
+            "notes":"Gitlab Domains 443",
+            "owner" : "me",
+            "action" : "allow",
+            "ports" : "443",
+            "process" : "any",
+            "protocol" : "tcp",
+            "remote-domains" : [
+  	        "malware-filter.gitlab.io",
+              "gitlab.com",
+              "gitlab.dev",
+              "gitlab.io"
+               ]
+          },
+        {
+        "description": "Microsoft-related domains",
+        "name": "Microsoft",
+        "action": "allow",
+        "process": "any",
+        "owner": "me",
+        "remote-domains": [
+          "azurewebsites.net",
+          "bing.com",
+          "hockeyapp.net",
+          "live.com",
+          "live.net",
+          "microsoft.com",
+          "microsoftonline.com",
+          "msedge.net",
+          "oaspapps.com",
+          "office.com",
+          "office.net",
+          "office365.com",
+          "onedrive.com",
+          "outlook.com",
+          "skype.com",
+          "windows.com",
+          "blob.core.windows.net"
+            ]
+        },
+        {
+        "description": "Reddit WWW",
+        "name": "Reddit",
+        "action": "allow",
+        "process": "any",
+        "owner": "me",
+        "remote-domains": [
+        "redditspace.com",
+        "redditstatic.com",
+        "Redditmedia.com",
+        "Reddit.com",
+        "preview.redd.it"
+          ]
+      },
+      {
+      "description": "Bitdefender WWW",
+      "action": "allow",
+      "ports": "443",
+      "process" : "any",
+      "protocol": "tcp",
+      "remote-domains": [
+        "download.bitdefender.com",
+        "securepass-auth.bitdefender.com",
+        "cdn.bitdefender.net",
+        "nimbus.bitdefender.net",
+        "us.nimbus.bitdefender.net",
+        "push.bitdefender.net"
+          ]
+       },
+        {
+          "notes" : "Lucid Sites",
+        "action": "allow",
+        "ports": "443",
+        "process" : "any",
+        "protocol": "tcp",
+        "remote-domains": [
+        "lucid.app",
+        "excalidraw.com",
+        "excalidraw.net",
+        "lucidcdn.net",
+        "lucidchart.net"
+          ]
+    }
+  ]
+}
