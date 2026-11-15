@@ -206,7 +206,7 @@
   	"notes":"Domains Personal 2096",
       "action" : "allow",
       "ports" : "2096",
-"process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
       "protocol" : "tcp",
       "remote-domains" : [
         "audaxum.me",
@@ -218,7 +218,7 @@
     {
       "action" : "allow",
       "ports" : "443",
-"process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
       "protocol" : "tcp",
       "remote-domains" : [
   	"filen-1.net",
@@ -233,7 +233,7 @@
     {
       "action": "allow",
       "ports": "443",
- "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
       "protocol": "tcp",
       "remote-domains": [
         "ip-lookup.com",
@@ -246,7 +246,7 @@
     {
       "action": "allow",
       "ports": "443",
-  "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
       "protocol": "tcp",
       "remote-domains": [
         "onecdn.static.microsoft.com",
@@ -271,7 +271,7 @@
 	 	"notes":"MS Office Domains",
       "action": "allow",
       "ports": "443",
-"process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
       "protocol": "tcp",
       "remote-domains": [
         "edgesuite.net",
@@ -290,7 +290,7 @@
     {
       "action": "allow",
       "ports": "443",
-  "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
       "protocol": "tcp",
       "remote-domains": [
         "sublimetext.com",
@@ -302,7 +302,7 @@
     {
       "action": "deny",
       "ports": "443",
-  "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
       "protocol": "udp",
       "remote-addresses": [
         "173.194.219.*",
@@ -315,7 +315,7 @@
     {
       "action": "allow",
       "ports": "443",
-  "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
       "protocol": "tcp",
       "remote-domains": [
         "redditspace.com",
@@ -328,7 +328,7 @@
     {
       "action": "allow",
       "ports": "443",
-  "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
       "protocol": "tcp",
       "remote-domains": [
         "duck.ai",

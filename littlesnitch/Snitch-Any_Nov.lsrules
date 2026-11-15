@@ -65,6 +65,7 @@
 		  "scroller.com",
 		  "wikipedia.com",
 		  "wikihow.com",
+          "wikimedia.net",
             "wikimedia.org",
 		  "whaismyipaddress.com",
 		  "brave.com",
@@ -73,7 +74,7 @@
 		  "dogpile.com",
 		  "lifewire.com",
 		  "supermedia.com",
-		  "googletagservices.com",
+		  "obdev.net",
 		  "googleapis.com"
            ]
       {
@@ -201,6 +202,7 @@
            "githubusercontent.com",
            "raw.githubusercontent.com",
            "github.com",
+           "github.dev",
            "github.io",
            "homebrew.sh"
             ]
@@ -215,6 +217,7 @@
             "remote-domains" : [
   	        "malware-filter.gitlab.io",
               "gitlab.com",
+              "gitlab.dev",,
               "gitlab.io"
                ]
           },

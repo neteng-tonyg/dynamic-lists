@@ -7,7 +7,7 @@
   "action" : "deny",
     "ports" : "443",
     "priority" : "high",
- "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
+    "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
     "protocol" : "udp",
     "remote" : "any"
   },
@@ -16,15 +16,15 @@
   "action" : "allow",
     "ports" : "3478",
     "priority" : "high",
- "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
+     "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
     "protocol" : "udp",
     "remote" : "any"
   },
   {
- "notes":"0.Default deny WWW/443",
+    "notes":"0.Default deny WWW/443",
     "action" : "deny",
     "ports" : "443",
- "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
+    "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
     "protocol" : "tcp",
     "remote-domains" :
     [
@@ -36,7 +36,7 @@
     ]
   },
     {
-    "notes":"Google/ Youtube Domains 443",
+      "notes":"Google/ Youtube Domains 443",
      "action" : "allow",
      "ports" : "443",
       "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
@@ -66,7 +66,7 @@
          ]
 		},
     {
-  	"notes":"Mozilla.com Domains 443",
+  	    "notes":"Mozilla.com Domains 443",
         "action" : "allow",
         "ports" : "443",
    		 "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
@@ -85,7 +85,7 @@
       ]
   },
       {
-  	"notes":"Mozilla.org Domains 443",
+  	    "notes":"Mozilla.org Domains 443",
         "action" : "allow",
         "ports" : "443",
    		 "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
@@ -100,7 +100,7 @@
   	      ]
       },
       {
-  	"notes":"Firefox Domains 443",
+  	    "notes":"Firefox Domains 443",
         "action" : "allow",
         "ports" : "443",
         "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
@@ -115,7 +115,7 @@
         ]
       },
       {
-  	"notes":"Mozilla port 80",
+  	    "notes":"Mozilla port 80",
         "action" : "allow",
         "ports" : "80",
         "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
@@ -129,10 +129,10 @@
       ]
 	},
       {
-    "notes":"Github Domains 443",
+      "notes":"Github Domains 443",
          "action" : "allow",
          "ports" : "443",
- "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
+        "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
          "protocol" : "tcp",
          "remote-domains" : [
            "avatars.githubusercontent.com",
@@ -150,7 +150,7 @@
        "notes":"Gitlab Domains 443",
             "action" : "allow",
             "ports" : "443",
-  "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
+        "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
             "protocol" : "tcp",
             "remote-domains" : [
   	        "malware-filter.gitlab.io",
@@ -162,7 +162,7 @@
       "notes": "Atlassian",
       "action": "allow",
       "ports": "443",
- "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
+      "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
 	  "protocol" : "tcp",
       "remote-domains": ["atl-paas.net","atlassian.com","atlassian.net",      
         "atlassian.io","bitbucket.org","bytebucket.org","jira.com","valiantys.com"]
@@ -171,7 +171,7 @@
       "notes": "Terraform",
       "action": "allow",
       "ports": "443",
-  "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
+      "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
 	      "protocol" : "tcp",
       "remote-domains": ["terraform.net","terraform.com"]
     },
@@ -179,7 +179,7 @@
   	"notes":"Firewall WWW ",
       "action" : "allow",
       "ports" : "443",
- "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
+    "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
       "protocol" : "tcp",
       "remote-domains" : [
         "paloaltonetworks.co.uk",
@@ -197,7 +197,7 @@
   	"notes":"Domains Personal 2083",
       "action" : "allow",
       "ports" : "2083",
- "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
+    "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
       "protocol" : "tcp",
       "remote-domains" : [
         "audaxum.me",
@@ -210,7 +210,7 @@
   	"notes":"Domains Personal 2096",
       "action" : "allow",
       "ports" : "2096",
- "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
+    "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
       "protocol" : "tcp",
       "remote-domains" : [
         "audaxum.me",
@@ -221,7 +221,7 @@
     {
       "action" : "allow",
       "ports" : "443",
- "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
+    "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
       "protocol" : "tcp",
       "remote-domains" : [
   	"filen-1.net",
@@ -236,7 +236,7 @@
     {
       "action": "allow",
       "ports": "443",
- "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
+    "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
       "protocol": "tcp",
       "remote-domains": [
         "ip-lookup.com",
@@ -248,7 +248,7 @@
     {
       "action": "allow",
       "ports": "443",
-  "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
+      "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
       "protocol": "tcp",
       "remote-domains": [
         "onecdn.static.microsoft.com",
@@ -273,7 +273,7 @@
 	 	"notes":"MS Office Domains",
       "action": "allow",
       "ports": "443",
- "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
+    "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
       "protocol": "tcp",
       "remote-domains": [
         "edgesuite.net",
@@ -291,7 +291,7 @@
     {
       "action": "allow",
       "ports": "443",
-  "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
+      "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
       "protocol": "tcp",
       "remote-domains": [
         "sublimetext.com",
@@ -303,7 +303,7 @@
     {
       "action": "deny",
       "ports": "443",
-  "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
+      "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
       "protocol": "udp",
       "remote-addresses": [
         "173.194.219.*",
@@ -316,7 +316,7 @@
     {
       "action": "allow",
       "ports": "443",
-  "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
+      "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
       "protocol": "tcp",
       "remote-domains": [
         "redditspace.com",
@@ -330,7 +330,7 @@
     {
       "action": "allow",
       "ports": "443",
-  "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
+      "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
       "protocol": "tcp",
       "remote-domains": [
         "duck.ai",
@@ -344,7 +344,7 @@
     {
       "action": "allow",
       "ports": "443",
-  "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
+      "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
       "protocol": "tcp",
       "remote-domains": [
         "download.bitdefender.com",
@@ -359,7 +359,7 @@
       "notes":"Cloudflare port 80",
       "action": "allow",
       "ports": "80",
-  "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
+      "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
       "protocol": "tcp",
       "remote-domains": [
         "cloudflare.com",
@@ -374,7 +374,7 @@
     {
       "action": "allow",
       "ports": "443",
-  "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
+      "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
       "protocol": "tcp",
       "remote-domains": [
         "cloudflare.com",
@@ -388,7 +388,7 @@
     {
       "action": "allow",
       "ports": "443",
-  "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
+      "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
       "protocol": "tcp",
       "remote-domains": [
         "bluehost.com",
@@ -400,7 +400,7 @@
     {
       "action": "allow",
       "ports": "443",
-  "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
+      "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
       "protocol": "tcp",
       "remote-domains": [
         "lucid.app",
