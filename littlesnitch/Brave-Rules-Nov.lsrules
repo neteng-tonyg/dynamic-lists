@@ -69,6 +69,7 @@
         "whatismyipaddress.com",
         "iplookup.com",
         "noip.com",
+		"check-host.net",
         "brave.com",
         "bravesoftware.com",
         "bing.com",
@@ -81,7 +82,6 @@
         "dropbox.com",
         "costco.com",
         "ublockorigin.pages.dev"
-
       ]
     },
       {
@@ -120,6 +120,7 @@
 		  "dl.google.com",
 		  "www.google.com",
           "i.google.com",
+		  "stun1.l.google.com",
 		  "accounts.google.com",
 		  "play.google.com",
 		  "fonts.gstatic.com",
@@ -291,21 +292,63 @@
         "nimbus.bitdefender.net",
         "us.nimbus.bitdefender.net",
         "push.bitdefender.net"
-          ]
-       },
-        {
-          "notes" : "Lucid Sites",
-        "action": "allow",
-        "ports": "443",
-        "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
-        "protocol": "tcp",
-        "remote-domains": [
+      ]
+    },
+    {
+	"notes":"Cloudflare port 80",
+      "action": "allow",
+      "ports": "80",
+    "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "protocol": "tcp",
+      "remote-domains": [
+        "cloudflare.com",
+        "cloudflare-dns.com",
+        "static.cloudflareinsights.com",
+        "digicert.com",
+        "sectigo.com",
+        "cloudflare.net",
+        "cloudfront.net",
+        "sectigo.net"
+      ]
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+  "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "protocol": "tcp",
+      "remote-domains": [
+        "cloudflare.com",
+        "cloudflare-dns.com",
+        "digicert.com",
+        "sectigo.com",
+        "cloudflare.net",
+        "sectigo.net"
+      ]
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+  "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "protocol": "tcp",
+      "remote-domains": [
+        "bluehost.com",
+	"nixihost.com",
+	"audaxum.me",
+	"goethals.us"
+      ]
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+  "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "protocol": "tcp",
+      "remote-domains": [
         "lucid.app",
         "excalidraw.com",
         "excalidraw.net",
         "lucidcdn.net",
         "lucidchart.net"
-          ]
+      ]
     }
   ]
 }
