@@ -1,29 +1,24 @@
 {
   "name": "Snitch-Any-Process-15",
-  "description": "Standard app traffic from Snitch",
+  "description": "Standard app traffic for all brows",
   "rules": [
     {
-      "name": "Ruleset-Any-Process-05",
-      "description": "Standard app traffic for all browsers",
     "notes ": "Default Deny Quic",
     "action": "deny",
-    "owner": "me",
     "ports": "443",
-    "priority": "high",
     "process": "any",
     "protocol": "udp",
     "remote": "any"
     },
     {
-      "notes": "Allow nat-stun-UDP-3478",
-      "action": "allow",
-      "owner": "me",
-      "ports": "3478",
-      "priority": "high",
-      "process": "any",
-      "protocol": "udp",
-      "remote": "any"
-    },
+    "notes":"Allow nat-stun-UDP-3478",
+  "action" : "allow",
+    "ports" : "3478",
+    "priority" : "high",
+     "process" : "any",
+    "protocol" : "udp",
+    "remote" : "any"
+  },
     {
       "action": "deny",
       "notes": "Default deny WWW/443",
@@ -44,6 +39,7 @@
       "name" : "Plex-subs-et-al",
       "action" : "allow",
       "ports" : "443",
+      "process" : "any",
       "protocol" : "tcp",
       "remote-hostnames" : [
 	  "clients.plex.tv",
@@ -72,6 +68,7 @@
         "whatismyipaddress.com",
         "iplookup.com",
         "noip.com",
+		"check-host.net",
         "brave.com",
         "bravesoftware.com",
         "bing.com",
@@ -123,6 +120,7 @@
 		  "dl.google.com",
 		  "www.google.com",
           "i.google.com",
+		  "stun1.l.google.com",
 		  "accounts.google.com",
 		  "play.google.com",
 		  "fonts.gstatic.com",
@@ -294,15 +292,70 @@
         "nimbus.bitdefender.net",
         "us.nimbus.bitdefender.net",
         "push.bitdefender.net"
-          ]
-       },
+      ]
+    },
+    {
+	"notes":"Cloudflare port 80",
+      "action": "allow",
+      "ports": "80",
+      "process" : "anyx",
+      "protocol": "tcp",
+      "remote-domains": [
+        "cloudflare.com",
+        "cloudflare-dns.com",
+        "static.cloudflareinsights.com",
+        "digicert.com",
+        "sectigo.com",
+        "cloudflare.net",
+        "cloudfront.net",
+        "sectigo.net"
+      ]
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+      "process" : "anyx",
+      "protocol": "tcp",
+      "remote-domains": [
+        "cloudflare.com",
+        "cloudflare-dns.com",
+        "digicert.com",
+        "sectigo.com",
+        "cloudflare.net",
+        "sectigo.net"
+      ]
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+  "process" : "anyx",
+      "protocol": "tcp",
+      "remote-domains": [
+        "bluehost.com",
+	"nixihost.com",
+	"audaxum.me",
+	"goethals.us"
+      ]
+    },
         {
-          "notes" : "Lucid Sites",
-        "action": "allow",
-        "ports": "443",
-        "process" : "any",
-        "protocol": "tcp",
-        "remote-domains": [
+     "notes":"Filen and Seedbox ",
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "any",
+      "protocol" : "tcp",
+      "remote-domains" : [
+  	"filen-1.net", "filen-2.net", "filen-3.net","filen-4.net","filen-5.net",
+  	"filen.com",
+  	"seedbox.io",
+	"extto.com"
+  	]
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+  "process" : "anyx",
+      "protocol": "tcp",
+      "remote-domains": [
         "lucid.app",
         "excalidraw.com",
         "excalidraw.net",
