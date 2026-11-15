@@ -49,6 +49,9 @@
       "process" : "\/Applications\/Zen.app\/Contents\/MacOS\/zen",
       "protocol" : "tcp",
       "remote-domains" : [
+	"googleapis.com",
+	"pubmatic.com",
+	"forbes.com",
 	  "azurefed.net",
 	  "azurefed.com"
 	  ]
