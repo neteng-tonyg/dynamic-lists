@@ -83,6 +83,39 @@
 
       ]
     },
+        {
+    "notes":"111 Deny Google Analytics Subnets",
+      "action" : "deny",
+      "ports" : "443",
+      "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
+      "protocol" : "tcp",
+      "remote-addresses" : [
+	  "64.233.177.0/24",
+	  "173.194.219.0/24",
+	  "142.250.105.0/24",
+	  "142.250.9.0/24",
+	  "74.125.21.0/24"
+	  ]
+    },
+        {
+      "notes":"111 Deny Google Analytics Hosts",
+      "action" : "deny",
+      "ports" : "443",
+      "process" : "\/Applications\/Zen.app\/Contents\/MacOS\/zen",
+      "protocol" : "tcp",
+      "remote-hostnames" : [
+	  "i.doubleclick.net",
+	  "g.doubleclick.net",
+        "ad.doubleclick.net",
+		"fls.doubleclick.net",
+	  "pubads.g.doubleclick.net",
+	  "pagead2.googlesyndication.com",
+	  "googleads4.g.doubleclick.net",
+	  "ep1.adtrafficquality.google",
+      "adservice.google.com",
+      "adtrafficquality.google.com"
+	  ]
+    },
       {
         "notes":"Google/ Youtube Domains 443",
       "action" : "allow",
@@ -118,7 +151,6 @@
       "remote-hostnames" : [
 		  "dl.google.com",
 		  "www.google.com",
-          "i.google.com",
 		  "stun1.l.google.com",
 		  "accounts.google.com",
 		  "play.google.com",
@@ -246,6 +278,8 @@
         "owner": "me",
         "remote-domains": [
           "azurewebsites.net",
+          "azurefed.net",
+          "azurefed.com",
           "bing.com",
           "hockeyapp.net",
           "live.com",
@@ -306,11 +340,11 @@
         "digicert.com",
         "sectigo.com",
         "cloudflare.net",
-        "cloudfront.net",
         "sectigo.net"
       ]
     },
     {
+      "notes":"Cloudflare port 443",
       "action": "allow",
       "ports": "443",
   "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
@@ -331,9 +365,9 @@
       "protocol": "tcp",
       "remote-domains": [
         "bluehost.com",
-	"nixihost.com",
-	"audaxum.me",
-	"goethals.us"
+	    "nixihost.com",
+	    "audaxum.me",
+	    "goethals.us"
       ]
     },
         {
@@ -343,11 +377,12 @@
       "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
       "protocol" : "tcp",
       "remote-domains" : [
-  	"filen-1.net", "filen-2.net", "filen-3.net","filen-4.net","filen-5.net",
-  	"filen.com",
-  	"seedbox.io",
-	"extto.com"
-  	]
+  	  "filen-1.net", "filen-2.net",
+        "filen-3.net","filen-4.net","filen-5.net",
+  	  "filen.com",
+  	  "seedbox.io",
+	  "extto.com"
+    	]
     },
     {
       "action": "allow",
@@ -360,7 +395,7 @@
         "excalidraw.net",
         "lucidcdn.net",
         "lucidchart.net"
-      ]
+          ]
     }
   ]
 }
