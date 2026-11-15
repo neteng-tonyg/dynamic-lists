@@ -45,9 +45,9 @@
       "action" : "allow",
       "ports" : "443",
       "protocol" : "tcp",
-      "remote-domains" : [
+      "remote-hostnames" : [
 	  "clients.plex.tv",
-        "features.plex.tv",
+      "features.plex.tv",
 	  "community.plex.tv",
 	  "provider.plex.tv",
 	  "pubsub.plex.tv",
@@ -96,11 +96,7 @@
       "protocol" : "tcp",
       "remote-domains" : [
 		  "googlevideo.com",
-		  "dl.google.com",
 		  "www.google.com",
-          "i.google.com",
-		  "accounts.google.com",
-		  "play.google.com",
 		  "googleapps.com",
 		  "googleusercontent.com",
 		  "googletagmanager.com",
@@ -110,17 +106,32 @@
 		  "googletagservices.com",
 		  "googleapis.com",
 		  "withgoogle.com",
-		  "fonts.gstatic.com",
 		  "www.gstatic.com",
 		  "gstatic.com",
-			"c.youtube.com",
-			"accounts.youtube.com",
 			"youtube.com",
 			"youtube.be"
             ]
       },
+            {
+        "notes":"Google/ Youtube Domains 443",
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "any",
+      "owner" : "me",
+      "protocol" : "tcp",
+      "remote-hostnames" : [
+		  "dl.google.com",
+		  "www.google.com",
+          "i.google.com",
+		  "accounts.google.com",
+		  "play.google.com",
+		  "fonts.gstatic.com",
+			"c.youtube.com",
+			"accounts.youtube.com"
+            ]
+      },
       {
-  	    "notes":"Mozilla.com Domains 443",
+  	    "notes":"Mozilla Domains 443",
         "action" : "allow",
         "ports" : "443",
    		"process" : "any",
@@ -129,43 +140,40 @@
         "mozilla.com",
   		"mozilla.net",
   		"mozgcp.net",
-  	  	"classify-services.mozilla.com",
-        "services.mozilla.com",
-        "firefox.settings.services.mozilla.com",
-  		"mozilla-ohttp.fastly-edge.com",
-  		"ohttp-merino.mozilla.fastly-edge.com",
-  		"mozilla.fastly-edge.com"
+  		  "firefox.com",
+          "firefox.org"
           ]
       },
       {
-  	    "notes":"Mozilla.org Domains 443",
+  	    "notes":"Mozilla Hostnames 443",
         "action" : "allow",
         "ports" : "443",
    		"process" : "any",
    		"owner" :"me",
         "protocol" : "tcp",
-        "remote-domains" : [
+        "remote-hostnames" : [
+        "classify-services.mozilla.com",
+        "services.mozilla.com",
+        "firefox.settings.services.mozilla.com",
+  		"mozilla-ohttp.fastly-edge.com",
+  		"ohttp-merino.mozilla.fastly-edge.com",
+  		"mozilla.fastly-edge.com",
   		"addons.mozilla.org",
         "aus5.mozilla.org",
         "download.mozilla.org",
         "telemetry.mozilla.org",
         "vpn.mozilla.org",
+        "classify-services.mozilla.com",
+        "services.mozilla.com",
+        "firefox.settings.services.mozilla.com",
+  		"mozilla-ohttp.fastly-edge.com",
+  		"ohttp-merino.mozilla.fastly-edge.com",
+  		"mozilla.fastly-edge.com",
 		"ads-img.mozilla.org",
+		  "accounts.firefox.com",
+          "firefox-portal-detection.com",
           "ads.mozilla.org"
           ]
-      },
-      {
-  	    "notes":"Firefox Domains 443",
-        "action" : "allow",
-        "ports" : "443",
-        "process" : "any",
-        "protocol" : "tcp",
-        "remote-domains" : [
-          "accounts.firefox.com",
-          "firefox-portal-detection.com",
-          "firefox.com",
-          "firefox.org"
-        ]
       },
       {
       "action": "allow",
@@ -200,19 +208,19 @@
           ]
       },
       {
-        "notes":"Github Domains 443",
+        "notes":"Git Domains 443",
         "owner" : "me",
         "action" : "allow",
         "ports" : "443",
         "process": "any",
         "protocol" : "tcp",
         "remote-domains" : [
-           "avatars.githubusercontent.com",
+
     	    "githubassets.com",
-           "cafe.github.com",
-           "central.github.com",
+              "gitlab.com",
+              "gitlab.dev",
+              "gitlab.io",
            "githubusercontent.com",
-           "raw.githubusercontent.com",
            "github.com",
            "github.dev",
            "github.io",
@@ -220,17 +228,18 @@
             ]
        },
          {
-            "notes":"Gitlab Domains 443",
+            "notes":"Git Hosts 443",
             "owner" : "me",
             "action" : "allow",
             "ports" : "443",
             "process" : "any",
             "protocol" : "tcp",
-            "remote-domains" : [
+            "remote-hostnames" : [
+            "raw.githubusercontent.com",
   	        "malware-filter.gitlab.io",
-              "gitlab.com",
-              "gitlab.dev",
-              "gitlab.io"
+            "avatars.githubusercontent.com",
+            "cafe.github.com",
+            "central.github.com"
                ]
           },
         {
