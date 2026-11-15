@@ -55,28 +55,29 @@
 	    ]
     },
     {
-      "notes" : "Major Domains 443",
-      "action" : "allow",
-      "ports" : "443",
-      "process" : "any",
-          "protocol" : "tcp",
-          "remote-domains" : [
-		  "cisco.com",
-		  "scroller.com",
-		  "wikipedia.com",
-		  "wikihow.com",
-          "wikimedia.net",
-            "wikimedia.org",
-		  "whaismyipaddress.com",
-		  "brave.com",
-		  "bing.com",
-		  "duckduckgo.com",
-		  "dogpile.com",
-		  "lifewire.com",
-		  "supermedia.com",
-		  "obdev.net",
-		  "googleapis.com"
-           ]
+      "notes": "Major Domains 443",
+      "action": "allow",
+      "ports": "443",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": [
+        "cisco.com",
+        "scroller.com",
+        "wikipedia.com",
+        "wikihow.com",
+        "wikimedia.net",
+        "wikimedia.org",
+        "whaismyipaddress.com",
+        "brave.com",
+        "bing.com",
+        "duckduckgo.com",
+        "dogpile.com",
+        "lifewire.com",
+        "supermedia.com",
+        "obdev.net",
+        "googleapis.com"
+      ]
+    },
       {
         "notes":"Google/ Youtube Domains 443",
       "action" : "allow",
@@ -217,7 +218,7 @@
             "remote-domains" : [
   	        "malware-filter.gitlab.io",
               "gitlab.com",
-              "gitlab.dev",,
+              "gitlab.dev",
               "gitlab.io"
                ]
           },

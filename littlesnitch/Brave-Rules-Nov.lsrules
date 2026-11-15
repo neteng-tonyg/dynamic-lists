@@ -73,9 +73,7 @@
         "protocol" : "tcp",
         "remote-domains" : [
         "mozilla.com",
-          "www.mozilla.com",
   		"mozilla.net",
-          "mozilla.net",
   		"mozgcp.net",
   	  	"classify-services.mozilla.com",
         "firefox.settings.services.mozilla.com",
