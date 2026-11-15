@@ -213,12 +213,13 @@
      "notes":"Filen and Seedbox ",
       "action" : "allow",
       "ports" : "443",
-"process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
+	  "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
       "protocol" : "tcp",
       "remote-domains" : [
   	"filen-1.net", "filen-2.net", "filen-3.net","filen-4.net","filen-5.net",
   	"filen.com",
   	"seedbox.io",
+	"extto.com"
   	]
     },
     {
