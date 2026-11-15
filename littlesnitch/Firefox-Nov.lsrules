@@ -21,22 +21,21 @@
     "remote" : "any"
   },
   {
- "notes":"0.Default deny WWW/443",
+    "notes":"0.Default deny WWW/443",
     "action" : "deny",
     "ports" : "443",
-"process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+    "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
     "protocol" : "tcp",
-    "remote-domains" : 
-  ["facebook.com",
+    "remote-domains" :  [
+  "facebook.com",
   "facebook.net",
   "tiktokcdn.com",
-"g.doubleclick.net",
-      "static.doubleclick.net"
-  ]
+  "g.doubleclick.net",
+  "static.doubleclick.net"
+    ]
   },
     {
-    "notes":"Google/ Youtube Domains 443",
-      "owner : me"
+    "notes" : "Google/ Youtube Domains 443",
      "action" : "allow",
      "ports" : "443",
       "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
@@ -66,31 +65,30 @@
         ]
 		},
       {
-  	"notes":"Mozilla.com Domains 443",
-        "owner : me"
+  	    "notes":"Mozilla.com Domains 443",
         "action" : "allow",
         "ports" : "443",
-   		 "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+   		"process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
         "protocol" : "tcp",
         "remote-domains" : [
         "mozilla.com",
-  		"mozilla.net", 
-  		"mozgcp.net",        
+  		"mozilla.net",
+  		"mozgcp.net",
   	  	"classify-services.mozilla.com",
-        "firefox.settings.services.mozilla.com",  
+        "firefox.settings.services.mozilla.com",
   		"mozilla-ohttp.fastly-edge.com",
   		"ohttp-merino.mozilla.fastly-edge.com",
   		"mozilla.fastly-edge.com"
-      ]
-  },
+        ]
+      },
       {
   	"notes":"Mozilla.org Domains 443",
-        "owner : me"
         "action" : "allow",
         "ports" : "443",
-   		 "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+   		"process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+   		"owner" :"me",
         "protocol" : "tcp",
-        "remote-domains" : [   
+        "remote-domains" : [
   		"addons.mozilla.org",
         "aus5.mozilla.org",
         "download.mozilla.org",
@@ -101,7 +99,7 @@
       },
       {
   	"notes":"Firefox Domains 443",
-        "owner : me"
+
         "action" : "allow",
         "ports" : "443",
    		 "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
@@ -115,7 +113,7 @@
       },
       {
   	"notes":"Mozilla port 80",
-        "owner : me"
+
         "action" : "allow",
         "ports" : "80",
    		 "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
@@ -129,7 +127,7 @@
 	},
       {
     "notes":"Github Domains 443",
-        "owner : me"
+        "owner" : "me",
          "action" : "allow",
          "ports" : "443",
         "process": "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
@@ -147,12 +145,13 @@
        },
          {
        "notes":"Gitlab Domains 443",
+            "owner" : "me",
             "action" : "allow",
             "ports" : "443",
-"process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+       "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
             "protocol" : "tcp",
             "remote-domains" : [
-  	"malware-filter.gitlab.io",	  
+  	        "malware-filter.gitlab.io",
               "gitlab.com",
               "gitlab.io"
             ]
@@ -161,16 +160,17 @@
       "notes": "Atlassian",
       "action": "allow",
       "ports": "443",
-"process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
 	  "protocol" : "tcp",
-      "remote-domains": ["atl-paas.net","atlassian.com","atlassian.net",      	"atlassian.io","bitbucket.org","bytebucket.org","jira.com","valiantys.com"]
+      "remote-domains": ["atl-paas.net","atlassian.com","atlassian.net",
+      "atlassian.io","bitbucket.org","bytebucket.org","jira.com","valiantys.com"
+      	]
     },
-
     {
       "notes": "Terraform",
       "action": "allow",
       "ports": "443",
-"process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
 	      "protocol" : "tcp",
       "remote-domains": ["terraform.net","terraform.com"]
     },
@@ -178,7 +178,7 @@
   	"notes":"Firewall WWW ",
       "action" : "allow",
       "ports" : "443",
-"process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
       "protocol" : "tcp",
       "remote-domains" : [
         "paloaltonetworks.co.uk",
@@ -187,7 +187,7 @@
   	"firewall.com",
 	"firewall.net",
 	"zscaler.com",
-	"cisco.com"	
+	"cisco.com"
       ]
     },
     {
@@ -203,7 +203,7 @@
         "nixihost.com"
       ]
     },
-  {	
+  {
   	"notes":"Domains Personal 2096",
       "action" : "allow",
       "ports" : "2096",
@@ -215,7 +215,7 @@
         "nixihost.com"
       ]
     },
-  
+
     {
       "action" : "allow",
       "ports" : "443",
@@ -354,10 +354,10 @@
       ]
     },
     {
-		    "notes":"Cloudflare port 80",
+	"notes":"Cloudflare port 80",
       "action": "allow",
       "ports": "80",
-  "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+    "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
       "protocol": "tcp",
       "remote-domains": [
         "cloudflare.com",

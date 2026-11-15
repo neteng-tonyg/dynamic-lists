@@ -1,16 +1,16 @@
 {
-  "name": "Rulesset-Any-Process",
+  "rules": {
+    {
+      "name": "Ruleset-Any-Process-05",
   "description": "Standard app traffic for all browsers",
-  "rules": [
-  {
-    "notes":"0.Default deny quic",
-  "action" : "deny",
-      "owner": "me",
-    "ports" : "443",
-    "priority" : "high",
-      "process": "any",
-    "protocol" : "udp",
-    "remote" : "any"
+    "notes ": "0.Default deny quic",
+    "action": "deny",
+    "owner": "me",
+    "ports": "443",
+    "priority": "high",
+    "process": "any",
+    "protocol": "udp",
+    "remote": "any"
   },
     {
       "action": "allow",
@@ -26,8 +26,8 @@
       ]
     },
     {
-      "action": "allow",
       "notes": "Allow nat-stunUDP-3478",
+      "action": "allow",
       "owner": "me",
       "ports": "3478",
       "priority": "high",
