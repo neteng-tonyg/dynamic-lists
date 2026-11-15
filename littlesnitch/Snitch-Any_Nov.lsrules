@@ -1,5 +1,5 @@
 {
-  "rules": {
+  "rules": [
     {
       "name": "Ruleset-Any-Process-05",
   "description": "Standard app traffic for all browsers",
@@ -133,29 +133,27 @@
     {
       "description": "Microsoft-related domains",
       "name": "Microsoft",
-      "rules":
-        {
-          "action": "allow",
-          "process": "any",
-          "owner": "me",
-          "remote-domains": [
-            "azurewebsites.net",
-            "bing.com",
-            "hockeyapp.net",
-            "live.com",
-            "live.net",
-            "microsoft.com",
-            "microsoftonline.com",
-            "msedge.net",
-            "oaspapps.com",
-            "office.com",
-            "office.net",
-            "office365.com",
-            "onedrive.com",
-            "outlook.com",
-            "skype.com",
-            "windows.com"
-          ]
-        }
+        "action": "allow",
+        "process": "any",
+        "owner": "me",
+        "remote-domains": [
+          "azurewebsites.net",
+          "bing.com",
+          "hockeyapp.net",
+          "live.com",
+          "live.net",
+          "microsoft.com",
+          "microsoftonline.com",
+          "msedge.net",
+          "oaspapps.com",
+          "office.com",
+          "office.net",
+          "office365.com",
+          "onedrive.com",
+          "outlook.com",
+          "skype.com",
+          "windows.com"
+        ]
+      }
       ]
-    }
+}
