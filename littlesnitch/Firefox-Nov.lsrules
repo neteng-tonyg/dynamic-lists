@@ -34,11 +34,43 @@
   "static.doubleclick.net"
     ]
   },
+        {
+    "notes" : "Major Domains 443",
+     "action" : "allow",
+     "ports" : "443",
+      "process" : "anyx",
+          "protocol" : "tcp",
+          "remote-domains" : [
+		  "cisco.com",
+		  "scroller.com",
+		  "wikipedia.com",
+		  "wikihow.com",
+            "wikimedia.org",
+		  "whaismyipaddress.com",
+		  "brave.com",
+		  "bing.com",
+		  "duckduckgo.com",
+		  "dogpile.com",
+		  "lifewire.com",
+		  "supermedia.com",
+		  "googletagservices.com",
+		  "googleapis.com",
+		  "withgoogle.com",
+		  "fonts.gstatic.com",
+		  "www.gstatic.com",
+		  "gstatic.com",
+			"c.youtube.com",
+			"accounts.youtube.com",
+			"youtube.com",
+			"youtube.be"
+        ]
+		},
+      {
     {
     "notes" : "Google/ Youtube Domains 443",
      "action" : "allow",
      "ports" : "443",
-      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "process" : "anyx",
           "protocol" : "tcp",
           "remote-domains" : [
 		  "googlevideo.com",
@@ -68,7 +100,7 @@
   	    "notes":"Mozilla.com Domains 443",
         "action" : "allow",
         "ports" : "443",
-   		"process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+   		"process" : "any",
         "protocol" : "tcp",
         "remote-domains" : [
         "mozilla.com",
@@ -85,7 +117,7 @@
   	"notes":"Mozilla.org Domains 443",
         "action" : "allow",
         "ports" : "443",
-   		"process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+   		"process" : "any",
    		"owner" :"me",
         "protocol" : "tcp",
         "remote-domains" : [
@@ -102,21 +134,20 @@
 
         "action" : "allow",
         "ports" : "443",
-   		 "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+   		 "process" : "any",
         "protocol" : "tcp",
         "remote-domains" : [
           "accounts.firefox.com",
           "firefox-portal-detection.com",
           "firefox.com",
-			"firefox.org"
+          "firefox.org"
         ]
       },
       {
   	"notes":"Mozilla port 80",
-
         "action" : "allow",
         "ports" : "80",
-        "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+        "process" : "any",
         "protocol" : "tcp",
         "remote-domains" : [
 		"mozilla.com",
@@ -130,7 +161,7 @@
         "owner" : "me",
          "action" : "allow",
          "ports" : "443",
-        "process": "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+        "process": "any",
         "protocol" : "tcp",
         "remote-domains" : [
           "avatars.githubusercontent.com",
@@ -140,7 +171,8 @@
            "githubusercontent.com",
            "raw.githubusercontent.com",
            "github.com",
-           "github.io"
+           "github.io",
+          "homebrew.sh"
          ]
        },
          {
@@ -148,7 +180,7 @@
             "owner" : "me",
             "action" : "allow",
             "ports" : "443",
-            "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+            "process" : "any",
             "protocol" : "tcp",
             "remote-domains" : [
   	        "malware-filter.gitlab.io",
@@ -160,7 +192,7 @@
       "notes": "Atlassian",
       "action": "allow",
       "ports": "443",
-      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "process" : "any",
 	  "protocol" : "tcp",
       "remote-domains": ["atl-paas.net","atlassian.com","atlassian.net",
       "atlassian.io","bitbucket.org","bytebucket.org","jira.com","valiantys.com"
@@ -170,7 +202,7 @@
       "notes": "Terraform",
       "action": "allow",
       "ports": "443",
-      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "process" : "any",
       "protocol" : "tcp",
       "remote-domains": ["terraform.net","terraform.com"]
     },
@@ -178,7 +210,7 @@
   	"notes":"Firewall WWW ",
       "action" : "allow",
       "ports" : "443",
-      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "process" : "any",
       "protocol" : "tcp",
       "remote-domains" : [
         "paloaltonetworks.co.uk",
@@ -407,5 +439,5 @@
         "lucidchart.net"
       ]
     }
-  ]
+  ],
 }
