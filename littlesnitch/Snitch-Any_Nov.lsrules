@@ -1,8 +1,10 @@
 {
+  "name": "Librewolf-Rules-Nov",
+  "description": "Standard app traffic from Librewolf",
   "rules": [
     {
       "name": "Ruleset-Any-Process-05",
-  "description": "Standard app traffic for all browsers",
+      "description": "Standard app traffic for all browsers",
     "notes ": "0.Default deny quic",
     "action": "deny",
     "owner": "me",
