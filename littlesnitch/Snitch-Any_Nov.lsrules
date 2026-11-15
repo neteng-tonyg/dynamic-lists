@@ -1,6 +1,6 @@
 {
-  "name": "Librewolf-Rules-Nov",
-  "description": "Standard app traffic from Librewolf",
+  "name": "Snitch-Any-Process",
+  "description": "Standard app traffic from Snitch",
   "rules": [
     {
       "name": "Ruleset-Any-Process-05",
