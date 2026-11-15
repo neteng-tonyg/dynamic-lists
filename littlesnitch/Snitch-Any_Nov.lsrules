@@ -58,6 +58,7 @@
       "protocol" : "tcp",
       "remote-domains" : [
 	  "clients.plex.tv",
+        "features.plex.tv",
 	  "community.plex.tv",
 	  "provider.plex.tv",
 	  "pubsub.plex.tv",
@@ -114,40 +115,47 @@
       ]
   },
     {
-  "description": "Microsoft-related domains",
-  "name": "Microsoft",
-  "rules": [
-    {
       "action": "allow",
-      "process" : "any",
-       "owner" : "me",
+      "notes": "Cloudflare port 80",
+      "ports": "80",
+      "process": "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "protocol": "tcp",
       "remote-domains": [
-        "azurewebsites.net",
-        "bing.com",
-        "hockeyapp.net",
-        "live.com",
-        "live.net",
-        "microsoft.com",
-        "microsoftonline.com",
-        "msedge.net",
-        "oaspapps.com",
-        "office.com",
-        "office.net",
-        "office365.com",
-        "onedrive.com",
-        "outlook.com",
-        "skype.com",
-        "windows.com"
+        "cloudflare.com",
+        "cloudflare-dns.com",
+        "static.cloudflareinsights.com",
+        "digicert.com",
+        "sectigo.com",
+        "cloudflare.net",
+        "sectigo.net"
+      ]
+    },
+    {
+      "description": "Microsoft-related domains",
+      "name": "Microsoft",
+      "rules":
+        {
+          "action": "allow",
+          "process": "any",
+          "owner": "me",
+          "remote-domains": [
+            "azurewebsites.net",
+            "bing.com",
+            "hockeyapp.net",
+            "live.com",
+            "live.net",
+            "microsoft.com",
+            "microsoftonline.com",
+            "msedge.net",
+            "oaspapps.com",
+            "office.com",
+            "office.net",
+            "office365.com",
+            "onedrive.com",
+            "outlook.com",
+            "skype.com",
+            "windows.com"
+          ]
+        }
       ]
     }
-  ]
-},
-    {
-     "description" : "All",
-  "name" : "Allow-All",
-      "action" : "allow",
-      "ports" : "any",
-      "protocol" : "any"
-    }
-  ]
-}
