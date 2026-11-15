@@ -11,6 +11,7 @@
 	  "64.233.177.0/24",
 	  "173.194.219.0/24",
 	  "142.250.105.0/24",
+	  "142.250.9.0/24",
 	  "74.125.21.0/24"
 	  ]
     },
@@ -20,6 +21,16 @@
       "process" : "\/Applications\/Zen.app\/Contents\/MacOS\/zen",
       "protocol" : "tcp",
       "remote-domains" : [
+	  "gogleadservices.com",
+	  "doubleclick.net",
+		"adtrafficquality.google.com"
+	  ]
+    },
+      "action" : "deny",
+      "ports" : "443",
+      "process" : "\/Applications\/Zen.app\/Contents\/MacOS\/zen",
+      "protocol" : "tcp",
+      "remote-hostnames" : [
 	  "i.doubleclick.net",
 	  "g.doubleclick.net",
  		"ad.doubleclick.net",
@@ -28,7 +39,7 @@
 	  "pagead2.googlesyndication.com",
 	  "googleads4.g.doubleclick.net",
 	  "ep1.adtrafficquality.google",
-			"adservice.google.com",
+		"adservice.google.com",
 		"adtrafficquality.google.com"
 	  ]
     },
@@ -39,11 +50,7 @@
       "protocol" : "tcp",
       "remote-domains" : [
 	  "azurefed.net",
-	  "azurefed.com",
-	  "pubads.g.doubleclick.net",
-	  "pagead2.googlesyndication.com",
-	  "googleads4.g.doubleclick.net"
-
+	  "azurefed.com"
 	  ]
     },
   ]
