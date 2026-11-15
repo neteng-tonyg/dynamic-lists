@@ -45,9 +45,9 @@
       "action" : "allow",
       "ports" : "443",
       "protocol" : "tcp",
-      "remote-domains" : [
+      "remote-hostnames" : [
 	  "clients.plex.tv",
-        "features.plex.tv",
+      "features.plex.tv",
 	  "community.plex.tv",
 	  "provider.plex.tv",
 	  "pubsub.plex.tv",
@@ -200,19 +200,18 @@
           ]
       },
       {
-        "notes":"Github Domains 443",
+        "notes":"Git Domains 443",
         "owner" : "me",
         "action" : "allow",
         "ports" : "443",
         "process": "any",
         "protocol" : "tcp",
         "remote-domains" : [
-           "avatars.githubusercontent.com",
     	    "githubassets.com",
-           "cafe.github.com",
-           "central.github.com",
+              "gitlab.com",
+              "gitlab.dev",
+              "gitlab.io",
            "githubusercontent.com",
-           "raw.githubusercontent.com",
            "github.com",
            "github.dev",
            "github.io",
@@ -220,17 +219,18 @@
             ]
        },
          {
-            "notes":"Gitlab Domains 443",
+            "notes":"Git Hosts 443",
             "owner" : "me",
             "action" : "allow",
             "ports" : "443",
             "process" : "any",
             "protocol" : "tcp",
-            "remote-domains" : [
+            "remote-hostnames" : [
+            "raw.githubusercontent.com",
   	        "malware-filter.gitlab.io",
-              "gitlab.com",
-              "gitlab.dev",
-              "gitlab.io"
+            "avatars.githubusercontent.com",
+            "cafe.github.com",
+            "central.github.com"
                ]
           },
         {
