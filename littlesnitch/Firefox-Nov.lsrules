@@ -69,6 +69,7 @@
         "whatismyipaddress.com",
         "iplookup.com",
         "noip.com",
+		"check-host.net",
         "brave.com",
         "bravesoftware.com",
         "bing.com",
@@ -81,7 +82,6 @@
         "dropbox.com",
         "costco.com",
         "ublockorigin.pages.dev"
-
       ]
     },
       {
@@ -120,6 +120,7 @@
 		  "dl.google.com",
 		  "www.google.com",
           "i.google.com",
+		  "stun1.l.google.com",
 		  "accounts.google.com",
 		  "play.google.com",
 		  "fonts.gstatic.com",
