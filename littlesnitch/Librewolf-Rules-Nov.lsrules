@@ -124,11 +124,12 @@
     "notes":"Github Domains 443",
          "action" : "allow",
          "ports" : "443",
-  "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
+         "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
          "protocol" : "tcp",
          "remote-domains" : [
            "avatars.githubusercontent.com",
-    	"githubassets.com",
+           "githubcopilot.com",,
+    	   "githubassets.com",
            "cafe.github.com",
            "central.github.com",
            "githubusercontent.com",
@@ -140,10 +141,10 @@
        "notes":"Gitlab Domains 443",
             "action" : "allow",
             "ports" : "443",
- "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
+            "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
             "protocol" : "tcp",
             "remote-domains" : [
-  	"malware-filter.gitlab.io",	  
+              "malware-filter.gitlab.io",
               "gitlab.com",
               "gitlab.io"
             ]
@@ -152,24 +153,31 @@
       "notes": "Atlassian",
       "action": "allow",
       "ports": "443",
- "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
+      "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
 	  "protocol" : "tcp",
-      "remote-domains": ["atl-paas.net","atlassian.com","atlassian.net",      	"atlassian.io","bitbucket.org","bytebucket.org","jira.com","valiantys.com"]
+      "remote-domains": [
+        "atl-paas.net","atlassian.com","atlassian.net",
+        "atlassian.io",
+        "bitbucket.org","bytebucket.org",
+        "jira.com","valiantys.com"
+      ]
     },
 
     {
       "notes": "Terraform",
       "action": "allow",
       "ports": "443",
- "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
-	      "protocol" : "tcp",
-      "remote-domains": ["terraform.net","terraform.com"]
+      "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
+      "protocol" : "tcp",
+      "remote-domains": [
+        "terraform.net","terraform.com"
+      ]
     },
     {
   	"notes":"Firewall WWW ",
       "action" : "allow",
       "ports" : "443",
- "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
+      "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
       "protocol" : "tcp",
       "remote-domains" : [
         "paloaltonetworks.co.uk",
@@ -185,7 +193,7 @@
   	"notes":"Domains Personal 2083",
       "action" : "allow",
       "ports" : "2083",
- "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
+      "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
       "protocol" : "tcp",
       "remote-domains" : [
         "audaxum.me",
@@ -198,7 +206,7 @@
   	"notes":"Domains Personal 2096",
       "action" : "allow",
       "ports" : "2096",
- "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
+      "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
       "protocol" : "tcp",
       "remote-domains" : [
         "audaxum.me",
@@ -210,20 +218,22 @@
     {
       "action" : "allow",
       "ports" : "443",
- "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
+      "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
       "protocol" : "tcp",
       "remote-domains" : [
-  	"filen-1.net", "filen-2.net", "filen-3.net","filen-4.net","filen-5.net"
-  	]
+  	  "filen-1.net", "filen-2.net",
+        "filen-3.net","filen-4.net",
+        "filen-5.net"
+  	    ]
     },
     {
       "action": "allow",
       "ports": "443",
-  "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
+      "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
       "protocol": "tcp",
       "remote-domains": [
         "ip-lookup.com",
-      "whatismyipaddress.com",
+        "whatismyipaddress.com",
     	"sublimetext.com",
     	"textmate.org"
       ]
@@ -254,7 +264,7 @@
 	 	"notes":"MS Office Domains",
       "action": "allow",
       "ports": "443",
- "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
+       "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
       "protocol": "tcp",
       "remote-domains": [
 		"sharepointonline.net",
@@ -273,7 +283,7 @@
     {
       "action": "allow",
       "ports": "443",
-   "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
+      "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
       "protocol": "tcp",
       "remote-domains": [
         "sublimetext.com",
@@ -285,7 +295,7 @@
     {
       "action": "deny",
       "ports": "443",
-   "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
+      "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
       "protocol": "udp",
       "remote-addresses": [
         "173.194.219.*",
@@ -298,20 +308,20 @@
     {
       "action": "allow",
       "ports": "443",
-   "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
+      "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
       "protocol": "tcp",
       "remote-domains": [
         "redditspace.com",
         "redditstatic.com",
         "Redditmedia.com",
- "Reddit.com",
-"preview.redd.it"
+        "Reddit.com",
+        "preview.redd.it"
       ]
     },
     {
       "action": "allow",
       "ports": "443",
-   "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
+      "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
       "protocol": "tcp",
       "remote-domains": [
         "duck.ai",

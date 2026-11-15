@@ -4,19 +4,19 @@
   "rules": [
   {
     "notes":"0.Default deny quic",
-  "action" : "deny",
+    "action" : "deny",
     "ports" : "443",
     "priority" : "high",
- "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+    "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
     "protocol" : "udp",
     "remote" : "any"
   },
   {
     "notes":"0.Allow nat-stunUDP",
-  "action" : "allow",
+    "action" : "allow",
     "ports" : "3478",
     "priority" : "high",
- "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+    "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
     "protocol" : "udp",
     "remote" : "any"
   },
@@ -116,7 +116,7 @@
 
         "action" : "allow",
         "ports" : "80",
-   		 "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+        "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
         "protocol" : "tcp",
         "remote-domains" : [
 		"mozilla.com",
@@ -126,15 +126,15 @@
       ]
 	},
       {
-    "notes":"Github Domains 443",
+        "notes":"Github Domains 443",
         "owner" : "me",
          "action" : "allow",
          "ports" : "443",
         "process": "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
-         "protocol" : "tcp",
-         "remote-domains" : [
-           "avatars.githubusercontent.com",
-    	"githubassets.com",
+        "protocol" : "tcp",
+        "remote-domains" : [
+          "avatars.githubusercontent.com",
+    	  "githubassets.com",
            "cafe.github.com",
            "central.github.com",
            "githubusercontent.com",
@@ -144,11 +144,11 @@
          ]
        },
          {
-       "notes":"Gitlab Domains 443",
+            "notes":"Gitlab Domains 443",
             "owner" : "me",
             "action" : "allow",
             "ports" : "443",
-       "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+            "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
             "protocol" : "tcp",
             "remote-domains" : [
   	        "malware-filter.gitlab.io",
@@ -171,7 +171,7 @@
       "action": "allow",
       "ports": "443",
       "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
-	      "protocol" : "tcp",
+      "protocol" : "tcp",
       "remote-domains": ["terraform.net","terraform.com"]
     },
     {
