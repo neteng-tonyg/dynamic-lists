@@ -318,6 +318,7 @@
         ]
     },
         {
+      "notes" : "Lucid",
       "action": "allow",
       "ports": "443",
       "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
