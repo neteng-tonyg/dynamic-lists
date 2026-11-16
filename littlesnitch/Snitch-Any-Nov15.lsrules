@@ -11,7 +11,7 @@
     "remote": "any"
     },
     {
-    "notes":"Allow nat-stun-UDP-3478",
+    "notes": "Allow nat-stun-UDP-3478",
   "action" : "allow",
     "ports" : "3478",
     "priority" : "high",
@@ -19,21 +19,20 @@
     "protocol" : "udp",
     "remote" : "any"
   },
-    {
-      "action": "deny",
-      "notes": "Default deny WWW/443",
-      "owner": "me",
-      "ports": "443",
-      "process": "any",
-      "protocol": "tcp",
-      "remote-domains": [
-        "facebook.com",
-        "facebook.net",
-        "tiktokcdn.com",
-        "g.doubleclick.net",
-        "static.doubleclick.net"
-          ]
-    },
+  {
+    "notes":"0.Default deny WWW/443",
+    "action" : "deny",
+    "ports" : "443",
+    "process" : "any",
+    "protocol" : "tcp",
+    "remote-domains" : [
+    "facebook.com",
+    "facebook.net",
+    "tiktokcdn.com",
+    "g.doubleclick.net",
+    "static.doubleclick.net"
+    ]
+  },
     {
       "description" : "Plex",
       "name" : "Plex-subs-et-al",
@@ -60,6 +59,7 @@
         "cisco.com",
         "meraki.com",
         "meraki.net",
+        "pbs.org",
         "scroller.com",
         "wikipedia.com",
         "wikihow.com",
@@ -80,9 +80,40 @@
         "obdev.net",
         "dropbox.com",
         "costco.com",
-        "ublockorigin.pages.dev"
-
       ]
+    },
+    {
+      "notes":"111 Deny Google Analytics Subnets",
+      "action" : "deny",
+      "ports" : "443",
+      "process" : "any",
+      "protocol" : "tcp",
+      "remote-addresses" : [
+	  "64.233.177.0/24",
+	  "173.194.219.0/24",
+	  "142.250.105.0/24",
+	  "142.250.9.0/24",
+	  "74.125.21.0/24"
+	    ]
+    },
+    {
+      "notes":"111 Deny Google Analytics Hosts",
+      "action" : "deny",
+      "ports" : "443",
+      "process" : "any",
+      "protocol" : "tcp",
+      "remote-hostnames" : [
+	  "i.doubleclick.net",
+	  "g.doubleclick.net",
+        "ad.doubleclick.net",
+		"fls.doubleclick.net",
+	  "pubads.g.doubleclick.net",
+	  "pagead2.googlesyndication.com",
+	  "googleads4.g.doubleclick.net",
+	  "ep1.adtrafficquality.google",
+      "adservice.google.com",
+      "adtrafficquality.google.com"
+	    ]
     },
       {
         "notes":"Google/ Youtube Domains 443",
@@ -109,7 +140,7 @@
 			"youtube.be"
             ]
       },
-            {
+      {
         "notes":"Google/ Youtube Hosts 443",
       "action" : "allow",
       "ports" : "443",
@@ -147,9 +178,9 @@
         "action" : "allow",
         "ports" : "443",
    		"process" : "any",
-   		"owner" :"me",
         "protocol" : "tcp",
         "remote-hostnames" : [
+        "firefox-portal-detection.com",
         "classify-services.mozilla.com",
         "services.mozilla.com",
         "firefox.settings.services.mozilla.com",
@@ -181,6 +212,7 @@
       "protocol": "tcp",
       "remote-domains": [
         "cloudflare.com",
+        "cloudfront.net",
         "cloudflarecaptcha.com",
         "cloudflare-dns.com",
         "cloudflareinsights.com",
@@ -198,7 +230,10 @@
       "protocol": "tcp",
       "remote-domains": [
         "cloudflare.com",
+        "cloudfront.net",
+        "cloudflarecaptcha.com",
         "cloudflare-dns.com",
+        "cloudflareinsights.com",
         "digicert.com",
         "sectigo.com",
         "cloudflare.net",
@@ -247,6 +282,8 @@
         "owner": "me",
         "remote-domains": [
           "azurewebsites.net",
+          "azurefed.net",
+          "azurefed.com",
           "bing.com",
           "hockeyapp.net",
           "live.com",
@@ -298,7 +335,7 @@
 	"notes":"Cloudflare port 80",
       "action": "allow",
       "ports": "80",
-      "process" : "anyx",
+    "process" : "any",
       "protocol": "tcp",
       "remote-domains": [
         "cloudflare.com",
@@ -307,14 +344,14 @@
         "digicert.com",
         "sectigo.com",
         "cloudflare.net",
-        "cloudfront.net",
         "sectigo.net"
       ]
     },
     {
+      "notes":"Cloudflare port 443",
       "action": "allow",
       "ports": "443",
-      "process" : "anyx",
+      "process" : "any",
       "protocol": "tcp",
       "remote-domains": [
         "cloudflare.com",
@@ -328,13 +365,13 @@
     {
       "action": "allow",
       "ports": "443",
-  "process" : "anyx",
+  "process" : "any",
       "protocol": "tcp",
       "remote-domains": [
         "bluehost.com",
-	"nixihost.com",
-	"audaxum.me",
-	"goethals.us"
+	    "nixihost.com",
+	    "audaxum.me",
+	    "goethals.us"
       ]
     },
         {
@@ -353,7 +390,7 @@
     {
       "action": "allow",
       "ports": "443",
-  "process" : "anyx",
+      "process" : "any",
       "protocol": "tcp",
       "remote-domains": [
         "lucid.app",

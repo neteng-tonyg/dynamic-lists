@@ -6,13 +6,12 @@
     "notes":"0.Default deny quic",
     "action" : "deny",
     "ports" : "443",
-    "priority" : "high",
     "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
     "protocol" : "udp",
     "remote" : "any"
   },
   {
-    "notes":"0.Allow nat-stunUDP",
+    "notes": "Allow nat-stun-UDP-3478P",
     "action" : "allow",
     "ports" : "3478",
     "priority" : "high",
@@ -26,8 +25,7 @@
     "ports" : "443",
     "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
     "protocol" : "tcp",
-    "remote-domains" :
-    [
+    "remote-domains" : [
     "facebook.com",
     "facebook.net",
     "tiktokcdn.com",
@@ -40,7 +38,7 @@
       "name" : "Plex-subs-et-al",
       "action" : "allow",
       "ports" : "443",
-          "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
       "protocol" : "tcp",
       "remote-hostnames" : [
 	  "clients.plex.tv",
@@ -128,26 +126,26 @@
 			"accounts.youtube.com"
             ]
       },
-      {
+            {
   	    "notes":"Mozilla Domains 443",
         "action" : "allow",
         "ports" : "443",
-   		 "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+   		"process" : "any",
         "protocol" : "tcp",
         "remote-domains" : [
         "mozilla.com",
   		"mozilla.net",
   		"mozgcp.net",
   		  "firefox.com",
-          "firefox.org"
-          ]
+          "firefox.org",
+          "firefox-portal-detection.com"
+        ]
       },
       {
   	    "notes":"Mozilla Hostnames 443",
         "action" : "allow",
-        "ports" : "443",
-   		    "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
-   		"owner" :"me",
+        "ports" : ["443","80"],
+   		"process" : "any",
         "protocol" : "tcp",
         "remote-hostnames" : [
         "classify-services.mozilla.com",
@@ -169,7 +167,6 @@
   		"mozilla.fastly-edge.com",
 		"ads-img.mozilla.org",
 		  "accounts.firefox.com",
-          "firefox-portal-detection.com",
           "ads.mozilla.org"
           ]
       },
@@ -181,6 +178,7 @@
       "protocol": "tcp",
       "remote-domains": [
         "cloudflare.com",
+        "cloudfront.net",
         "cloudflarecaptcha.com",
         "cloudflare-dns.com",
         "cloudflareinsights.com",
@@ -198,7 +196,10 @@
       "protocol": "tcp",
       "remote-domains": [
         "cloudflare.com",
+        "cloudfront.net",
+        "cloudflarecaptcha.com",
         "cloudflare-dns.com",
+        "cloudflareinsights.com",
         "digicert.com",
         "sectigo.com",
         "cloudflare.net",
@@ -229,7 +230,7 @@
             "owner" : "me",
             "action" : "allow",
             "ports" : "443",
-            "process" : "any",
+            "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
             "protocol" : "tcp",
             "remote-hostnames" : [
             "raw.githubusercontent.com",
@@ -295,23 +296,6 @@
       ]
     },
     {
-	"notes":"Cloudflare port 80",
-      "action": "allow",
-      "ports": "80",
-    "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
-      "protocol": "tcp",
-      "remote-domains": [
-        "cloudflare.com",
-        "cloudflare-dns.com",
-        "static.cloudflareinsights.com",
-        "digicert.com",
-        "sectigo.com",
-        "cloudflare.net",
-        "cloudfront.net",
-        "sectigo.net"
-      ]
-    },
-    {
       "action": "allow",
       "ports": "443",
   "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
@@ -358,6 +342,7 @@
       "remote-domains": [
         "lucid.app",
         "excalidraw.com",
+        "excalidraw.net",
         "lucidcdn.net",
         "lucidchart.net"
       ]

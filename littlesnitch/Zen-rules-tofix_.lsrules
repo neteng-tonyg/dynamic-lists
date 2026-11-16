@@ -1,49 +1,64 @@
 {
  "name": "Zen-Rules",
-  "description": "Standard app traffic Zen",
-  "rules" : [
+  "description": "Custom rules-Zen : QUIC+Google+MS+Mozilla+Cloudflare",
+    "rules": [
     {
-      "notes":"111 Deny Google Analytics Domains",
-      "action" : "deny",
-      "ports" : "443",
-      "process" : "\/Applications\/Zen.app\/Contents\/MacOS\/zen",
-      "protocol" : "tcp",
-      "remote-domains" : [
-	  "googleadservices.com",
-	  "googlesyndication.com",
-      "www.googleadservices.com",
-	  "doubleclick.net"
-	  ]
+    "notes ": "Default Deny Quic",
+    "action": "deny",
+    "ports": "443",
+    "process": "any",
+    "protocol": "udp",
+    "remote": "any"
     },
     {
-      "notes":"111 Deny Google Analytics Hosts",
-      "action" : "deny",
-      "ports" : "443",
-      "process" : "\/Applications\/Zen.app\/Contents\/MacOS\/zen",
-      "protocol" : "tcp",
-      "remote-hostnames" : [
-	  "i.doubleclick.net",
-	  "g.doubleclick.net",
-        "ad.doubleclick.net",
-		"fls.doubleclick.net",
-	  "pubads.g.doubleclick.net",
-	  "pagead2.googlesyndication.com",
-	  "googleads4.g.doubleclick.net",
-	  "ep1.adtrafficquality.google",
-      "adservice.google.com",
-      "adtrafficquality.google.com"
-	  ]
+    "notes": "Allow nat-stun-UDP-3478",
+  "action" : "allow",
+    "ports" : "3478",
+    "priority" : "high",
+     "process" : "any",
+    "protocol" : "udp",
+    "remote" : "any"
+  },
+  {
+    "notes":"0.Default deny WWW/443",
+    "action" : "deny",
+    "ports" : "443",
+    "process" : "any",
+    "protocol" : "tcp",
+    "remote-domains" : [
+    "facebook.com",
+    "facebook.net",
+    "tiktokcdn.com",
+    "g.doubleclick.net",
+    "static.doubleclick.net"
+    ]
+  },
+        {
+	"notes":"011.Cloudflare ports 80,443",
+      "action": "allow",
+      "ports": ["80","443"],
+       "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
+      "protocol": "tcp",
+      "remote-domains": [
+        "cloudflare.com",
+        "cloudflare-dns.com",
+        "digicert.com",
+        "sectigo.com",
+        "cloudflare.net",
+        "sectigo.net"
+        ]
     },
-          {
-            "notes":"Google/ Youtube Domains 443",
-      "action" : "allow",
-      "ports" : "443",
-      "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
-      "owner" : "me",
-      "protocol" : "tcp",
-      "remote-domains" : [
+    {
+     "notes":"Google/ Youtube Domains 443",
+     "action" : "allow",
+     "ports" : "443",
+    "process" : "any",
+          "protocol" : "tcp",
+          "remote-domains" : [
 		  "googlevideo.com",
-		  "www.google.com",
+		  "google.com",
+		  "dl.google.com",
+		  "accounts.google.com",
 		  "googleapps.com",
 		  "googleusercontent.com",
 		  "googletagmanager.com",
@@ -53,17 +68,116 @@
 		  "googletagservices.com",
 		  "googleapis.com",
 		  "withgoogle.com",
+		  "fonts.gstatic.com",
 		  "www.gstatic.com",
 		  "gstatic.com",
 			"youtube.com",
 			"youtube.be"
             ]
       },
-            {
+      {
+        "notes":"Google/ Youtube Hosts 443",
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "any",
+      "owner" : "me",
+      "protocol" : "tcp",
+      "remote-hostnames" :
+        [
+		  "dl.google.com",
+		  "www.google.com",
+          "i.google.com",
+		  "stun1.l.google.com",
+		  "accounts.google.com",
+		  "play.google.com",
+		  "fonts.gstatic.com",
+			"c.youtube.com",
+			"accounts.youtube.com"
+            ]
+      },
+      {
+  	    "notes":"Mozilla Domains 443",
+        "action" : "allow",
+        "ports" : "443",
+   		"process" : "any",
+        "protocol" : "tcp",
+        "remote-domains" : [
+        "mozilla.com",
+  		"mozilla.net",
+  		"mozgcp.net",
+  		  "firefox.com",
+          "firefox.org",
+          "firefox-portal-detection.com"
+        ]
+      },
+      {
+  	    "notes":"Mozilla Hostnames 443",
+        "action" : "allow",
+        "ports" : ["443","80"],
+   		"process" : "any",
+        "protocol" : "tcp",
+        "remote-hostnames" : [
+        "classify-services.mozilla.com",
+        "services.mozilla.com",
+        "firefox.settings.services.mozilla.com",
+  		"mozilla-ohttp.fastly-edge.com",
+  		"ohttp-merino.mozilla.fastly-edge.com",
+  		"mozilla.fastly-edge.com",
+  		"addons.mozilla.org",
+        "aus5.mozilla.org",
+        "download.mozilla.org",
+        "telemetry.mozilla.org",
+        "vpn.mozilla.org",
+        "classify-services.mozilla.com",
+        "services.mozilla.com",
+        "firefox.settings.services.mozilla.com",
+  		"mozilla-ohttp.fastly-edge.com",
+  		"ohttp-merino.mozilla.fastly-edge.com",
+  		"mozilla.fastly-edge.com",
+		"ads-img.mozilla.org",
+		  "accounts.firefox.com",
+          "ads.mozilla.org"
+          ]
+      },
+      {
+        "notes":"Git Domains 443",
+        "owner" : "me",
+        "action" : "allow",
+        "ports" : "443",
+        "process": "any",
+        "protocol" : "tcp",
+        "remote-domains" : [
+    	    "githubassets.com",
+              "gitlab.com",
+              "gitlab.dev",
+              "gitlab.io",
+           "githubusercontent.com",
+           "github.com",
+           "github.dev",
+           "github.io",
+           "homebrew.sh"
+            ]
+       },
+         {
+            "notes":"Git Hosts 443",
+            "owner" : "me",
+            "action" : "allow",
+            "ports" : "443",
+            "process" : "any",
+            "protocol" : "tcp",
+            "remote-hostnames" : [
+            "raw.githubusercontent.com",
+  	        "malware-filter.gitlab.io",
+            "avatars.githubusercontent.com",
+            "cafe.github.com",
+            "central.github.com"
+               ]
+          },
+        {
         "description": "Microsoft-related domains",
         "name": "Microsoft",
         "action": "allow",
-        "process" : "\/Applications\/Zen.app\/Contents\/MacOS\/zen",
+        "process": "any",
         "owner": "me",
         "remote-domains": [
           "azurewebsites.net",
@@ -86,47 +200,6 @@
           "windows.com",
           "blob.core.windows.net"
             ]
-        },
-        {
-        "description": "Reddit WWW",
-        "name": "Reddit",
-        "action": "allow",
-        "process" : "\/Applications\/Zen.app\/Contents\/MacOS\/zen",
-        "owner": "me",
-        "remote-domains": [
-        "redditspace.com",
-        "redditstatic.com",
-        "Redditmedia.com",
-        "Reddit.com",
-        "preview.redd.it"
-          ]
-      },
-    {
-      "action" : "allow",
-      "ports" : "443",
-      "process" : "\/Applications\/Zen.app\/Contents\/MacOS\/zen",
-      "protocol" : "tcp",
-      "remote-domains" : [
-	"googleapis.com",
-	"pubmatic.com",
-	"forbes.com",
-	  "azurefed.net",
-	  "azurefed.com"
-	  ]
-    },
-    {
-    "notes":"111 Deny Google Analytics Subnets",
-      "action" : "deny",
-      "ports" : "443",
-      "process" : "\/Applications\/Zen.app\/Contents\/MacOS\/zen",
-      "protocol" : "tcp",
-      "remote-addresses" : [
-	  "64.233.177.0/24",
-	  "173.194.219.0/24",
-	  "142.250.105.0/24",
-	  "142.250.9.0/24",
-	  "74.125.21.0/24"
-	  ]
-    }
+        }
   ]
 }

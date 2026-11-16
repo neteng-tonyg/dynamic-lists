@@ -1,21 +1,22 @@
 {
   "name": "Brave-Rules-Nov",
-  "description": "Standard app traffic from Brave",
+   "description" :
+    "AnyProc + Major DomainsReddit+Lucid+Plex+Filen",
   "rules": [
     {
     "notes ": "Default Deny Quic",
     "action": "deny",
     "ports": "443",
-    "process": "/Applications/Brave Browser.app/Contents/MacOS/Brave Browse",
+      "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
     "protocol": "udp",
     "remote": "any"
     },
     {
     "notes":"Allow nat-stun-UDP-3478",
-  "action" : "allow",
+    "action" : "allow",
     "ports" : "3478",
     "priority" : "high",
-     "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
+      "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
     "protocol" : "udp",
     "remote" : "any"
   },
@@ -33,58 +34,23 @@
     "static.doubleclick.net"
     ]
   },
-    {
-      "description" : "Plex",
-      "name" : "Plex-subs-et-al",
-      "action" : "allow",
-      "ports" : "443",
-          "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
-      "protocol" : "tcp",
-      "remote-hostnames" : [
-	  "clients.plex.tv",
-      "features.plex.tv",
-	  "community.plex.tv",
-	  "provider.plex.tv",
-	  "pubsub.plex.tv",
-	  "together.plex.tv"
-	    ]
-    },
-    {
-      "notes": "Major Domains 443",
+       {
+	"notes":"011.Cloudflare ports 80,443",
       "action": "allow",
-      "ports": "443",
-      "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
+      "ports": ["80","443"],
+       "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
       "protocol": "tcp",
       "remote-domains": [
-        "cisco.com",
-        "meraki.com",
-        "meraki.net",
-        "scroller.com",
-        "wikipedia.com",
-        "wikihow.com",
-        "wikimedia.net",
-        "wikimedia.org",
-        "whatismyipaddress.com",
-        "iplookup.com",
-        "noip.com",
-		"check-host.net",
-        "brave.com",
-        "bravesoftware.com",
-        "bing.com",
-        "duckduckgo.com",
-        "duck.ai",
-        "dogpile.com",
-        "lifewire.com",
-        "supermedia.com",
-        "obdev.net",
-        "dropbox.com",
-        "costco.com",
-        "ublockorigin.pages.dev"
-
-      ]
+        "cloudflare.com",
+        "cloudflare-dns.com",
+        "digicert.com",
+        "sectigo.com",
+        "cloudflare.net",
+        "sectigo.net"
+        ]
     },
-        {
-    "notes":"111 Deny Google Analytics Subnets",
+    {
+      "notes":"111 Deny Google Analytics Subnets",
       "action" : "deny",
       "ports" : "443",
       "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
@@ -101,7 +67,7 @@
       "notes":"111 Deny Google Analytics Hosts",
       "action" : "deny",
       "ports" : "443",
-      "process" : "\/Applications\/Zen.app\/Contents\/MacOS\/zen",
+       "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
       "protocol" : "tcp",
       "remote-hostnames" : [
 	  "i.doubleclick.net",
@@ -116,14 +82,13 @@
       "adtrafficquality.google.com"
 	  ]
     },
-      {
-        "notes":"Google/ Youtube Domains 443",
-      "action" : "allow",
-      "ports" : "443",
+    {
+     "notes":"Google/ Youtube Domains 443",
+     "action" : "allow",
+     "ports" : "443",
       "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
-      "owner" : "me",
-      "protocol" : "tcp",
-      "remote-domains" : [
+          "protocol" : "tcp",
+          "remote-domains" : [
 		  "googlevideo.com",
 		  "www.google.com",
 		  "googleapps.com",
@@ -141,16 +106,18 @@
 			"youtube.be"
             ]
       },
-            {
+      {
         "notes":"Google/ Youtube Hosts 443",
       "action" : "allow",
       "ports" : "443",
       "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
       "owner" : "me",
       "protocol" : "tcp",
-      "remote-hostnames" : [
+      "remote-hostnames" :
+        [
 		  "dl.google.com",
 		  "www.google.com",
+          "i.google.com",
 		  "stun1.l.google.com",
 		  "accounts.google.com",
 		  "play.google.com",
@@ -159,26 +126,26 @@
 			"accounts.youtube.com"
             ]
       },
-      {
+            {
   	    "notes":"Mozilla Domains 443",
         "action" : "allow",
         "ports" : "443",
-   		 "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
+   		"process" : "any",
         "protocol" : "tcp",
         "remote-domains" : [
         "mozilla.com",
   		"mozilla.net",
   		"mozgcp.net",
   		  "firefox.com",
-          "firefox.org"
-          ]
+          "firefox.org",
+          "firefox-portal-detection.com"
+        ]
       },
       {
   	    "notes":"Mozilla Hostnames 443",
         "action" : "allow",
-        "ports" : "443",
-   		    "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
-   		"owner" :"me",
+        "ports" : ["443","80"],
+   		"process" : "any",
         "protocol" : "tcp",
         "remote-hostnames" : [
         "classify-services.mozilla.com",
@@ -200,42 +167,22 @@
   		"mozilla.fastly-edge.com",
 		"ads-img.mozilla.org",
 		  "accounts.firefox.com",
-          "firefox-portal-detection.com",
           "ads.mozilla.org"
           ]
       },
-      {
-      "action": "allow",
-      "notes": "Cloudflare/ 80",
-      "ports": "80",
-      "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
-      "protocol": "tcp",
-      "remote-domains": [
-        "cloudflare.com",
-        "cloudflarecaptcha.com",
-        "cloudflare-dns.com",
-        "cloudflareinsights.com",
-        "digicert.com",
-        "sectigo.com",
-        "cloudflare.net",
-        "sectigo.net"
-          ]
-      },
-      {
-      "notes" : "Cloudflare/ 443",
-      "action": "allow",
-      "ports": "443",
-      "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
-      "protocol": "tcp",
-      "remote-domains": [
-        "cloudflare.com",
-        "cloudflare-dns.com",
-        "digicert.com",
-        "sectigo.com",
-        "cloudflare.net",
-        "sectigo.net"
-          ]
-      },
+    {
+  	    "notes":"Mozilla port 80",
+        "action" : "allow",
+        "ports" : "80",
+   		"process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
+        "protocol" : "tcp",
+        "remote-domains" : [
+		"mozilla.com",
+		"firefox-portal-detection.com",
+		"ads-img.mozilla.org",
+		"ads.mozilla.org"
+      ]
+	},
       {
         "notes":"Git Domains 443",
         "owner" : "me",
@@ -274,7 +221,7 @@
         "description": "Microsoft-related domains",
         "name": "Microsoft",
         "action": "allow",
-        "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
+         "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
         "owner": "me",
         "remote-domains": [
           "azurewebsites.net",
@@ -298,20 +245,6 @@
           "blob.core.windows.net"
             ]
         },
-        {
-        "description": "Reddit WWW",
-        "name": "Reddit",
-        "action": "allow",
-        "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
-        "owner": "me",
-        "remote-domains": [
-        "redditspace.com",
-        "redditstatic.com",
-        "Redditmedia.com",
-        "Reddit.com",
-        "preview.redd.it"
-          ]
-      },
       {
       "description": "Bitdefender WWW",
       "action": "allow",
@@ -325,43 +258,12 @@
         "nimbus.bitdefender.net",
         "us.nimbus.bitdefender.net",
         "push.bitdefender.net"
-      ]
-    },
-    {
-	"notes":"Cloudflare port 80",
-      "action": "allow",
-      "ports": "80",
-    "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
-      "protocol": "tcp",
-      "remote-domains": [
-        "cloudflare.com",
-        "cloudflare-dns.com",
-        "static.cloudflareinsights.com",
-        "digicert.com",
-        "sectigo.com",
-        "cloudflare.net",
-        "sectigo.net"
-      ]
-    },
-    {
-      "notes":"Cloudflare port 443",
-      "action": "allow",
-      "ports": "443",
-  "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
-      "protocol": "tcp",
-      "remote-domains": [
-        "cloudflare.com",
-        "cloudflare-dns.com",
-        "digicert.com",
-        "sectigo.com",
-        "cloudflare.net",
-        "sectigo.net"
-      ]
-    },
+        ]
+      },
     {
       "action": "allow",
       "ports": "443",
-  "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+       "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
       "protocol": "tcp",
       "remote-domains": [
         "bluehost.com",
@@ -370,32 +272,108 @@
 	    "goethals.us"
       ]
     },
-        {
-     "notes":"Filen and Seedbox ",
-      "action" : "allow",
-      "ports" : "443",
-      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
-      "protocol" : "tcp",
-      "remote-domains" : [
-  	  "filen-1.net", "filen-2.net",
-        "filen-3.net","filen-4.net","filen-5.net",
-  	  "filen.com",
-  	  "seedbox.io",
-	  "extto.com"
-    	]
+         {
+      "notes": "Major Domains 443",
+      "action": "allow",
+      "ports": "443",
+      "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
+      "protocol": "tcp",
+      "remote-domains": [
+        "cisco.com",
+        "meraki.com",
+        "meraki.net",
+        "scroller.com",
+        "wikipedia.com",
+        "wikihow.com",
+        "wikimedia.net",
+        "wikimedia.org",
+        "whatismyipaddress.com",
+        "iplookup.com",
+        "noip.com",
+		"check-host.net",
+        "brave.com",
+        "bravesoftware.com",
+        "bing.com",
+        "duckduckgo.com",
+        "duck.ai",
+        "dogpile.com",
+        "lifewire.com",
+        "supermedia.com",
+        "obdev.net",
+        "dropbox.com",
+        "costco.com",
+        "ublockorigin.pages.dev"
+      ]
     },
     {
       "action": "allow",
       "ports": "443",
-  "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
+      "protocol": "tcp",
+      "remote-domains": [
+        "duck.ai",
+		"urboscribe.ai",
+		"factors.ai",
+		"engagement.ai",
+		"reco.ai",
+		"hybrid.ai"
+        ]
+    },
+    {
+        "description": "Reddit WWW",
+        "name": "Reddit",
+        "action": "allow",
+        "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
+        "owner": "me",
+        "remote-domains": [
+        "redditspace.com",
+        "redditstatic.com",
+        "Redditmedia.com",
+        "reddit.com",
+        "preview.redd.it",
+        "redd.it"
+        ]
+    },
+        {
+      "action": "allow",
+      "ports": "443",
+      "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
       "protocol": "tcp",
       "remote-domains": [
         "lucid.app",
         "excalidraw.com",
-        "excalidraw.net",
         "lucidcdn.net",
         "lucidchart.net"
-          ]
+        ]
+    },
+    {
+      "description" : "Plex",
+      "name" : "Plex-subs-et-al",
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
+      "protocol" : "tcp",
+      "remote-hostnames" : [
+	  "clients.plex.tv",
+      "features.plex.tv",
+	  "community.plex.tv",
+	  "provider.plex.tv",
+	  "pubsub.plex.tv",
+	  "together.plex.tv"
+	    ]
+      },
+    {
+     "notes":"Filen and Seedbox ",
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
+      "protocol" : "tcp",
+      "remote-domains" : [
+  	"filen-1.net", "filen-2.net", "filen-3.net","filen-4.net","filen-5.net",
+  	"filen.com",
+  	"seedbox.io",
+	"extto.com"
+  	  ]
     }
   ]
 }
