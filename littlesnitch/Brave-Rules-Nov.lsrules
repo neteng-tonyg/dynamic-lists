@@ -5,6 +5,7 @@
   "rules": [
     {
     "notes ": "Default Deny Quic",
+    "priority" : "high",
     "action": "deny",
     "ports": "443",
       "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
@@ -24,6 +25,7 @@
     "notes":"0.Default deny WWW/443",
     "action" : "deny",
     "ports" : "443",
+    "priority" : "high",
     "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
     "protocol" : "tcp",
     "remote-domains" : [
@@ -38,6 +40,7 @@
 	"notes":"011.Cloudflare ports 80,443",
       "action": "allow",
       "ports": "80, 443",
+      "priority" : "high",
        "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
       "protocol": "tcp",
       "remote-domains": [
@@ -53,6 +56,7 @@
       "notes":"111 Deny Google Analytics Subnets",
       "action" : "deny",
       "ports" : "443",
+		"priority" : "high",
       "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
       "protocol" : "tcp",
       "remote-addresses" : [
@@ -67,6 +71,7 @@
       "notes":"111 Deny Google Analytics Hosts",
       "action" : "deny",
       "ports" : "443",
+      "priority" : "high",
        "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
       "protocol" : "tcp",
       "remote-hostnames" : [
@@ -107,11 +112,10 @@
             ]
       },
       {
-        "notes":"Google/ Youtube Hosts 443",
+      "notes":"Google/ Youtube Hosts 443",
       "action" : "allow",
       "ports" : "443",
       "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
-      "owner" : "me",
       "protocol" : "tcp",
       "remote-hostnames" :
         [
@@ -122,11 +126,11 @@
 		  "accounts.google.com",
 		  "play.google.com",
 		  "fonts.gstatic.com",
-			"c.youtube.com",
-			"accounts.youtube.com"
+		  "c.youtube.com",
+		  "accounts.youtube.com"
             ]
       },
-            {
+        {
   	    "notes":"Mozilla Domains 443",
         "action" : "allow",
         "ports": "80, 443",
@@ -172,7 +176,6 @@
       },
       {
         "notes":"Git Domains 443",
-        "owner" : "me",
         "action" : "allow",
         "ports" : "443",
         "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
@@ -191,7 +194,6 @@
        },
          {
             "notes":"Git Hosts 443",
-            "owner" : "me",
             "action" : "allow",
             "ports" : "443",
             "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
@@ -209,7 +211,6 @@
         "name": "Microsoft",
         "action": "allow",
          "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
-        "owner": "me",
         "remote-domains": [
           "azurewebsites.net",
           "azurefed.net",
