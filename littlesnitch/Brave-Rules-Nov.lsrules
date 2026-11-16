@@ -73,7 +73,7 @@
       "priority" : "high",
        "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
       "protocol" : "tcp",
-      "remote-hostnames" : [
+      "remote-hosts" : [
 	  "i.doubleclick.net",
 	  "g.doubleclick.net",
         "ad.doubleclick.net",
@@ -116,7 +116,7 @@
       "ports" : "443",
       "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
       "protocol" : "tcp",
-      "remote-hostnames" :
+      "remote-hosts" :
         [
 		  "dl.google.com",
 		  "www.google.com",
@@ -145,12 +145,12 @@
         ]
       },
       {
-  	    "notes" : "Mozilla Hostnames 443",
+  	    "notes" : "Mozilla hosts 443",
         "action" : "allow",
         "ports": "80, 443",
    		"process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
         "protocol" : "tcp",
-        "remote-hostnames" : [
+        "remote-hosts" : [
         "classify-services.mozilla.com",
         "services.mozilla.com",
         "firefox.settings.services.mozilla.com",
@@ -197,7 +197,7 @@
             "ports" : "443",
             "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
             "protocol" : "tcp",
-            "remote-hostnames" : [
+            "remote-hosts" : [
             "raw.githubusercontent.com",
   	        "malware-filter.gitlab.io",
             "avatars.githubusercontent.com",
@@ -238,7 +238,7 @@
       "ports": "443",
       "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
       "protocol": "tcp",
-      "remote-hostnames": [
+      "remote-hosts": [
         "download.bitdefender.com",
         "securepass-auth.bitdefender.com",
         "cdn.bitdefender.net",
@@ -340,7 +340,7 @@
       "ports" : "443",
       "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
       "protocol" : "tcp",
-      "remote-hostnames" : [
+      "remote-hosts" : [
 	  "clients.plex.tv",
       "features.plex.tv",
 	  "community.plex.tv",

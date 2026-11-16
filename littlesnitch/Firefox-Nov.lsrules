@@ -73,7 +73,7 @@
       "priority" : "high",
        "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
       "protocol" : "tcp",
-      "remote-hostnames" : [
+      "remote-hosts" : [
 	  "i.doubleclick.net",
 	  "g.doubleclick.net",
         "ad.doubleclick.net",
@@ -116,11 +116,10 @@
       "ports" : "443",
       "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
       "protocol" : "tcp",
-      "remote-hostnames" :
-        [
+      "remote-hosts" : [
 		  "dl.google.com",
 		  "www.google.com",
-          "i.google.com",
+                    "i.google.com",
 		  "stun1.l.google.com",
 		  "accounts.google.com",
 		  "play.google.com",
@@ -145,12 +144,12 @@
         ]
       },
       {
-  	    "notes" : "Mozilla Hostnames 443",
+  	    "notes" : "Mozilla hosts 443",
         "action" : "allow",
         "ports": "80, 443",
    		"process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
         "protocol" : "tcp",
-        "remote-hostnames" : [
+        "remote-hosts" : [
         "classify-services.mozilla.com",
         "services.mozilla.com",
         "firefox.settings.services.mozilla.com",
@@ -197,9 +196,9 @@
             "ports" : "443",
             "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
             "protocol" : "tcp",
-            "remote-hostnames" : [
+            "remote-hosts" : [
             "raw.githubusercontent.com",
-  	        "malware-filter.gitlab.io",
+  	   "malware-filter.gitlab.io",
             "avatars.githubusercontent.com",
             "cafe.github.com",
             "central.github.com"
@@ -238,7 +237,7 @@
       "ports": "443",
       "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
       "protocol": "tcp",
-      "remote-hostnames": [
+      "remote-hosts": [
         "download.bitdefender.com",
         "securepass-auth.bitdefender.com",
         "cdn.bitdefender.net",
@@ -278,7 +277,7 @@
         "whatismyipaddress.com",
         "iplookup.com",
         "noip.com",
-		"check-host.net",
+	"check-host.net",
         "brave.com",
         "bravesoftware.com",
         "bing.com",
@@ -343,8 +342,8 @@
       "ports" : "443",
       "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
       "protocol" : "tcp",
-      "remote-hostnames" : [
-	  "clients.plex.tv",
+      "remote-hosts" : [
+      "clients.plex.tv",
       "features.plex.tv",
 	  "community.plex.tv",
 	  "provider.plex.tv",

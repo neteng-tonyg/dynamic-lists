@@ -42,7 +42,7 @@
       "ports" : "443",
          "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
       "protocol" : "tcp",
-      "remote-hostnames" : [
+      "remote-hosts" : [
 	  "clients.plex.tv",
       "features.plex.tv",
 	  "community.plex.tv",
@@ -120,7 +120,7 @@
      "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
       "owner" : "me",
       "protocol" : "tcp",
-      "remote-hostnames" : [
+      "remote-hosts" : [
 		  "dl.google.com",
 		  "www.google.com",
           "i.google.com",
@@ -147,13 +147,13 @@
           ]
       },
       {
-  	    "notes":"Mozilla Hostnames 443",
+  	    "notes":"Mozilla hosts 443",
         "action" : "allow",
         "ports" : "443",
    		   "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
    		"owner" :"me",
         "protocol" : "tcp",
-        "remote-hostnames" : [
+        "remote-hosts" : [
         "classify-services.mozilla.com",
         "services.mozilla.com",
         "firefox.settings.services.mozilla.com",
@@ -235,7 +235,7 @@
             "ports" : "443",
            "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
             "protocol" : "tcp",
-            "remote-hostnames" : [
+            "remote-hosts" : [
             "raw.githubusercontent.com",
   	        "malware-filter.gitlab.io",
             "avatars.githubusercontent.com",
@@ -289,7 +289,7 @@
       "ports": "443",
      "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
       "protocol": "tcp",
-      "remote-hostnames": [
+      "remote-hosts": [
         "download.bitdefender.com",
         "securepass-auth.bitdefender.com",
         "cdn.bitdefender.net",
