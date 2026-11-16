@@ -129,7 +129,7 @@
       {
   	    "notes":"Mozilla hosts 443",
         "action" : "allow",
-        "ports" : ["443","80"],
+        "ports" : "443, 80",
    		"process" : "any",
         "protocol" : "tcp",
         "remote-hosts" : [
@@ -193,6 +193,7 @@
         "description": "Microsoft-related domains",
         "name": "Microsoft",
         "action": "allow",
+          "ports" : "443",
         "process": "any",
         "owner": "me",
         "remote-domains": [
