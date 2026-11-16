@@ -1,10 +1,11 @@
 {
-  "name": "Firefox-Rules-Nov",
+  "notes": "Firefox-Rules-Nov",
    "description" :
     "AnyProc + Major DomainsReddit+Lucid+Plex+Filen",
   "rules": [
     {
     "notes ": "Default Deny Quic",
+    "priority" : "high",
     "action": "deny",
     "ports": "443",
       "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
@@ -24,7 +25,8 @@
     "notes" : "0.Default deny WWW/443",
     "action" : "deny",
     "ports" : "443",
-    "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+    "priority" : "high",
+    "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
     "protocol" : "tcp",
     "remote-domains" : [
     "facebook.com",
@@ -38,7 +40,8 @@
 	"notes" : "011.Cloudflare ports 80,443",
       "action": "allow",
       "ports": "80, 443",
-       "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "priority" : "high",
+       "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
       "protocol": "tcp",
       "remote-domains": [
         "cloudflare.com",
@@ -67,7 +70,8 @@
       "notes" : "111 Deny Google Analytics Hosts",
       "action" : "deny",
       "ports" : "443",
-       "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "priority" : "high",
+       "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
       "protocol" : "tcp",
       "remote-hostnames" : [
 	  "i.doubleclick.net",
@@ -111,7 +115,6 @@
       "action" : "allow",
       "ports" : "443",
       "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
-      "owner" : "me",
       "protocol" : "tcp",
       "remote-hostnames" :
         [
@@ -122,8 +125,8 @@
 		  "accounts.google.com",
 		  "play.google.com",
 		  "fonts.gstatic.com",
-			"c.youtube.com",
-			"accounts.youtube.com"
+		  "c.youtube.com",
+		  "accounts.youtube.com"
             ]
       },
             {
@@ -172,7 +175,6 @@
       },
       {
         "notes" : "Git Domains 443",
-        "owner" : "me",
         "action" : "allow",
         "ports" : "443",
         "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
@@ -191,7 +193,6 @@
        },
          {
             "notes" : "Git Hosts 443",
-            "owner" : "me",
             "action" : "allow",
             "ports" : "443",
             "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
@@ -206,10 +207,9 @@
           },
         {
         "description": "Microsoft-related domains",
-        "name": "Microsoft",
+        "notes": "Microsoft",
         "action": "allow",
          "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
-        "owner": "me",
         "remote-domains": [
           "azurewebsites.net",
           "azurefed.net",
@@ -308,10 +308,10 @@
     },
     {
         "description": "Reddit WWW",
-        "name": "Reddit",
+        "notes": "Reddit",
         "action": "allow",
         "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
-        "owner": "me",
+        "protocol": "tcp",
         "remote-domains": [
         "redditspace.com",
         "redditstatic.com",
@@ -335,7 +335,7 @@
     },
     {
       "description" : "Plex",
-      "name" : "Plex-subs-et-al",
+      "notes" : "Plex-subs-et-al",
       "action" : "allow",
       "ports" : "443",
       "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",

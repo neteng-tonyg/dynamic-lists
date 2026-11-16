@@ -1,5 +1,5 @@
 {
-  "name": "Brave-Rules-Nov",
+  "notes": "Brave-Rules-Nov",
    "description" :
     "AnyProc + Major DomainsReddit+Lucid+Plex+Filen",
   "rules": [
@@ -13,7 +13,7 @@
     "remote": "any"
     },
     {
-    "notes":"Allow nat-stun-UDP-3478",
+    "notes" : "Allow nat-stun-UDP-3478",
     "action" : "allow",
     "ports" : "3478",
     "priority" : "high",
@@ -22,7 +22,7 @@
     "remote" : "any"
   },
   {
-    "notes":"0.Default deny WWW/443",
+    "notes" : "0.Default deny WWW/443",
     "action" : "deny",
     "ports" : "443",
     "priority" : "high",
@@ -55,9 +55,8 @@
     {
       "notes":"111 Deny Google Analytics Subnets",
       "action" : "deny",
-      "ports" : "443",
-		"priority" : "high",
-      "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
+      "ports" : "any",
+      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
       "protocol" : "tcp",
       "remote-addresses" : [
 	  "64.233.177.0/24",
@@ -88,7 +87,7 @@
 	  ]
     },
     {
-     "notes":"Google/ Youtube Domains 443",
+     "notes" : "Google/ Youtube Domains 443",
      "action" : "allow",
      "ports" : "443",
       "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
@@ -112,7 +111,7 @@
             ]
       },
       {
-      "notes":"Google/ Youtube Hosts 443",
+        "notes" : "Google/ Youtube Hosts 443",
       "action" : "allow",
       "ports" : "443",
       "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
@@ -130,8 +129,8 @@
 		  "accounts.youtube.com"
             ]
       },
-        {
-  	    "notes":"Mozilla Domains 443",
+            {
+  	    "notes" : "Mozilla Domains 443",
         "action" : "allow",
         "ports": "80, 443",
    		"process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
@@ -146,7 +145,7 @@
         ]
       },
       {
-  	    "notes":"Mozilla Hostnames 443",
+  	    "notes" : "Mozilla Hostnames 443",
         "action" : "allow",
         "ports": "80, 443",
    		"process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
@@ -175,7 +174,7 @@
           ]
       },
       {
-        "notes":"Git Domains 443",
+        "notes" : "Git Domains 443",
         "action" : "allow",
         "ports" : "443",
         "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
@@ -193,7 +192,7 @@
             ]
        },
          {
-            "notes":"Git Hosts 443",
+            "notes" : "Git Hosts 443",
             "action" : "allow",
             "ports" : "443",
             "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
@@ -208,7 +207,7 @@
           },
         {
         "description": "Microsoft-related domains",
-        "name": "Microsoft",
+        "notes": "Microsoft",
         "action": "allow",
          "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
         "remote-domains": [
@@ -261,7 +260,7 @@
       ]
     },
          {
-      "notes": "Major Domains 443",
+      "notes" :  "Major Domains 443",
       "action": "allow",
       "ports": "443",
       "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
@@ -308,9 +307,9 @@
         ]
     },
     {
-        "name": "Reddit WWW",
-      "action": "allow",
-      "ports": "443",
+        "description": "Reddit WWW",
+        "notes": "Reddit",
+        "action": "allow",
         "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
         "protocol": "tcp",
         "remote-domains": [
@@ -351,7 +350,7 @@
 	    ]
       },
     {
-     "notes":"Filen and Seedbox ",
+     "notes" : "Filen and Seedbox ",
       "action" : "allow",
       "ports" : "443",
       "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
