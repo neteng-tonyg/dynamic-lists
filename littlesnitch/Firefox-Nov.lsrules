@@ -260,6 +260,7 @@
       ]
     },
          {
+      "name" :  "Major Domains 443",
       "notes" :  "Major Domains 443",
       "action": "allow",
       "ports": "443",
@@ -307,7 +308,7 @@
         ]
     },
     {
-        "description": "Reddit WWW",
+        "name": "Reddit WWW",
         "notes": "Reddit",
         "action": "allow",
         "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
@@ -322,6 +323,8 @@
         ]
     },
         {
+                "name" : "Lucid",
+      "notes" : "Lucid",
       "action": "allow",
       "ports": "443",
       "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
@@ -334,7 +337,7 @@
         ]
     },
     {
-      "description" : "Plex",
+      "name" : "Plex",
       "notes" : "Plex-subs-et-al",
       "action" : "allow",
       "ports" : "443",
@@ -350,7 +353,8 @@
 	    ]
       },
     {
-     "notes" : "Filen and Seedbox ",
+     "name" : "Filen and Seedbox ",
+      "notes" : "Filen and Seedbox",
       "action" : "allow",
       "ports" : "443",
       "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",

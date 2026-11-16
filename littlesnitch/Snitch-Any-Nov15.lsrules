@@ -276,6 +276,7 @@
           },
         {
         "description": "Microsoft-related domains",
+          "notes": "Microsoft-related domains",
         "name": "Microsoft",
         "action": "allow",
         "process": "any",
