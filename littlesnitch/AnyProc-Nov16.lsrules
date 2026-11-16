@@ -4,7 +4,7 @@
      "v3.15 - Standard  traffic: Cloudflare/ Google Block/ Mozilla 443/80, GitHub, Microsoft, Bitdefender, Personal ",
   "rules": [
     {
-    "notes ": "000 Default Deny Quic",
+    "notes ": "000-Default Deny Quic",
     "priority" : "high",
     "action": "deny",
     "ports": "443",
@@ -13,7 +13,7 @@
     "remote": "any"
     },
     {
-    "notes" : "003  Default deny WWW/443",
+    "notes" : "003-Default deny WWW/443",
     "priority" : "high",
     "action" : "deny",
     "ports" : "443",
@@ -28,7 +28,7 @@
     ]
   },
     {
-      "notes":"111 Deny Google Analytics Subnets",
+      "notes":"111-Deny Google Analytics Subnets",
       "priority" : "high",
       "action" : "deny",
       "ports" : "any",
@@ -43,7 +43,7 @@
 	  ]
     },
         {
-      "notes" : "117 Deny Google Analytics Hosts",
+      "notes" : "117-Deny Google Analytics Hosts",
       "action" : "deny",
       "ports" : "443",
       "priority" : "high",
@@ -63,7 +63,7 @@
 	  ]
     },
         {
-      "notes" :  "211 Allow nat-stun-UDP-3478",
+      "notes" :  "211-Allow nat-stun-UDP-3478",
         "action" : "allow",
         "ports" : "3478",
         "priority" : "high",
@@ -72,7 +72,7 @@
         "remote" : "any"
     },
        {
-	"notes" : "222 Allow Cloudflare ports 80,443",
+	"notes" : "222-Allow Cloudflare ports 80,443",
       "action": "allow",
       "ports": "80, 443",
       "priority" : "high",
@@ -88,7 +88,7 @@
         ]
     },
     {
-     "notes" : "233 Google/ Youtube Domains 443",
+     "notes" : "233-Google/ Youtube Domains 443",
      "action" : "allow",
      "ports" : "443",
     "process" : "any",
