@@ -208,7 +208,7 @@
         "description": "Microsoft-related domains",
         "name": "Microsoft",
         "action": "allow",
-        "process": "any",
+        "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
         "owner": "me",
         "remote-domains": [
           "azurewebsites.net",
