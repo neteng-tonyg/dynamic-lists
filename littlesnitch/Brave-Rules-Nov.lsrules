@@ -22,7 +22,7 @@
     "remote" : "any"
   },
   {
-    "notes" : "0.Default deny WWW/443",
+    "notes" : "00 - Default deny WWW/443",
     "action" : "deny",
     "ports" : "443",
     "priority" : "high",
@@ -37,7 +37,7 @@
     ]
   },
        {
-	"notes":"011.Cloudflare ports 80,443",
+	"notes" : "011 - Cloudflare ports 80,443",
       "action": "allow",
       "ports": "80, 443",
       "priority" : "high",
@@ -116,8 +116,7 @@
       "ports" : "443",
       "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
       "protocol" : "tcp",
-      "remote-hosts" :
-        [
+      "remote-hosts" :[
 		  "dl.google.com",
 		  "www.google.com",
           "i.google.com",
@@ -129,7 +128,7 @@
 		  "accounts.youtube.com"
             ]
       },
-            {
+      {
   	    "notes" : "Mozilla Domains 443",
         "action" : "allow",
         "ports": "80, 443",
@@ -198,6 +197,7 @@
             "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
             "protocol" : "tcp",
             "remote-hosts" : [
+ 	   "individual.githubcopilot.com",
             "raw.githubusercontent.com",
   	        "malware-filter.gitlab.io",
             "avatars.githubusercontent.com",
@@ -206,9 +206,9 @@
                ]
           },
         {
-
-        "notes": "Microsoft-related domains",
+        "notes" : "Microsoft/ Office domains",
         "action": "allow",
+            "ports" : "443",
          "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
         "remote-domains": [
           "azurewebsites.net",
@@ -289,6 +289,7 @@
         "obdev.net",
         "dropbox.com",
         "costco.com",
+        "pbs.org",,
         "ublockorigin.pages.dev"
       ]
     },
