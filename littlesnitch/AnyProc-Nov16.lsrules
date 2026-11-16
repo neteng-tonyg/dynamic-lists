@@ -1,7 +1,7 @@
 {
   "name": "Any-Rules-v-3",
   "description":
-     "v3.10 - Standard  traffic: Cloudflare/ Google Block/ Mozilla 443/80, GitHub, Microsoft, Bitdefender, Personal ",
+     "v3.15 - Standard  traffic: Cloudflare/ Google Block/ Mozilla 443/80, GitHub, Microsoft, Bitdefender, Personal ",
   "rules": [
     {
     "notes ": "Default Deny Quic",
