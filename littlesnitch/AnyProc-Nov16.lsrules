@@ -1,5 +1,5 @@
 {
-  "name": "Any-Process-Rules 16",
+  "name": "Any-Rules-v-3",
   "description":
      "Standard  traffic: Cloudflare/ Google Block/ Mozilla 443/80, GitHub, Microsoft, Bitdefender, Personal ",
 
@@ -13,7 +13,7 @@
     "remote": "any"
     },
     {
-    "notes": "Allow nat-stun-UDP-3478",
+    "notes" :  "Allow nat-stun-UDP-3478",
   "action" : "allow",
     "ports" : "3478",
     "priority" : "high",
@@ -22,7 +22,7 @@
     "remote" : "any"
   },
   {
-    "notes":"0.Default deny WWW/443",
+    "notes" : "00 - Default deny WWW/443",
     "action" : "deny",
     "ports" : "443",
     "process" : "any",
@@ -36,10 +36,10 @@
     ]
   },
        {
-	"notes":"011.Cloudflare ports 80,443",
+	"notes" : "011 - Cloudflare ports 80,443",
       "action": "allow",
       "ports": "80, 443",
-       "process" : "anyr",
+       "process" : "any",
       "protocol": "tcp",
       "remote-domains": [
         "cloudflare.com",
@@ -51,7 +51,7 @@
         ]
     },
     {
-     "notes":"Google/ Youtube Domains 443",
+     "notes" : "Google/ Youtube Domains 443",
      "action" : "allow",
      "ports" : "443",
     "process" : "any",
@@ -78,14 +78,13 @@
             ]
       },
       {
-        "notes":"Google/ Youtube Hosts 443",
+      "notes" : "Google/ Youtube Hosts 443",
       "action" : "allow",
       "ports" : "443",
       "process" : "any",
       "owner" : "me",
       "protocol" : "tcp",
-      "remote-hosts" :
-        [
+      "remote-hosts" :[
 		  "dl.google.com",
 		  "www.google.com",
           "i.google.com",
@@ -98,7 +97,7 @@
             ]
       },
       {
-  	    "notes":"Mozilla Domains 443",
+  	    "notes" : "Mozilla Domains 443",
         "action" : "allow",
         "ports" : "443",
    		"process" : "any",
@@ -112,22 +111,7 @@
           ]
       },
       {
-  	    "notes":"Mozilla Domains 443",
-        "action" : "allow",
-        "ports" : "443",
-   		"process" : "any",
-        "protocol" : "tcp",
-        "remote-domains" : [
-        "mozilla.com",
-  		"mozilla.net",
-  		"mozgcp.net",
-  		  "firefox.com",
-          "firefox.org",
-          "firefox-portal-detection.com"
-        ]
-      },
-      {
-  	    "notes":"Mozilla hosts 443",
+  	    "notes" : "Mozilla hosts 443",
         "action" : "allow",
         "ports" : "443, 80",
    		"process" : "any",
@@ -156,8 +140,7 @@
           ]
       },
       {
-        "notes":"Git Domains 443",
-        "owner" : "me",
+        "notes" : "Git Domains 443",
         "action" : "allow",
         "ports" : "443",
         "process": "any",
@@ -175,7 +158,7 @@
             ]
        },
          {
-            "notes":"Git Hosts 443",
+            "notes" : "Git Hosts 443",
             "owner" : "me",
             "action" : "allow",
             "ports" : "443",
@@ -190,12 +173,10 @@
                ]
           },
         {
-        "description": "Microsoft-related domains",
-        "name": "Microsoft",
+        "notes" : "Microsoft/ Office domains",
         "action": "allow",
           "ports" : "443",
         "process": "any",
-        "owner": "me",
         "remote-domains": [
           "azurewebsites.net",
           "azurefed.net",
@@ -219,7 +200,7 @@
             ]
         },
       {
-      "description": "Bitdefender WWW",
+      "description": "Bitdefender Hosts",
       "action": "allow",
       "ports": "443",
       "process" : "any",
