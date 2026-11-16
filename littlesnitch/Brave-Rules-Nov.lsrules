@@ -307,11 +307,11 @@
         ]
     },
     {
-        "description": "Reddit WWW",
-        "name": "Reddit",
-        "action": "allow",
+        "name": "Reddit WWW",
+      "action": "allow",
+      "ports": "443",
         "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
-        "owner": "me",
+        "protocol": "tcp",
         "remote-domains": [
         "redditspace.com",
         "redditstatic.com",
@@ -335,7 +335,7 @@
     },
     {
       "description" : "Plex",
-      "name" : "Plex-subs-et-al",
+      "notes" : "Plex-subs-et-al",
       "action" : "allow",
       "ports" : "443",
       "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
