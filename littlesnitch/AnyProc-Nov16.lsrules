@@ -1,7 +1,7 @@
 {
   "name": "Any-Rules-v-3",
   "description":
-     "v3.15 - Standard  traffic: Cloudflare/ Google Block/ Mozilla 443/80, GitHub, Microsoft, Bitdefender, Personal ",
+     "v3.17 - Standard  traffic: Cloudflare/ Google Block/ Mozilla 443/80, GitHub, Microsoft, Bitdefender, Personal ",
   "rules": [
     {
     "notes ": "000-Default Deny Quic",
@@ -17,6 +17,7 @@
     "priority" : "high",
     "action" : "deny",
     "ports" : "443",
+    "priority" : "high",
     "process" : "any",
     "protocol" : "tcp",
     "remote-domains" : [
@@ -112,7 +113,7 @@
             ]
       },
       {
-      "notes" : "237 Google/ Youtube Hosts 443",
+      "notes" : "237-Google/ Youtube Hosts 443",
       "action" : "allow",
       "ports" : "443",
       "process" : "any",
@@ -130,7 +131,7 @@
             ]
       },
       {
-  	    "notes" : "333 Mozilla Domains 443",
+  	    "notes" : "333-Mozilla Domains 443",
         "action" : "allow",
          "ports": "80, 443",
    		"process" : "any",
@@ -145,7 +146,7 @@
         ]
       },
       {
-  	    "notes" : "335 Mozilla hosts 443",
+  	    "notes" : "335-Mozilla hosts 443",
         "action" : "allow",
         "ports": "80, 443",
    		"process" : "any",
@@ -185,7 +186,7 @@
             ]
        },
          {
-            "notes":"Git Hosts 443",
+            "notes" : "Git Hosts 443",
             "action" : "allow",
             "ports" : "443",
             "process" : "any",
