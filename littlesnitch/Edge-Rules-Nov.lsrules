@@ -111,7 +111,7 @@
       "action" : "allow",
       "ports" : "443",
       "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
-      "owner" : "me",
+       
       "protocol" : "tcp",
       "remote-hostnames" :
         [
@@ -172,7 +172,7 @@
       },
       {
         "notes":"Git Domains 443",
-        "owner" : "me",
+         
         "action" : "allow",
         "ports" : "443",
         "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
@@ -191,7 +191,7 @@
        },
          {
             "notes":"Git Hosts 443",
-            "owner" : "me",
+             
             "action" : "allow",
             "ports" : "443",
             "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
