@@ -1,8 +1,8 @@
 {
   "name": "Any-Process-Rules 16",
-  "description": [
-    "Standard  traffic: Cloudflare/ Google Block/ Mozilla 443/80, GitHub, Microsoft, Bitdefender, Personal ",
-    ]
+  "description":
+     "Standard  traffic: Cloudflare/ Google Block/ Mozilla 443/80, GitHub, Microsoft, Bitdefender, Personal ",
+
   "rules": [
     {
     "notes ": "Default Deny Quic",
@@ -38,7 +38,7 @@
        {
 	"notes":"011.Cloudflare ports 80,443",
       "action": "allow",
-      "ports": ["80","443"],
+      "ports": "80, 443",
        "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
       "protocol": "tcp",
       "remote-domains": [

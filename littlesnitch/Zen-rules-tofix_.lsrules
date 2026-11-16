@@ -36,7 +36,7 @@
         {
 	"notes":"011.Cloudflare ports 80,443",
       "action": "allow",
-      "ports": ["80","443"],
+      "ports": "80, 443",
        "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
       "protocol": "tcp",
       "remote-domains": [
@@ -98,7 +98,7 @@
       {
   	    "notes":"Mozilla Domains 443",
         "action" : "allow",
-        "ports" : "443",
+        "ports": "80, 443",
    		"process" : "any",
         "protocol" : "tcp",
         "remote-domains" : [
@@ -113,7 +113,7 @@
       {
   	    "notes":"Mozilla Hostnames 443",
         "action" : "allow",
-        "ports" : ["443","80"],
+        "ports": "80, 443",
    		"process" : "any",
         "protocol" : "tcp",
         "remote-hostnames" : [

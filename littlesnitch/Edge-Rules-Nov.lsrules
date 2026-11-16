@@ -37,7 +37,7 @@
        {
 	"notes":"011.Cloudflare ports 80,443",
       "action": "allow",
-      "ports": ["80","443"],
+      "ports": "80, 443",
       "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
       "protocol": "tcp",
       "remote-domains": [
@@ -129,7 +129,7 @@
            {
   	    "notes":"Mozilla Domains 443",
         "action" : "allow",
-        "ports" : "443",
+        "ports": "80, 443",
    		"process" : "any",
         "protocol" : "tcp",
         "remote-domains" : [
@@ -144,7 +144,7 @@
       {
   	    "notes":"Mozilla Hostnames 443",
         "action" : "allow",
-        "ports" : ["443","80"],
+        "ports": "80, 443",
    		"process" : "any",
         "protocol" : "tcp",
         "remote-hostnames" : [
@@ -170,19 +170,6 @@
           "ads.mozilla.org"
           ]
       },
-    {
-  	    "notes":"Mozilla port 80",
-        "action" : "allow",
-        "ports" : "80",
-   		 "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
-        "protocol" : "tcp",
-        "remote-domains" : [
-		"mozilla.com",
-		"firefox-portal-detection.com",
-		"ads-img.mozilla.org",
-		"ads.mozilla.org"
-      ]
-	},
       {
         "notes":"Git Domains 443",
         "owner" : "me",
