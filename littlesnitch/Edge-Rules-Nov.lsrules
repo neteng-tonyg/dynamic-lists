@@ -5,6 +5,7 @@
   "rules": [
     {
     "notes ": "Default Deny Quic",
+    "priority" : "high",
     "action": "deny",
     "ports": "443",
  "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
@@ -21,7 +22,7 @@
     "remote" : "any"
   },
   {
- "notes":"0.Default deny WWW/443",
+    "notes" : "0.Default deny WWW/443",
     "action" : "deny",
     "ports" : "443",
  "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
@@ -38,7 +39,8 @@
 	"notes":"011.Cloudflare ports 80,443",
       "action": "allow",
       "ports": "80, 443",
-      "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
+      "priority" : "high",
+        "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
       "protocol": "tcp",
       "remote-domains": [
         "cloudflare.com",
@@ -64,10 +66,11 @@
 	  ]
     },
         {
-      "notes":"111 Deny Google Analytics Hosts",
+      "notes" : "111 Deny Google Analytics Hosts",
       "action" : "deny",
       "ports" : "443",
-      "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
+      "priority" : "high",
+       "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
       "protocol" : "tcp",
       "remote-hostnames" : [
 	  "i.doubleclick.net",
@@ -83,7 +86,7 @@
 	  ]
     },
     {
-     "notes":"Google/ Youtube Domains 443",
+     "notes" : "Google/ Youtube Domains 443",
      "action" : "allow",
      "ports" : "443",
       "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
@@ -107,11 +110,10 @@
             ]
       },
       {
-        "notes":"Google/ Youtube Hosts 443",
+        "notes" : "Google/ Youtube Hosts 443",
       "action" : "allow",
       "ports" : "443",
       "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
-       
       "protocol" : "tcp",
       "remote-hostnames" :
         [
@@ -122,12 +124,12 @@
 		  "accounts.google.com",
 		  "play.google.com",
 		  "fonts.gstatic.com",
-			"c.youtube.com",
-			"accounts.youtube.com"
+		  "c.youtube.com",
+		  "accounts.youtube.com"
             ]
       },
-           {
-  	    "notes":"Mozilla Domains 443",
+            {
+  	    "notes" : "Mozilla Domains 443",
         "action" : "allow",
         "ports": "80, 443",
    		"process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
@@ -142,7 +144,7 @@
         ]
       },
       {
-  	    "notes":"Mozilla Hostnames 443",
+  	    "notes" : "Mozilla Hostnames 443",
         "action" : "allow",
         "ports": "80, 443",
    		"process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
@@ -171,8 +173,7 @@
           ]
       },
       {
-        "notes":"Git Domains 443",
-         
+        "notes" : "Git Domains 443",
         "action" : "allow",
         "ports" : "443",
         "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
@@ -190,8 +191,7 @@
             ]
        },
          {
-            "notes":"Git Hosts 443",
-             
+            "notes" : "Git Hosts 443",
             "action" : "allow",
             "ports" : "443",
             "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
@@ -205,11 +205,10 @@
                ]
           },
         {
-        "description": "Microsoft-related domains",
-        "name": "Microsoft",
+
+        "notes": "Microsoft-related domains",
         "action": "allow",
         "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
-        "owner": "me",
         "remote-domains": [
           "azurewebsites.net",
           "azurefed.net",
@@ -233,7 +232,7 @@
             ]
         },
       {
-      "description": "Bitdefender WWW",
+      "notes": "Bitdefender WWW",
       "action": "allow",
       "ports": "443",
       "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
@@ -259,8 +258,8 @@
 	    "goethals.us"
       ]
     },
-       {
-      "notes": "Major Domains 443",
+         {
+      "notes" :  "Major Domains 443",
       "action": "allow",
       "ports": "443",
       "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
@@ -307,11 +306,11 @@
         ]
     },
     {
-        "description": "Reddit WWW",
-        "name": "Reddit",
+        "notes": "Reddit WWW",
+        "notes": "Reddit",
         "action": "allow",
         "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
-        "owner": "me",
+        "protocol": "tcp",
         "remote-domains": [
         "redditspace.com",
         "redditstatic.com",
@@ -334,8 +333,8 @@
         ]
     },
     {
-      "description" : "Plex",
-      "name" : "Plex-subs-et-al",
+
+      "notes" : "Plex-subs-et-al",
       "action" : "allow",
       "ports" : "443",
       "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
@@ -350,7 +349,7 @@
 	    ]
       },
     {
-     "notes":"Filen and Seedbox ",
+     "notes" : "Filen and Seedbox ",
       "action" : "allow",
       "ports" : "443",
       "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",

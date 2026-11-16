@@ -67,7 +67,7 @@
 	  ]
     },
         {
-      "notes":"111 Deny Google Analytics Hosts",
+      "notes" : "111 Deny Google Analytics Hosts",
       "action" : "deny",
       "ports" : "443",
       "priority" : "high",
