@@ -12,7 +12,7 @@
     "remote": "any"
     },
     {
-    "notes":"Allow nat-stun-UDP-3478",
+    "notes" : "Allow nat-stun-UDP-3478",
     "action" : "allow",
     "ports" : "3478",
     "priority" : "high",
@@ -21,7 +21,7 @@
     "remote" : "any"
   },
   {
-    "notes":"0.Default deny WWW/443",
+    "notes" : "0.Default deny WWW/443",
     "action" : "deny",
     "ports" : "443",
     "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
@@ -35,7 +35,7 @@
     ]
   },
        {
-	"notes":"011.Cloudflare ports 80,443",
+	"notes" : "011.Cloudflare ports 80,443",
       "action": "allow",
       "ports": "80, 443",
        "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
@@ -50,9 +50,9 @@
         ]
     },
     {
-      "notes":"111 Deny Google Analytics Subnets",
+      "notes" : "111 Deny Google Analytics Subnets",
       "action" : "deny",
-      "ports" : "443",
+      "ports" : "any",
       "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
       "protocol" : "tcp",
       "remote-addresses" : [
@@ -64,7 +64,7 @@
 	  ]
     },
         {
-      "notes":"111 Deny Google Analytics Hosts",
+      "notes" : "111 Deny Google Analytics Hosts",
       "action" : "deny",
       "ports" : "443",
        "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
@@ -83,7 +83,7 @@
 	  ]
     },
     {
-     "notes":"Google/ Youtube Domains 443",
+     "notes" : "Google/ Youtube Domains 443",
      "action" : "allow",
      "ports" : "443",
       "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
@@ -107,7 +107,7 @@
             ]
       },
       {
-        "notes":"Google/ Youtube Hosts 443",
+        "notes" : "Google/ Youtube Hosts 443",
       "action" : "allow",
       "ports" : "443",
       "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
@@ -127,7 +127,7 @@
             ]
       },
             {
-  	    "notes":"Mozilla Domains 443",
+  	    "notes" : "Mozilla Domains 443",
         "action" : "allow",
         "ports": "80, 443",
    		"process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
@@ -142,7 +142,7 @@
         ]
       },
       {
-  	    "notes":"Mozilla Hostnames 443",
+  	    "notes" : "Mozilla Hostnames 443",
         "action" : "allow",
         "ports": "80, 443",
    		"process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
@@ -171,7 +171,7 @@
           ]
       },
       {
-        "notes":"Git Domains 443",
+        "notes" : "Git Domains 443",
         "owner" : "me",
         "action" : "allow",
         "ports" : "443",
@@ -190,7 +190,7 @@
             ]
        },
          {
-            "notes":"Git Hosts 443",
+            "notes" : "Git Hosts 443",
             "owner" : "me",
             "action" : "allow",
             "ports" : "443",
@@ -260,7 +260,7 @@
       ]
     },
          {
-      "notes": "Major Domains 443",
+      "notes" :  "Major Domains 443",
       "action": "allow",
       "ports": "443",
       "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
@@ -350,7 +350,7 @@
 	    ]
       },
     {
-     "notes":"Filen and Seedbox ",
+     "notes" : "Filen and Seedbox ",
       "action" : "allow",
       "ports" : "443",
       "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
