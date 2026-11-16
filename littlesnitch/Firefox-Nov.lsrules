@@ -1,21 +1,22 @@
 {
   "name": "Firefox-Rules-Nov",
-  "description": "Standard app traffic from Firefox",
+   "description" :
+    "AnyProc + Major DomainsReddit+Lucid+Plex+Filen",
   "rules": [
-  {
-    "notes":"0.Default deny quic",
-    "action" : "deny",
-    "ports" : "443",
-    "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
-    "protocol" : "udp",
-    "remote" : "any"
-  },
-  {
-    "notes": "Allow nat-stun-UDP-3478P",
+    {
+    "notes ": "Default Deny Quic",
+    "action": "deny",
+    "ports": "443",
+      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+    "protocol": "udp",
+    "remote": "any"
+    },
+    {
+    "notes":"Allow nat-stun-UDP-3478",
     "action" : "allow",
     "ports" : "3478",
     "priority" : "high",
-    "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
     "protocol" : "udp",
     "remote" : "any"
   },
@@ -33,63 +34,61 @@
     "static.doubleclick.net"
     ]
   },
-    {
-      "description" : "Plex",
-      "name" : "Plex-subs-et-al",
-      "action" : "allow",
-      "ports" : "443",
-      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
-      "protocol" : "tcp",
-      "remote-hostnames" : [
-	  "clients.plex.tv",
-      "features.plex.tv",
-	  "community.plex.tv",
-	  "provider.plex.tv",
-	  "pubsub.plex.tv",
-	  "together.plex.tv"
-	    ]
-    },
-    {
-      "notes": "Major Domains 443",
+       {
+	"notes":"011.Cloudflare ports 80,443",
       "action": "allow",
-      "ports": "443",
-      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "ports": "80, 443",
+       "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
       "protocol": "tcp",
       "remote-domains": [
-        "cisco.com",
-        "meraki.com",
-        "meraki.net",
-        "scroller.com",
-        "wikipedia.com",
-        "wikihow.com",
-        "wikimedia.net",
-        "wikimedia.org",
-        "whatismyipaddress.com",
-        "iplookup.com",
-        "noip.com",
-		"check-host.net",
-        "brave.com",
-        "bravesoftware.com",
-        "bing.com",
-        "duckduckgo.com",
-        "duck.ai",
-        "dogpile.com",
-        "lifewire.com",
-        "supermedia.com",
-        "obdev.net",
-        "dropbox.com",
-        "costco.com",
-        "ublockorigin.pages.dev"
-      ]
+        "cloudflare.com",
+        "cloudflare-dns.com",
+        "digicert.com",
+        "sectigo.com",
+        "cloudflare.net",
+        "sectigo.net"
+        ]
     },
-      {
-        "notes":"Google/ Youtube Domains 443",
-      "action" : "allow",
+    {
+      "notes":"111 Deny Google Analytics Subnets",
+      "action" : "deny",
       "ports" : "443",
       "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
-      "owner" : "me",
       "protocol" : "tcp",
-      "remote-domains" : [
+      "remote-addresses" : [
+	  "64.233.177.0/24",
+	  "173.194.219.0/24",
+	  "142.250.105.0/24",
+	  "142.250.9.0/24",
+	  "74.125.21.0/24"
+	  ]
+    },
+        {
+      "notes":"111 Deny Google Analytics Hosts",
+      "action" : "deny",
+      "ports" : "443",
+       "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "protocol" : "tcp",
+      "remote-hostnames" : [
+	  "i.doubleclick.net",
+	  "g.doubleclick.net",
+        "ad.doubleclick.net",
+		"fls.doubleclick.net",
+	  "pubads.g.doubleclick.net",
+	  "pagead2.googlesyndication.com",
+	  "googleads4.g.doubleclick.net",
+	  "ep1.adtrafficquality.google",
+      "adservice.google.com",
+      "adtrafficquality.google.com"
+	  ]
+    },
+    {
+     "notes":"Google/ Youtube Domains 443",
+     "action" : "allow",
+     "ports" : "443",
+      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+          "protocol" : "tcp",
+          "remote-domains" : [
 		  "googlevideo.com",
 		  "www.google.com",
 		  "googleapps.com",
@@ -107,14 +106,15 @@
 			"youtube.be"
             ]
       },
-            {
+      {
         "notes":"Google/ Youtube Hosts 443",
       "action" : "allow",
       "ports" : "443",
       "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
       "owner" : "me",
       "protocol" : "tcp",
-      "remote-hostnames" : [
+      "remote-hostnames" :
+        [
 		  "dl.google.com",
 		  "www.google.com",
           "i.google.com",
@@ -129,8 +129,8 @@
             {
   	    "notes":"Mozilla Domains 443",
         "action" : "allow",
-        "ports" : "443",
-   		"process" : "any",
+        "ports": "80, 443",
+   		"process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
         "protocol" : "tcp",
         "remote-domains" : [
         "mozilla.com",
@@ -144,8 +144,8 @@
       {
   	    "notes":"Mozilla Hostnames 443",
         "action" : "allow",
-        "ports" : ["443","80"],
-   		"process" : "any",
+        "ports": "80, 443",
+   		"process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
         "protocol" : "tcp",
         "remote-hostnames" : [
         "classify-services.mozilla.com",
@@ -168,42 +168,6 @@
 		"ads-img.mozilla.org",
 		  "accounts.firefox.com",
           "ads.mozilla.org"
-          ]
-      },
-      {
-      "action": "allow",
-      "notes": "Cloudflare/ 80",
-      "ports": "80",
-      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
-      "protocol": "tcp",
-      "remote-domains": [
-        "cloudflare.com",
-        "cloudfront.net",
-        "cloudflarecaptcha.com",
-        "cloudflare-dns.com",
-        "cloudflareinsights.com",
-        "digicert.com",
-        "sectigo.com",
-        "cloudflare.net",
-        "sectigo.net"
-          ]
-      },
-      {
-      "notes" : "Cloudflare/ 443",
-      "action": "allow",
-      "ports": "443",
-      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
-      "protocol": "tcp",
-      "remote-domains": [
-        "cloudflare.com",
-        "cloudfront.net",
-        "cloudflarecaptcha.com",
-        "cloudflare-dns.com",
-        "cloudflareinsights.com",
-        "digicert.com",
-        "sectigo.com",
-        "cloudflare.net",
-        "sectigo.net"
           ]
       },
       {
@@ -244,10 +208,12 @@
         "description": "Microsoft-related domains",
         "name": "Microsoft",
         "action": "allow",
-        "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+         "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
         "owner": "me",
         "remote-domains": [
           "azurewebsites.net",
+          "azurefed.net",
+          "azurefed.com",
           "bing.com",
           "hockeyapp.net",
           "live.com",
@@ -266,20 +232,6 @@
           "blob.core.windows.net"
             ]
         },
-        {
-        "description": "Reddit WWW",
-        "name": "Reddit",
-        "action": "allow",
-        "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
-        "owner": "me",
-        "remote-domains": [
-        "redditspace.com",
-        "redditstatic.com",
-        "Redditmedia.com",
-        "Reddit.com",
-        "preview.redd.it"
-          ]
-      },
       {
       "description": "Bitdefender WWW",
       "action": "allow",
@@ -293,35 +245,111 @@
         "nimbus.bitdefender.net",
         "us.nimbus.bitdefender.net",
         "push.bitdefender.net"
-      ]
-    },
+        ]
+      },
     {
       "action": "allow",
       "ports": "443",
-  "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
-      "protocol": "tcp",
-      "remote-domains": [
-        "cloudflare.com",
-        "cloudflare-dns.com",
-        "digicert.com",
-        "sectigo.com",
-        "cloudflare.net",
-        "sectigo.net"
-      ]
-    },
-    {
-      "action": "allow",
-      "ports": "443",
-  "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+       "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
       "protocol": "tcp",
       "remote-domains": [
         "bluehost.com",
-	"nixihost.com",
-	"audaxum.me",
-	"goethals.us"
+	    "nixihost.com",
+	    "audaxum.me",
+	    "goethals.us"
       ]
     },
+         {
+      "notes": "Major Domains 443",
+      "action": "allow",
+      "ports": "443",
+      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "protocol": "tcp",
+      "remote-domains": [
+        "cisco.com",
+        "meraki.com",
+        "meraki.net",
+        "scroller.com",
+        "wikipedia.com",
+        "wikihow.com",
+        "wikimedia.net",
+        "wikimedia.org",
+        "whatismyipaddress.com",
+        "iplookup.com",
+        "noip.com",
+		"check-host.net",
+        "brave.com",
+        "bravesoftware.com",
+        "bing.com",
+        "duckduckgo.com",
+        "duck.ai",
+        "dogpile.com",
+        "lifewire.com",
+        "supermedia.com",
+        "obdev.net",
+        "dropbox.com",
+        "costco.com",
+        "ublockorigin.pages.dev"
+      ]
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "protocol": "tcp",
+      "remote-domains": [
+        "duck.ai",
+		"urboscribe.ai",
+		"factors.ai",
+		"engagement.ai",
+		"reco.ai",
+		"hybrid.ai"
+        ]
+    },
+    {
+        "description": "Reddit WWW",
+        "name": "Reddit",
+        "action": "allow",
+        "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+        "owner": "me",
+        "remote-domains": [
+        "redditspace.com",
+        "redditstatic.com",
+        "Redditmedia.com",
+        "reddit.com",
+        "preview.redd.it",
+        "redd.it"
+        ]
+    },
         {
+      "action": "allow",
+      "ports": "443",
+      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "protocol": "tcp",
+      "remote-domains": [
+        "lucid.app",
+        "excalidraw.com",
+        "lucidcdn.net",
+        "lucidchart.net"
+        ]
+    },
+    {
+      "description" : "Plex",
+      "name" : "Plex-subs-et-al",
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "protocol" : "tcp",
+      "remote-hostnames" : [
+	  "clients.plex.tv",
+      "features.plex.tv",
+	  "community.plex.tv",
+	  "provider.plex.tv",
+	  "pubsub.plex.tv",
+	  "together.plex.tv"
+	    ]
+      },
+    {
      "notes":"Filen and Seedbox ",
       "action" : "allow",
       "ports" : "443",
@@ -332,20 +360,7 @@
   	"filen.com",
   	"seedbox.io",
 	"extto.com"
-  	]
-    },
-    {
-      "action": "allow",
-      "ports": "443",
-  "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
-      "protocol": "tcp",
-      "remote-domains": [
-        "lucid.app",
-        "excalidraw.com",
-        "excalidraw.net",
-        "lucidcdn.net",
-        "lucidchart.net"
-      ]
+  	  ]
     }
   ]
 }

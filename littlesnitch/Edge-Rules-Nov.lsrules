@@ -130,7 +130,7 @@
   	    "notes":"Mozilla Domains 443",
         "action" : "allow",
         "ports": "80, 443",
-   		"process" : "any",
+   		"process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
         "protocol" : "tcp",
         "remote-domains" : [
         "mozilla.com",
@@ -145,7 +145,7 @@
   	    "notes":"Mozilla Hostnames 443",
         "action" : "allow",
         "ports": "80, 443",
-   		"process" : "any",
+   		"process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
         "protocol" : "tcp",
         "remote-hostnames" : [
         "classify-services.mozilla.com",
