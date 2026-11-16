@@ -54,7 +54,7 @@
       "notes":"111 Deny Google Analytics Subnets",
       "action" : "deny",
       "ports" : "any",
-       "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
+       "process" : "any",
       "protocol" : "tcp",
       "remote-addresses" : [
 	  "64.233.177.0/24",
@@ -69,7 +69,7 @@
       "action" : "deny",
       "ports" : "443",
       "priority" : "high",
-       "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
+        "process" : "any",
       "protocol" : "tcp",
       "remote-hosts" : [
 	  "i.doubleclick.net",
@@ -262,7 +262,7 @@
       "notes" :  "Major Domains 443",
       "action": "allow",
       "ports": "443",
-      "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
+       "process" : "any",
       "protocol": "tcp",
       "remote-domains": [
         "cisco.com",
