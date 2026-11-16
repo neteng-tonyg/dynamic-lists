@@ -4,7 +4,7 @@
     "AnyProc + MajorDomains+Reddit+Lucid+Plex+Filen",
   "rules": [
     {
-    "notes ": "Default Deny Quic",
+    "notes ": "000 Default Deny Quic",
     "priority" : "high",
     "action": "deny",
     "ports": "443",
@@ -12,8 +12,8 @@
     "protocol": "udp",
     "remote": "any"
     },
-  {
-    "notes" : "00 - Default deny WWW/443",
+    {
+    "notes" : "003  Default deny WWW/443",
     "priority" : "high",
     "action" : "deny",
     "ports" : "443",
@@ -44,7 +44,7 @@
 	  ]
     },
         {
-      "notes" : "111 Deny Google Analytics Hosts",
+      "notes" : "117 Deny Google Analytics Hosts",
       "action" : "deny",
       "ports" : "443",
       "priority" : "high",
@@ -64,7 +64,7 @@
 	  ]
     },
         {
-      "notes" :  "Allow nat-stun-UDP-3478",
+      "notes" :  "211 Allow nat-stun-UDP-3478",
         "action" : "allow",
         "ports" : "3478",
         "priority" : "high",
@@ -73,7 +73,7 @@
         "remote" : "any"
     },
        {
-	"notes" : "Allow Cloudflare ports 80,443",
+	"notes" : "222 Allow Cloudflare ports 80,443",
       "action": "allow",
       "ports": "80, 443",
       "priority" : "high",
@@ -89,7 +89,7 @@
         ]
     },
     {
-     "notes" : "Google/ Youtube Domains 443",
+     "notes" : "233 Google/ Youtube Domains 443",
      "action" : "allow",
      "ports" : "443",
       "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
@@ -113,7 +113,7 @@
             ]
       },
       {
-        "notes" : "Google/ Youtube Hosts 443",
+      "notes" : "237 Google/ Youtube Hosts 443",
       "action" : "allow",
       "ports" : "443",
       "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
@@ -131,7 +131,7 @@
             ]
       },
       {
-  	    "notes" : "Mozilla Domains 443",
+  	    "notes" : "333 Mozilla Domains 443",
         "action" : "allow",
         "ports": "80, 443",
    		"process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
@@ -146,7 +146,7 @@
         ]
       },
       {
-  	    "notes" : "Mozilla hosts 443",
+  	    "notes" : "335 Mozilla hosts 443",
         "action" : "allow",
         "ports": "80, 443",
    		"process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
@@ -228,7 +228,7 @@
             ]
         },
       {
-      "notes": "Bitdefender WWW",
+      "notes": "411 Bitdefender WWW",
       "action": "allow",
       "ports": "443",
       "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
@@ -255,7 +255,7 @@
       ]
     },
          {
-      "notes" : "Major Domains 443",
+      "notes" : "511 Major Domains 443",
       "action": "allow",
       "ports": "443",
       "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
