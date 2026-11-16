@@ -74,7 +74,7 @@
       "action": "allow",
       "ports": "80, 443",
       "priority" : "high",
-       "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
+       "process" : "any",
       "protocol": "tcp",
       "remote-domains": [
         "cloudflare.com",
@@ -146,7 +146,7 @@
   	    "notes" : "Mozilla hosts 443",
         "action" : "allow",
         "ports": "80, 443",
-   		"process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
+   		"process" : "any",
         "protocol" : "tcp",
         "remote-hosts" : [
         "classify-services.mozilla.com",
