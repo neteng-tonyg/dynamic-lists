@@ -26,7 +26,7 @@
     "action" : "deny",
     "ports" : "443",
     "priority" : "high",
-    "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
+      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
     "protocol" : "tcp",
     "remote-domains" : [
     "facebook.com",
@@ -41,7 +41,7 @@
       "action": "allow",
       "ports": "80, 443",
       "priority" : "high",
-       "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
+        "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
       "protocol": "tcp",
       "remote-domains": [
         "cloudflare.com",
@@ -71,7 +71,7 @@
       "action" : "deny",
       "ports" : "443",
       "priority" : "high",
-       "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
+       "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
       "protocol" : "tcp",
       "remote-hostnames" : [
 	  "i.doubleclick.net",

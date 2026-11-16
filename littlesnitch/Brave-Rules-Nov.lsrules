@@ -56,7 +56,7 @@
       "notes":"111 Deny Google Analytics Subnets",
       "action" : "deny",
       "ports" : "any",
-      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+       "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
       "protocol" : "tcp",
       "remote-addresses" : [
 	  "64.233.177.0/24",
