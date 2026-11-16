@@ -14,6 +14,7 @@
     },
     {
     "notes" : "00 - Default deny WWW/443",
+    "priority" : "high",
     "action" : "deny",
     "ports" : "443",
     "process" : "any",
@@ -28,6 +29,7 @@
   },
     {
       "notes":"111 Deny Google Analytics Subnets",
+      "priority" : "high",
       "action" : "deny",
       "ports" : "any",
        "process" : "any",
@@ -62,19 +64,19 @@
     },
         {
       "notes" :  "Allow nat-stun-UDP-3478",
-    "action" : "allow",
-    "ports" : "3478",
-    "priority" : "high",
-     "process" : "any",
-    "protocol" : "udp",
-    "remote" : "any"
+        "action" : "allow",
+        "ports" : "3478",
+        "priority" : "high",
+        "process" : "any",
+        "protocol" : "udp",
+        "remote" : "any"
     },
        {
 	"notes" : "Allow Cloudflare ports 80,443",
       "action": "allow",
       "ports": "80, 443",
       "priority" : "high",
-       "process" : "any",
+      "process" : "any",
       "protocol": "tcp",
       "remote-domains": [
         "cloudflare.com",
