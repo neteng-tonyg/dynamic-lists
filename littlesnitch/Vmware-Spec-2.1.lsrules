@@ -138,6 +138,10 @@
         "cisco.com",
         "meraki.com",
         "meraki.net",
+        "paloaltonetworks.com",
+        "fortinet.com",
+        "chatgpt.com",
+        "openai.com",
         "ubuntu.com",
         "broadcom.com",
         "literotica.com",
@@ -167,6 +171,7 @@
         "pbs.org",
         "band.us",
         "flickr.com",
+        "ext.to",
         "pages.dev"
       ]
     },
