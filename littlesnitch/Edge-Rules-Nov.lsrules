@@ -70,7 +70,7 @@
     "protocol" : "udp",
     "remote" : "any"
     },
-          {
+       {
 	  "notes" : "222-Allow Cloudflare ports 80,443",
       "action": "allow",
       "ports": "80, 443",
@@ -103,6 +103,7 @@
 		  "google-analytics.com",
 		  "googlesyndication.com",
 		  "googletagservices.com",
+          "www.googleadservices.com",
 		  "googleapis.com",
 		  "withgoogle.com",
           "i.google.com",
@@ -150,7 +151,7 @@
           ]
       },
       {
-  	    "notes" : "335-Mozilla hosts 443",
+  	    "notes" : "335-Mozilla Hosts 443",
         "action" : "allow",
         "ports": "80, 443",
    		"process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
@@ -186,7 +187,8 @@
            "github.com",
            "github.dev",
            "github.io",
-           "homebrew.sh"
+           "homebrew.sh",
+           "brew.sh"
             ]
        },
          {
@@ -197,6 +199,7 @@
             "protocol" : "tcp",
             "remote-hosts" : [
  	        "individual.githubcopilot.com",
+            "api.individual.githubcopilot.com",
             "avatars.githubusercontent.com",
             "raw.githubusercontent.com",
   	        "malware-filter.gitlab.io",
@@ -219,6 +222,8 @@
           "live.net",
           "microsoft.com",
           "microsoftonline.com",
+          "onecdn.static.microsoft",
+          "amcdn.msftauth.net",
           "msedge.net",
           "oaspapps.com",
           "office.com",
@@ -287,7 +292,10 @@
         "sentry.io",
         "lifewire.com",
         "supermedia.com",
+        "edgedl.me.gvt1.com",
+        "www.eff.org",
         "obdev.net",
+        "obdev.at",
         "dropbox.com",
         "costco.com",
         "pbs.org",
@@ -345,12 +353,12 @@
       "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
       "protocol" : "tcp",
       "remote-hosts" : [
-	  "clients.plex.tv",
-      "features.plex.tv",
-	  "community.plex.tv",
-	  "provider.plex.tv",
-	  "pubsub.plex.tv",
-	  "together.plex.tv"
+	    "clients.plex.tv",
+        "features.plex.tv",
+	    "community.plex.tv",
+	    "provider.plex.tv",
+	    "pubsub.plex.tv",
+	    "together.plex.tv"
 	    ]
       },
     {

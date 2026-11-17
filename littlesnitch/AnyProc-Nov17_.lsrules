@@ -69,7 +69,7 @@
         "process" : "any",
         "protocol" : "udp",
         "remote" : "any"
-    },
+        },
        {
 	  "notes" : "222-Allow Cloudflare ports 80,443",
       "action": "allow",
@@ -223,6 +223,7 @@
           "microsoft.com",
           "microsoftonline.com",
           "onecdn.static.microsoft",
+          "amcdn.msftauth.net",
           "msedge.net",
           "oaspapps.com",
           "office.com",
@@ -294,6 +295,7 @@
         "edgedl.me.gvt1.com",
         "www.eff.org",
         "obdev.net",
+        "obdev.at",
         "dropbox.com",
         "costco.com",
         "pbs.org",
