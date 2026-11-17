@@ -20,11 +20,11 @@
     "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
     "protocol" : "tcp",
     "remote-domains" : [
-    "facebook.com",
-    "facebook.net",
-    "tiktokcdn.com",
-    "g.doubleclick.net",
-    "static.doubleclick.net"
+      "facebook.com",
+      "facebook.net",
+      "tiktokcdn.com",
+      "g.doubleclick.net",
+      "static.doubleclick.net"
     ]
   },
     {
@@ -35,11 +35,11 @@
        "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
       "protocol" : "tcp",
       "remote-addresses" : [
-	  "64.233.177.0/24",
-	  "173.194.219.0/24",
-	  "142.250.105.0/24",
-	  "142.250.9.0/24",
-	  "74.125.21.0/24"
+	    "64.233.177.0/24",
+	    "173.194.219.0/24",
+	    "142.250.105.0/24",
+	    "142.250.9.0/24",
+	    "74.125.21.0/24"
 	  ]
     },
         {
@@ -50,23 +50,22 @@
        "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
       "protocol" : "tcp",
       "remote-hosts" : [
-	  "i.doubleclick.net",
-	  "g.doubleclick.net",
+	    "i.doubleclick.net",
+	    "g.doubleclick.net",
         "ad.doubleclick.net",
 		"fls.doubleclick.net",
-	  "pubads.g.doubleclick.net",
-	  "pagead2.googlesyndication.com",
-	  "googleads4.g.doubleclick.net",
-	  "ep1.adtrafficquality.google",
-      "adservice.google.com",
-      "adtrafficquality.google.com"
+	    "pubads.g.doubleclick.net",
+	    "pagead2.googlesyndication.com",
+	    "googleads4.g.doubleclick.net",
+	    "ep1.adtrafficquality.google",
+        "adservice.google.com",
+        "adtrafficquality.google.com"
 	  ]
     },
         {
       "notes" :  "211-Allow nat-stun-UDP-3478",
         "action" : "allow",
         "ports" : "3478",
-        "priority" : "high",
         "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
         "protocol" : "udp",
         "remote" : "any"
@@ -75,8 +74,7 @@
 	  "notes" : "222-Allow Cloudflare ports 80,443",
       "action": "allow",
       "ports": "80, 443",
-      "priority" : "high",
-       "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
+      "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
       "protocol": "tcp",
       "remote-domains": [
         "cloudflare.com",
@@ -94,8 +92,8 @@
      "action" : "allow",
      "ports" : "443",
       "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
-          "protocol" : "tcp",
-          "remote-domains" : [
+      "protocol" : "tcp",
+      "remote-domains" : [
 		  "googlevideo.com",
 		  "www.google.com",
 		  "googleapps.com",
@@ -138,9 +136,9 @@
    		"process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
         "protocol" : "tcp",
         "remote-domains" : [
-        "mozilla.com",
-  		"mozilla.net",
-  		"mozgcp.net",
+          "mozilla.com",
+  		  "mozilla.net",
+  		  "mozgcp.net",
   		  "firefox.com",
           "firefox.org",
           "firebase.io",
@@ -177,10 +175,10 @@
         "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
         "protocol" : "tcp",
         "remote-domains" : [
-          "githubassets.com",
-          "gitlab.com",
-          "gitlab.dev",
-          "gitlab.io",
+            "githubassets.com",
+            "gitlab.com",
+            "gitlab.dev",
+            "gitlab.io",
            "githubusercontent.com",
            "github.com",
            "github.dev",
@@ -290,7 +288,9 @@
         "dropbox.com",
         "costco.com",
         "pbs.org",
-        "ublockorigin.pages.dev"
+        "band.us",
+        "flickr.com",
+        "pages.dev"
       ]
     },
     {
@@ -309,7 +309,6 @@
     },
     {
         "notes": "Reddit WWW",
-        "notes": "Reddit",
         "action": "allow",
         "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
         "protocol": "tcp",
@@ -358,10 +357,10 @@
       "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
       "protocol" : "tcp",
       "remote-domains" : [
-  	"filen-1.net", "filen-2.net", "filen-3.net","filen-4.net","filen-5.net",
-  	"filen.com",
-  	"seedbox.io",
-	"extto.com"
+  	    "filen-1.net", "filen-2.net", "filen-3.net","filen-4.net","filen-5.net",
+  	    "filen.com",
+  	    "seedbox.io",
+	    "extto.com"
   	  ]
     }
   ]
