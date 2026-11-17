@@ -186,7 +186,8 @@
            "github.com",
            "github.dev",
            "github.io",
-           "homebrew.sh"
+           "homebrew.sh",
+           "brew.sh"
             ]
        },
          {
@@ -197,6 +198,7 @@
             "protocol" : "tcp",
             "remote-hosts" : [
  	        "individual.githubcopilot.com",
+            "api.individual.githubcopilot.com",
             "avatars.githubusercontent.com",
             "raw.githubusercontent.com",
   	        "malware-filter.gitlab.io",
@@ -219,6 +221,7 @@
           "live.net",
           "microsoft.com",
           "microsoftonline.com",
+          "onecdn.static.microsoft",
           "msedge.net",
           "oaspapps.com",
           "office.com",
@@ -287,6 +290,8 @@
         "sentry.io",
         "lifewire.com",
         "supermedia.com",
+        "edgedl.me.gvt1.com",
+        "www.eff.org",
         "obdev.net",
         "dropbox.com",
         "costco.com",
