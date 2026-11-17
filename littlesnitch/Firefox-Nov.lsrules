@@ -82,10 +82,12 @@
       "remote-domains": [
         "cloudflare.com",
         "cloudflare-dns.com",
+        "cloudflarecaptcha.com",
+        "cloudflareinsights.com",
+        "cloudfront.net",
         "digicert.com",
         "sectigo.com",
         "cloudflare.net",
-        "sectigo.net"
         ]
     },
     {
@@ -205,7 +207,7 @@
         "action": "allow",
           "ports" : "443",
          "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
-        "remote-domains": [
+         "remote-domains": [
           "azurewebsites.net",
           "azurefed.net",
           "azurefed.com",

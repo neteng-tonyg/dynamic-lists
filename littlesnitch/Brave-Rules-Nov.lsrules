@@ -17,7 +17,6 @@
     "priority" : "high",
     "action" : "deny",
     "ports" : "443",
-    "priority" : "high",
     "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
     "protocol" : "tcp",
     "remote-domains" : [
@@ -73,7 +72,7 @@
         "remote" : "any"
     },
        {
-	"notes" : "222-Allow Cloudflare ports 80,443",
+	  "notes" : "222-Allow Cloudflare ports 80,443",
       "action": "allow",
       "ports": "80, 443",
       "priority" : "high",
@@ -82,10 +81,12 @@
       "remote-domains": [
         "cloudflare.com",
         "cloudflare-dns.com",
+        "cloudflarecaptcha.com",
+        "cloudflareinsights.com",
+        "cloudfront.net",
         "digicert.com",
         "sectigo.com",
         "cloudflare.net",
-        "sectigo.net"
         ]
     },
     {
@@ -96,7 +97,8 @@
           "protocol" : "tcp",
           "remote-domains" : [
 		  "googlevideo.com",
-		  "www.google.com",
+		  "dl.google.com",
+		  "accounts.google.com",
 		  "googleapps.com",
 		  "googleusercontent.com",
 		  "googletagmanager.com",
@@ -131,7 +133,7 @@
             ]
       },
       {
-  	    "notes" : "333 Mozilla Domains 443",
+  	    "notes" : "333-Mozilla Domains 443",
         "action" : "allow",
         "ports": "80, 443",
    		"process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
@@ -146,7 +148,7 @@
         ]
       },
       {
-  	    "notes" : "335 Mozilla hosts 443",
+  	    "notes" : "335-Mozilla hosts 443",
         "action" : "allow",
         "ports": "80, 443",
    		"process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
@@ -205,7 +207,7 @@
         "action": "allow",
           "ports" : "443",
           "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
-        "remote-domains": [
+          "remote-domains": [
           "azurewebsites.net",
           "azurefed.net",
           "azurefed.com",

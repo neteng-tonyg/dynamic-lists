@@ -82,10 +82,12 @@
       "remote-domains": [
         "cloudflare.com",
         "cloudflare-dns.com",
+        "cloudflarecaptcha.com",
+        "cloudflareinsights.com",
+        "cloudfront.net",
         "digicert.com",
         "sectigo.com",
         "cloudflare.net",
-        "sectigo.net"
         ]
     },
     {

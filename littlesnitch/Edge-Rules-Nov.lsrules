@@ -1,10 +1,10 @@
 {
   "name": "Edge-Rules-Nov",
    "description":
-  "AnyProc + Major DomainsReddit+Lucid+Plex+Filen",
+  "AnyProc + MajorDomains+Reddit+Lucid+Plex+Filen",
   "rules": [
     {
-    "notes ": "000 Default Deny Quic",
+    "notes ": "000-Default Deny Quic",
     "priority" : "high",
     "action": "deny",
     "ports": "443",
@@ -13,16 +13,8 @@
     "remote" : "any"
   },
   {
-    "notes": "Allow nat-stun-UDP-3478",
-  "action" : "allow",
-    "ports" : "3478",
+    "notes" : "003-Default deny WWW/443",
     "priority" : "high",
- "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
-    "protocol" : "udp",
-    "remote" : "any"
-  },
-  {
-    "notes" : "0.Default deny WWW/443",
     "action" : "deny",
     "ports" : "443",
  "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
@@ -35,28 +27,13 @@
     "static.doubleclick.net"
     ]
   },
-       {
-	"notes":"011.Cloudflare ports 80,443",
-      "action": "allow",
-      "ports": "80, 443",
+    {
+      "notes":"111-Deny Google Analytics Subnets",
       "priority" : "high",
+      "action" : "deny",
+      "ports" : "any",
         "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
       "protocol": "tcp",
-      "remote-domains": [
-        "cloudflare.com",
-        "cloudflare-dns.com",
-        "digicert.com",
-        "sectigo.com",
-        "cloudflare.net",
-        "sectigo.net"
-        ]
-    },
-    {
-      "notes":"111 Deny Google Analytics Subnets",
-      "action" : "deny",
-      "ports" : "443",
-      "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
-      "protocol" : "tcp",
       "remote-addresses" : [
 	  "64.233.177.0/24",
 	  "173.194.219.0/24",
@@ -66,7 +43,7 @@
 	  ]
     },
         {
-      "notes" : "117 Deny Google Analytics Hosts",
+      "notes" : "117-Deny Google Analytics Hosts",
       "action" : "deny",
       "ports" : "443",
       "priority" : "high",
@@ -86,7 +63,34 @@
 	  ]
     },
     {
-     "notes" : "233 Google/ Youtube Domains 443",
+   "notes" :  "211-Allow nat-stun-UDP-3478",
+  "action" : "allow",
+    "ports" : "3478",
+    "priority" : "high",
+ "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
+    "protocol" : "udp",
+    "remote" : "any"
+  },
+          {
+	  "notes" : "222-Allow Cloudflare ports 80,443",
+      "action": "allow",
+      "ports": "80, 443",
+      "priority" : "high",
+       "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
+      "protocol": "tcp",
+      "remote-domains": [
+        "cloudflare.com",
+        "cloudflare-dns.com",
+        "cloudflarecaptcha.com",
+        "cloudflareinsights.com",
+        "cloudfront.net",
+        "digicert.com",
+        "sectigo.com",
+        "cloudflare.net",
+        ]
+    },
+    {
+     "notes" : "233-Google/ Youtube Domains 443",
      "action" : "allow",
      "ports" : "443",
       "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
@@ -110,13 +114,12 @@
             ]
       },
       {
-      "notes" : "237 Google/ Youtube Hosts 443",
+      "notes" : "237-Google/ Youtube Hosts 443",
       "action" : "allow",
       "ports" : "443",
       "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
       "protocol" : "tcp",
-      "remote-hosts" :
-        [
+      "remote-hosts" :[
 		  "dl.google.com",
 		  "www.google.com",
           "i.google.com",
@@ -129,7 +132,7 @@
             ]
       },
       {
-  	    "notes" : "333 Mozilla Domains 443",
+  	    "notes" : "333-Mozilla Domains 443",
         "action" : "allow",
         "ports": "80, 443",
    		"process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
@@ -144,7 +147,7 @@
         ]
       },
       {
-  	    "notes" : "335 Mozilla hosts 443",
+  	    "notes" : "335-Mozilla hosts 443",
         "action" : "allow",
         "ports": "80, 443",
    		"process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
@@ -184,7 +187,7 @@
             ]
        },
          {
-            "notes":"Git Hosts 443",
+            "notes" : "Git Hosts 443",
             "action" : "allow",
             "ports" : "443",
             "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
@@ -201,6 +204,7 @@
         {
         "notes" : "Microsoft/ Office domains",
         "action": "allow",
+        "ports" : "443",
         "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
         "remote-domains": [
           "azurewebsites.net",
@@ -315,6 +319,7 @@
         ]
     },
         {
+      "notes" : "Lucid",
       "action": "allow",
       "ports": "443",
       "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
