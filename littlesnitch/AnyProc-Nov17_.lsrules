@@ -25,7 +25,7 @@
       "tiktokcdn.com",
       "g.doubleclick.net",
       "static.doubleclick.net"
-    ]
+      ]
   },
     {
       "notes":"111-Deny Google Analytics Subnets",
@@ -71,20 +71,20 @@
         "remote" : "any"
     },
        {
-	"notes" : "222-Allow Cloudflare ports 80,443",
+	  "notes" : "222-Allow Cloudflare ports 80,443",
       "action": "allow",
       "ports": "80, 443",
       "process" : "any",
       "protocol": "tcp",
       "remote-domains": [
         "cloudflare.com",
+        "cloudflare.net",,
         "cloudflare-dns.com",
         "cloudflarecaptcha.com",
         "cloudflareinsights.com",
         "cloudfront.net",
         "digicert.com",
         "sectigo.com",
-        "cloudflare.net"
         ]
     },
     {
@@ -105,6 +105,9 @@
 		  "googletagservices.com",
 		  "googleapis.com",
 		  "withgoogle.com",
+          "i.google.com",
+		  "stun1.l.google.com",
+		  "accounts.google.com",
 		  "www.gstatic.com",
 		  "gstatic.com",
 			"youtube.com",
@@ -138,15 +141,16 @@
         "remote-domains" : [
           "mozilla.com",
   		  "mozilla.net",
+          "mozilla.org",
   		  "mozgcp.net",
   		  "firefox.com",
           "firefox.org",
           "firebase.io",
           "firefox-portal-detection.com"
-        ]
+          ]
       },
       {
-  	    "notes" : "335-Mozilla hosts 443",
+  	    "notes" : "335-Mozilla Hosts 443",
         "action" : "allow",
         "ports": "80, 443",
    		"process" : "any",
@@ -155,13 +159,12 @@
         "classify-services.mozilla.com",
         "accounts.firefox.com",
         "services.mozilla.com",
-        "telemetry.mozilla.org",
+        "incoming.telemetry.mozilla.org",
         "aus5.mozilla.org",
         "addons.mozilla.org",
         "ads-img.mozilla.org",
         "ads.mozilla.org",
         "download.mozilla.org",
-        "telemetry.mozilla.org",
         "vpn.mozilla.org",
         "ohttp-merino.mozilla.fastly-edge.com",
         "mozilla-ohttp.fastly-edge.com",
@@ -253,7 +256,7 @@
 	    "nixihost.com",
 	    "audaxum.me",
 	    "goethals.us"
-      ]
+          ]
     },
          {
       "notes" : "511 Major Domains 443",
@@ -292,6 +295,76 @@
         "flickr.com",
         "pages.dev"
       ]
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "protocol": "tcp",
+      "remote-domains": [
+        "duck.ai",
+		"urboscribe.ai",
+		"factors.ai",
+		"engagement.ai",
+		"reco.ai",
+		"hybrid.ai"
+        ]
+    },
+    {
+        "notes": "Reddit WWW",
+        "action": "allow",
+        "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+        "protocol": "tcp",
+        "remote-domains": [
+        "redditspace.com",
+        "redditstatic.com",
+        "Redditmedia.com",
+        "reddit.com",
+        "preview.redd.it",
+        "redd.it"
+        ]
+    },
+        {
+      "notes" : "Lucid",
+      "action": "allow",
+      "ports": "443",
+      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "protocol": "tcp",
+      "remote-domains": [
+        "lucid.app",
+        "excalidraw.com",
+        "lucidcdn.net",
+        "lucidchart.net"
+        ]
+    },
+    {
+
+      "notes" : "Plex-subs-et-al",
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "protocol" : "tcp",
+      "remote-hosts" : [
+	    "clients.plex.tv",
+        "features.plex.tv",
+	    "community.plex.tv",
+	    "provider.plex.tv",
+	    "pubsub.plex.tv",
+	    "together.plex.tv"
+	    ]
+      },
+    {
+     "notes" : "Filen and Seedbox ",
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "protocol" : "tcp",
+      "remote-domains" : [
+  	    "filen-1.net", "filen-2.net", "filen-3.net","filen-4.net","filen-5.net",
+  	    "filen.com",
+  	    "seedbox.io",
+	    "extto.com"
+  	  ]
     }
   ]
 }

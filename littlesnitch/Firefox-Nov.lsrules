@@ -25,7 +25,7 @@
       "tiktokcdn.com",
       "g.doubleclick.net",
       "static.doubleclick.net"
-    ]
+      ]
   },
     {
       "notes":"111-Deny Google Analytics Subnets",
@@ -63,7 +63,7 @@
 	  ]
     },
         {
-      "notes" :  "211-Allow nat-stun-UDP-3478",
+        "notes" :  "211-Allow nat-stun-UDP-3478",
         "action" : "allow",
         "ports" : "3478",
         "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
@@ -71,20 +71,20 @@
         "remote" : "any"
     },
        {
-	"notes" : "222-Allow Cloudflare ports 80,443",
+	  "notes" : "222-Allow Cloudflare ports 80,443",
       "action": "allow",
       "ports": "80, 443",
        "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
       "protocol": "tcp",
       "remote-domains": [
         "cloudflare.com",
+        "cloudflare.net",,
         "cloudflare-dns.com",
         "cloudflarecaptcha.com",
         "cloudflareinsights.com",
         "cloudfront.net",
         "digicert.com",
         "sectigo.com",
-        "cloudflare.net"
         ]
     },
     {
@@ -105,6 +105,9 @@
 		  "googletagservices.com",
 		  "googleapis.com",
 		  "withgoogle.com",
+          "i.google.com",
+		  "stun1.l.google.com",
+		  "accounts.google.com",
 		  "www.gstatic.com",
 		  "gstatic.com",
 			"youtube.com",
@@ -138,15 +141,16 @@
         "remote-domains" : [
           "mozilla.com",
   		  "mozilla.net",
+          "mozilla.org",
   		  "mozgcp.net",
   		  "firefox.com",
           "firefox.org",
           "firebase.io",
           "firefox-portal-detection.com"
-        ]
+          ]
       },
       {
-  	    "notes" : "335-Mozilla hosts 443",
+  	    "notes" : "335-Mozilla Hosts 443",
         "action" : "allow",
         "ports": "80, 443",
    		"process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
@@ -155,13 +159,12 @@
         "classify-services.mozilla.com",
         "accounts.firefox.com",
         "services.mozilla.com",
-        "telemetry.mozilla.org",
+        "incoming.telemetry.mozilla.org",
         "aus5.mozilla.org",
         "addons.mozilla.org",
         "ads-img.mozilla.org",
         "ads.mozilla.org",
         "download.mozilla.org",
-        "telemetry.mozilla.org",
         "vpn.mozilla.org",
         "ohttp-merino.mozilla.fastly-edge.com",
         "mozilla-ohttp.fastly-edge.com",
@@ -253,7 +256,7 @@
 	    "nixihost.com",
 	    "audaxum.me",
 	    "goethals.us"
-      ]
+          ]
     },
          {
       "notes" : "511 Major Domains 443",

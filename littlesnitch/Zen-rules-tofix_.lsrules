@@ -28,12 +28,12 @@
     "process" : "\/Applications\/Zen.app\/Contents\/MacOS\/zen",
     "protocol" : "tcp",
     "remote-domains" : [
-    "facebook.com",
-    "facebook.net",
-    "tiktokcdn.com",
-    "g.doubleclick.net",
-    "static.doubleclick.net"
-    ]
+      "facebook.com",
+      "facebook.net",
+      "tiktokcdn.com",
+      "g.doubleclick.net",
+      "static.doubleclick.net"
+      ]
   },
     {
       "notes":"111-Deny Google Analytics Subnets",
@@ -43,11 +43,11 @@
       "process" : "\/Applications\/Zen.app\/Contents\/MacOS\/zen",
       "protocol" : "tcp",
       "remote-addresses" : [
-	  "64.233.177.0/24",
-	  "173.194.219.0/24",
-	  "142.250.105.0/24",
-	  "142.250.9.0/24",
-	  "74.125.21.0/24"
+	    "64.233.177.0/24",
+	    "173.194.219.0/24",
+	    "142.250.105.0/24",
+	    "142.250.9.0/24",
+	    "74.125.21.0/24"
 	  ]
     },
         {
@@ -58,43 +58,41 @@
       "process" : "\/Applications\/Zen.app\/Contents\/MacOS\/zen"    ,
       "protocol" : "tcp",
       "remote-hosts" : [
-	  "i.doubleclick.net",
-	  "g.doubleclick.net",
+	    "i.doubleclick.net",
+	    "g.doubleclick.net",
         "ad.doubleclick.net",
 		"fls.doubleclick.net",
-	  "pubads.g.doubleclick.net",
-	  "pagead2.googlesyndication.com",
-	  "googleads4.g.doubleclick.net",
-	  "ep1.adtrafficquality.google",
-      "adservice.google.com",
-      "adtrafficquality.google.com"
+	    "pubads.g.doubleclick.net",
+	    "pagead2.googlesyndication.com",
+	    "googleads4.g.doubleclick.net",
+	    "ep1.adtrafficquality.google",
+        "adservice.google.com",
+        "adtrafficquality.google.com"
 	  ]
     },
         {
-        "notes" :  "211-Allow nat-stun-UDP-3478",
+      "notes" :  "211-Allow nat-stun-UDP-3478",
         "action" : "allow",
         "ports" : "3478",
-        "priority" : "high",
         "process" : "\/Applications\/Zen.app\/Contents\/MacOS\/zen",
         "protocol" : "udp",
         "remote" : "any"
-    },
+        },
        {
-	"notes" : "222-Allow Cloudflare ports 80,443",
+	  "notes" : "222-Allow Cloudflare ports 80,443",
       "action": "allow",
       "ports": "80, 443",
-      "priority" : "high",
       "process" : "\/Applications\/Zen.app\/Contents\/MacOS\/zen",
       "protocol": "tcp",
       "remote-domains": [
         "cloudflare.com",
+        "cloudflare.net",,
         "cloudflare-dns.com",
         "cloudflarecaptcha.com",
         "cloudflareinsights.com",
         "cloudfront.net",
         "digicert.com",
-        "sectigo.com",
-        "cloudflare.net"
+        "sectigo.com"
         ]
     },
     {
@@ -115,6 +113,9 @@
 		  "googletagservices.com",
 		  "googleapis.com",
 		  "withgoogle.com",
+          "i.google.com",
+		  "stun1.l.google.com",
+		  "accounts.google.com",
 		  "www.gstatic.com",
 		  "gstatic.com",
 			"youtube.com",
@@ -146,17 +147,18 @@
    		"process" : "\/Applications\/Zen.app\/Contents\/MacOS\/zen",
         "protocol" : "tcp",
         "remote-domains" : [
-        "mozilla.com",
-  		"mozilla.net",
-  		"mozgcp.net",
+          "mozilla.com",
+  		  "mozilla.net",
+          "mozilla.org",
+  		  "mozgcp.net",
   		  "firefox.com",
           "firefox.org",
           "firebase.io",
           "firefox-portal-detection.com"
-        ]
+          ]
       },
       {
-  	    "notes" : "335-Mozilla hosts 443",
+  	    "notes" : "335-Mozilla Hosts 443",
         "action" : "allow",
         "ports": "80, 443",
    		"process" : "\/Applications\/Zen.app\/Contents\/MacOS\/zen",
@@ -165,13 +167,12 @@
         "classify-services.mozilla.com",
         "accounts.firefox.com",
         "services.mozilla.com",
-        "telemetry.mozilla.org",
+        "incoming.telemetry.mozilla.org",
         "aus5.mozilla.org",
         "addons.mozilla.org",
         "ads-img.mozilla.org",
         "ads.mozilla.org",
         "download.mozilla.org",
-        "telemetry.mozilla.org",
         "vpn.mozilla.org",
         "ohttp-merino.mozilla.fastly-edge.com",
         "mozilla-ohttp.fastly-edge.com",
@@ -185,10 +186,10 @@
         "process" : "\/Applications\/Zen.app\/Contents\/MacOS\/zen",
         "protocol" : "tcp",
         "remote-domains" : [
-          "githubassets.com",
-          "gitlab.com",
-          "gitlab.dev",
-          "gitlab.io",
+            "githubassets.com",
+            "gitlab.com",
+            "gitlab.dev",
+            "gitlab.io",
            "githubusercontent.com",
            "github.com",
            "github.dev",
