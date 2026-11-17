@@ -86,7 +86,7 @@
         "cloudfront.net",
         "digicert.com",
         "sectigo.com",
-        "cloudflare.net",
+        "cloudflare.net"
         ]
     },
     {
@@ -97,8 +97,7 @@
           "protocol" : "tcp",
           "remote-domains" : [
 		  "googlevideo.com",
-		  "dl.google.com",
-		  "accounts.google.com",
+		  "www.google.com",
 		  "googleapps.com",
 		  "googleusercontent.com",
 		  "googletagmanager.com",
@@ -165,7 +164,8 @@
         "download.mozilla.org",
         "telemetry.mozilla.org",
         "vpn.mozilla.org",
-  		"mozilla-ohttp.fastly-edge.com",
+        "ohttp-merino.mozilla.fastly-edge.com",
+        "mozilla-ohttp.fastly-edge.com",
   		"mozilla.fastly-edge.com"
           ]
       },
@@ -245,11 +245,11 @@
         ]
       },
     {
-      "action": "allow",
-      "ports": "443",
+       "action": "allow",
+       "ports": "443, 2083",
        "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
-      "protocol": "tcp",
-      "remote-domains": [
+       "protocol": "tcp",
+       "remote-domains": [
         "bluehost.com",
 	    "nixihost.com",
 	    "audaxum.me",
@@ -267,6 +267,7 @@
         "meraki.com",
         "meraki.net",
         "scroller.com",
+        "medium.com",
         "wikipedia.com",
         "wikihow.com",
         "wikimedia.net",
@@ -275,12 +276,13 @@
         "iplookup.com",
         "noip.com",
 		"check-host.net",
+        "bing.com",
         "brave.com",
         "bravesoftware.com",
-        "bing.com",
-        "duckduckgo.com",
         "duck.ai",
+        "duckduckgo.com",
         "dogpile.com",
+        "sentry.io",
         "lifewire.com",
         "supermedia.com",
         "obdev.net",

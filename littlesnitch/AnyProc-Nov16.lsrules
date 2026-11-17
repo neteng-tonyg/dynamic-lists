@@ -1,7 +1,7 @@
 {
   "name": "Any-Rules-v-3",
   "description":
-     "v3.17 - Standard  traffic: Cloudflare/ Google Block/ Mozilla 443/80, GitHub, Microsoft, Bitdefender, Personal ",
+     "v3.21 - Standard  traffic: Cloudflare/ Google Block/ Mozilla 443/80, GitHub, Microsoft, Bitdefender, Personal ",
   "rules": [
     {
     "notes ": "000-Default Deny Quic",
@@ -17,7 +17,6 @@
     "priority" : "high",
     "action" : "deny",
     "ports" : "443",
-    "priority" : "high",
     "process" : "any",
     "protocol" : "tcp",
     "remote-domains" : [
@@ -87,7 +86,7 @@
         "cloudfront.net",
         "digicert.com",
         "sectigo.com",
-        "cloudflare.net",
+        "cloudflare.net"
         ]
     },
     {
@@ -165,7 +164,8 @@
         "download.mozilla.org",
         "telemetry.mozilla.org",
         "vpn.mozilla.org",
-  		"mozilla-ohttp.fastly-edge.com",
+        "ohttp-merino.mozilla.fastly-edge.com",
+        "mozilla-ohttp.fastly-edge.com",
   		"mozilla.fastly-edge.com"
           ]
       },
@@ -246,7 +246,7 @@
       },
     {
       "action": "allow",
-      "ports": "443",
+      "ports": "443, 2083",
       "process" : "any",
       "protocol": "tcp",
       "remote-domains": [
@@ -267,6 +267,7 @@
         "meraki.com",
         "meraki.net",
         "scroller.com",
+        "medium.com",
         "wikipedia.com",
         "wikihow.com",
         "wikimedia.net",
@@ -275,19 +276,22 @@
         "iplookup.com",
         "noip.com",
 		"check-host.net",
+        "bing.com",
         "brave.com",
         "bravesoftware.com",
-        "bing.com",
-        "duckduckgo.com",
         "duck.ai",
+        "duckduckgo.com",
         "dogpile.com",
+        "sentry.io",
         "lifewire.com",
         "supermedia.com",
         "obdev.net",
         "dropbox.com",
         "costco.com",
         "pbs.org",
-        "ublockorigin.pages.dev"
+        "band.us",
+        "flickr.com",
+        "pages.dev"
       ]
     }
   ]
