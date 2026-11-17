@@ -78,13 +78,13 @@
       "protocol": "tcp",
       "remote-domains": [
         "cloudflare.com",
-        "cloudflare.net",,
+        "cloudflare.net",
         "cloudflare-dns.com",
         "cloudflarecaptcha.com",
         "cloudflareinsights.com",
         "cloudfront.net",
         "digicert.com",
-        "sectigo.com",
+        "sectigo.com"
         ]
     },
     {

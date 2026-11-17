@@ -78,7 +78,7 @@
       "protocol": "tcp",
       "remote-domains": [
         "cloudflare.com",
-        "cloudflare.net",,
+        "cloudflare.net",
         "cloudflare-dns.com",
         "cloudflarecaptcha.com",
         "cloudflareinsights.com",
@@ -235,7 +235,7 @@
       "notes": "411 Bitdefender WWW",
       "action": "allow",
       "ports": "443",
-      "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",,
+      "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
       "protocol": "tcp",
       "remote-hosts": [
         "download.bitdefender.com",

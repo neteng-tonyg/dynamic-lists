@@ -65,7 +65,7 @@
     {
     "notes" :  "211-Allow nat-stun-UDP-3478",
     "action" : "allow",
-    "ports" : "3478", ,
+    "ports" : "3478",
     "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
     "protocol" : "udp",
     "remote" : "any"
@@ -78,13 +78,13 @@
       "protocol": "tcp",
       "remote-domains": [
         "cloudflare.com",
-        "cloudflare.net",,
+        "cloudflare.net",
         "cloudflare-dns.com",
         "cloudflarecaptcha.com",
         "cloudflareinsights.com",
         "cloudfront.net",
         "digicert.com",
-        "sectigo.com",
+        "sectigo.com"
         ]
     },
     {
