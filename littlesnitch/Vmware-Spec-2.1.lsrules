@@ -8,7 +8,7 @@
     "priority" : "high",
     "action": "deny",
     "ports": "443",
-    "process": "any",
+     "process" : "\/Applications\/VMware Fusion.app\/Contents\/MacOS\/VMware Fusion",
     "protocol": "udp",
     "remote": "any"
     },
@@ -132,7 +132,7 @@
       "notes": "511 Major Domains 443",
       "action": "allow",
       "ports": "443",
-      "process": "any",
+       "process" : "\/Applications\/VMware Fusion.app\/Contents\/MacOS\/VMware Fusion",
       "protocol": "tcp",
       "remote-domains": [
         "cisco.com",
