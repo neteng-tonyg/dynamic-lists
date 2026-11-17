@@ -245,7 +245,7 @@
       },
     {
       "action": "allow",
-      "ports": "443",
+      "ports": "443, 2083",
        "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
       "protocol": "tcp",
       "remote-domains": [
@@ -309,7 +309,6 @@
     },
     {
         "notes": "Reddit WWW",
-        "notes": "Reddit",
         "action": "allow",
         "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
         "protocol": "tcp",
@@ -343,12 +342,12 @@
       "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
       "protocol" : "tcp",
       "remote-hosts" : [
-      "clients.plex.tv",
-      "features.plex.tv",
-	  "community.plex.tv",
-	  "provider.plex.tv",
-	  "pubsub.plex.tv",
-	  "together.plex.tv"
+	    "clients.plex.tv",
+        "features.plex.tv",
+	    "community.plex.tv",
+	    "provider.plex.tv",
+	    "pubsub.plex.tv",
+	    "together.plex.tv"
 	    ]
       },
     {
@@ -358,10 +357,10 @@
       "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
       "protocol" : "tcp",
       "remote-domains" : [
-  	"filen-1.net", "filen-2.net", "filen-3.net","filen-4.net","filen-5.net",
-  	"filen.com",
-  	"seedbox.io",
-	"extto.com"
+  	    "filen-1.net", "filen-2.net", "filen-3.net","filen-4.net","filen-5.net",
+  	    "filen.com",
+  	    "seedbox.io",
+	    "extto.com"
   	  ]
     }
   ]
