@@ -20,11 +20,11 @@
     "process" : "any",
     "protocol" : "tcp",
     "remote-domains" : [
-    "facebook.com",
-    "facebook.net",
-    "tiktokcdn.com",
-    "g.doubleclick.net",
-    "static.doubleclick.net"
+      "facebook.com",
+      "facebook.net",
+      "tiktokcdn.com",
+      "g.doubleclick.net",
+      "static.doubleclick.net"
     ]
   },
     {
@@ -35,11 +35,11 @@
       "process" : "any",
       "protocol" : "tcp",
       "remote-addresses" : [
-	  "64.233.177.0/24",
-	  "173.194.219.0/24",
-	  "142.250.105.0/24",
-	  "142.250.9.0/24",
-	  "74.125.21.0/24"
+	    "64.233.177.0/24",
+	    "173.194.219.0/24",
+	    "142.250.105.0/24",
+	    "142.250.9.0/24",
+	    "74.125.21.0/24"
 	  ]
     },
         {
@@ -50,16 +50,16 @@
         "process" : "any",
       "protocol" : "tcp",
       "remote-hosts" : [
-	  "i.doubleclick.net",
-	  "g.doubleclick.net",
+	    "i.doubleclick.net",
+	    "g.doubleclick.net",
         "ad.doubleclick.net",
 		"fls.doubleclick.net",
-	  "pubads.g.doubleclick.net",
-	  "pagead2.googlesyndication.com",
-	  "googleads4.g.doubleclick.net",
-	  "ep1.adtrafficquality.google",
-      "adservice.google.com",
-      "adtrafficquality.google.com"
+	    "pubads.g.doubleclick.net",
+	    "pagead2.googlesyndication.com",
+	    "googleads4.g.doubleclick.net",
+	    "ep1.adtrafficquality.google",
+        "adservice.google.com",
+        "adtrafficquality.google.com"
 	  ]
     },
         {
@@ -136,9 +136,9 @@
    		"process" : "any",
         "protocol" : "tcp",
         "remote-domains" : [
-        "mozilla.com",
-  		"mozilla.net",
-  		"mozgcp.net",
+          "mozilla.com",
+  		  "mozilla.net",
+  		  "mozgcp.net",
   		  "firefox.com",
           "firefox.org",
           "firebase.io",
@@ -175,10 +175,10 @@
         "process": "any",
         "protocol" : "tcp",
         "remote-domains" : [
-          "githubassets.com",
-          "gitlab.com",
-          "gitlab.dev",
-          "gitlab.io",
+            "githubassets.com",
+            "gitlab.com",
+            "gitlab.dev",
+            "gitlab.io",
            "githubusercontent.com",
            "github.com",
            "github.dev",
