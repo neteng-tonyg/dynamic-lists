@@ -1,5 +1,5 @@
 {
-  "name": "Any-Rules-v-3",
+  "name": "AnyProc-v3.21",
   "description":
      "v3.21 - Standard  traffic: Cloudflare/ Google Block/ Mozilla 443/80, GitHub, Microsoft, Bitdefender, Personal ",
   "rules": [
@@ -32,7 +32,7 @@
       "priority" : "high",
       "action" : "deny",
       "ports" : "any",
-       "process" : "any",
+      "process" : "any",
       "protocol" : "tcp",
       "remote-addresses" : [
 	  "64.233.177.0/24",
@@ -63,7 +63,7 @@
 	  ]
     },
         {
-      "notes" :  "211-Allow nat-stun-UDP-3478",
+        "notes" :  "211-Allow nat-stun-UDP-3478",
         "action" : "allow",
         "ports" : "3478",
         "priority" : "high",
@@ -93,7 +93,7 @@
      "notes" : "233-Google/ Youtube Domains 443",
      "action" : "allow",
      "ports" : "443",
-    "process" : "any",
+     "process" : "any",
           "protocol" : "tcp",
           "remote-domains" : [
 		  "googlevideo.com",
@@ -143,6 +143,7 @@
   		"mozgcp.net",
   		  "firefox.com",
           "firefox.org",
+          "firebase.io",
           "firefox-portal-detection.com"
         ]
       },

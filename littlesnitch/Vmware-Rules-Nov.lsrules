@@ -1,9 +1,11 @@
 {
-  "name": "VMware-Rules-Nov",
-  "description": "Standard app traffic from WMware",
+  "name": "VMware-3.21-Nov",
+  "description":
+      "Standard app traffic  WMware",
   "rules": [
     {
-    "notes ": "Default Deny Quic",
+    "notes ": "000-Default Deny Quic",
+    "priority" : "high",
     "action": "deny",
     "ports": "443",
     "process": "any",
@@ -11,21 +13,11 @@
     "remote": "any"
     },
     {
-    "notes": "Allow nat-stun-UDP-3478",
-  "action" : "allow",
-    "owner" : "system",
-    "ports" : "3478",
+    "notes" : "003-Default deny WWW/443",
     "priority" : "high",
-     "process" : "\/Applications\/VMware Fusion.app\/Contents\/MacOS\/VMware Fusion",
-    "protocol" : "udp",
-    "remote" : "any"
-  },
-  {
- "notes":"0.Default deny WWW/443/stuff",
     "action" : "deny",
-    "owner" : "system",
     "ports" : "443",
-    "process" : "\/Applications\/VMware Fusion.app\/Contents\/MacOS\/VMware Fusion",
+    "process" : "any",
     "protocol" : "tcp",
     "remote-domains" : [
     "facebook.com",
@@ -36,59 +28,11 @@
     ]
   },
     {
-      "description" : "Plex",
-      "name" : "Plex-subs-et-al",
-      "action" : "allow",
-      "ports" : "443",
-          "process" : "\/Applications\/VMware Fusion.app\/Contents\/MacOS\/VMware Fusion",
-      "protocol" : "tcp",
-      "remote-hostnames" : [
-	  "clients.plex.tv",
-      "features.plex.tv",
-	  "community.plex.tv",
-	  "provider.plex.tv",
-	  "pubsub.plex.tv",
-	  "together.plex.tv"
-	    ]
-    },
-    {
-      "notes": "Major Domains 443",
-      "action": "allow",
-      "ports": "443",
-      "process" : "\/Applications\/VMware Fusion.app\/Contents\/MacOS\/VMware Fusion",
-      "protocol": "tcp",
-      "remote-domains": [
-        "cisco.com",
-        "meraki.com",
-        "meraki.net",
-        "pbs.org",
-        "scroller.com",
-        "wikipedia.com",
-        "wikihow.com",
-        "wikimedia.net",
-        "wikimedia.org",
-        "whatismyipaddress.com",
-        "iplookup.com",
-        "noip.com",
-		"check-host.net",
-        "brave.com",
-        "bravesoftware.com",
-        "bing.com",
-        "duckduckgo.com",
-        "duck.ai",
-        "dogpile.com",
-        "lifewire.com",
-        "supermedia.com",
-        "obdev.net",
-        "dropbox.com",
-        "costco.com",
-      ]
-    },
-    {
-      "notes":"111 Deny Google Analytics Subnets",
+      "notes":"111-Deny Google Analytics Subnets",
+      "priority" : "high",
       "action" : "deny",
-      "ports" : "443",
-      "process" : "\/Applications\/VMware Fusion.app\/Contents\/MacOS\/VMware Fusion",
+      "ports" : "any",
+      "process" : "any",
       "protocol" : "tcp",
       "remote-addresses" : [
 	  "64.233.177.0/24",
@@ -96,15 +40,16 @@
 	  "142.250.105.0/24",
 	  "142.250.9.0/24",
 	  "74.125.21.0/24"
-	    ]
+	  ]
     },
-    {
-      "notes":"111 Deny Google Analytics Hosts",
+        {
+      "notes" : "117-Deny Google Analytics Hosts",
       "action" : "deny",
       "ports" : "443",
-      "process" : "\/Applications\/VMware Fusion.app\/Contents\/MacOS\/VMware Fusion",
+      "priority" : "high",
+        "process" : "any",
       "protocol" : "tcp",
-      "remote-hostnames" : [
+      "remote-hosts" : [
 	  "i.doubleclick.net",
 	  "g.doubleclick.net",
         "ad.doubleclick.net",
@@ -115,16 +60,42 @@
 	  "ep1.adtrafficquality.google",
       "adservice.google.com",
       "adtrafficquality.google.com"
-	    ]
+	  ]
     },
-      {
-        "notes":"Google/ Youtube Domains 443",
-      "action" : "allow",
-      "ports" : "443",
-      "process" : "\/Applications\/VMware Fusion.app\/Contents\/MacOS\/VMware Fusion",
-      "owner" : "me",
-      "protocol" : "tcp",
-      "remote-domains" : [
+        {
+        "notes" :  "211-Allow nat-stun-UDP-3478",
+        "action" : "allow",
+        "ports" : "3478",
+        "priority" : "high",
+        "process" : "any",
+        "protocol" : "udp",
+        "remote" : "any"
+    },
+       {
+	"notes" : "222-Allow Cloudflare ports 80,443",
+      "action": "allow",
+      "ports": "80, 443",
+      "priority" : "high",
+      "process" : "any",
+      "protocol": "tcp",
+      "remote-domains": [
+        "cloudflare.com",
+        "cloudflare-dns.com",
+        "cloudflarecaptcha.com",
+        "cloudflareinsights.com",
+        "cloudfront.net",
+        "digicert.com",
+        "sectigo.com",
+        "cloudflare.net"
+        ]
+    },
+    {
+     "notes" : "233-Google/ Youtube Domains 443",
+     "action" : "allow",
+     "ports" : "443",
+     "process" : "any",
+          "protocol" : "tcp",
+          "remote-domains" : [
 		  "googlevideo.com",
 		  "www.google.com",
 		  "googleapps.com",
@@ -143,13 +114,12 @@
             ]
       },
       {
-        "notes":"Google/ Youtube Hosts 443",
+      "notes" : "237-Google/ Youtube Hosts 443",
       "action" : "allow",
       "ports" : "443",
-      "process" : "\/Applications\/VMware Fusion.app\/Contents\/MacOS\/VMware Fusion",
-      "owner" : "me",
+      "process" : "any",
       "protocol" : "tcp",
-      "remote-hostnames" : [
+      "remote-hosts" :[
 		  "dl.google.com",
 		  "www.google.com",
           "i.google.com",
@@ -157,103 +127,60 @@
 		  "accounts.google.com",
 		  "play.google.com",
 		  "fonts.gstatic.com",
-			"c.youtube.com",
-			"accounts.youtube.com"
+		  "c.youtube.com",
+		  "accounts.youtube.com"
             ]
       },
       {
-  	    "notes":"Mozilla Domains 443",
+  	    "notes" : "333-Mozilla Domains 443",
         "action" : "allow",
-        "ports" : "443",
-        "process" : "\/Applications\/VMware Fusion.app\/Contents\/MacOS\/VMware Fusion",
+         "ports": "80, 443",
+   		"process" : "any",
         "protocol" : "tcp",
         "remote-domains" : [
         "mozilla.com",
   		"mozilla.net",
   		"mozgcp.net",
   		  "firefox.com",
-          "firefox.org"
-          ]
+          "firefox.org",
+          "firebase.io",
+          "firefox-portal-detection.com"
+        ]
       },
       {
-  	    "notes":"Mozilla Hostnames 443",
+  	    "notes" : "335-Mozilla hosts 443",
         "action" : "allow",
-        "ports" : "443",
-    "process" : "\/Applications\/VMware Fusion.app\/Contents\/MacOS\/VMware Fusion",
+        "ports": "80, 443",
+   		"process" : "any",
         "protocol" : "tcp",
-        "remote-hostnames" : [
-        "firefox-portal-detection.com",
+        "remote-hosts" : [
         "classify-services.mozilla.com",
+        "accounts.firefox.com",
         "services.mozilla.com",
-        "firefox.settings.services.mozilla.com",
-  		"mozilla-ohttp.fastly-edge.com",
-  		"ohttp-merino.mozilla.fastly-edge.com",
-  		"mozilla.fastly-edge.com",
-  		"addons.mozilla.org",
+        "telemetry.mozilla.org",
         "aus5.mozilla.org",
+        "addons.mozilla.org",
+        "ads-img.mozilla.org",
+        "ads.mozilla.org",
         "download.mozilla.org",
         "telemetry.mozilla.org",
         "vpn.mozilla.org",
-        "classify-services.mozilla.com",
-        "services.mozilla.com",
-        "firefox.settings.services.mozilla.com",
-  		"mozilla-ohttp.fastly-edge.com",
-  		"ohttp-merino.mozilla.fastly-edge.com",
-  		"mozilla.fastly-edge.com",
-		"ads-img.mozilla.org",
-		  "accounts.firefox.com",
-          "firefox-portal-detection.com",
-          "ads.mozilla.org"
+        "ohttp-merino.mozilla.fastly-edge.com",
+        "mozilla-ohttp.fastly-edge.com",
+  		"mozilla.fastly-edge.com"
           ]
       },
       {
-      "action": "allow",
-      "notes": "Cloudflare/ 80",
-      "ports": "80",
-      "process" : "\/Applications\/VMware Fusion.app\/Contents\/MacOS\/VMware Fusion",
-      "protocol": "tcp",
-      "remote-domains": [
-        "cloudflare.com",
-        "cloudfront.net",
-        "cloudflarecaptcha.com",
-        "cloudflare-dns.com",
-        "cloudflareinsights.com",
-        "digicert.com",
-        "sectigo.com",
-        "cloudflare.net",
-        "sectigo.net"
-          ]
-      },
-      {
-      "notes" : "Cloudflare/ 443",
-      "action": "allow",
-      "ports": "443",
-      "process" : "\/Applications\/VMware Fusion.app\/Contents\/MacOS\/VMware Fusion",
-      "protocol": "tcp",
-      "remote-domains": [
-        "cloudflare.com",
-        "cloudfront.net",
-        "cloudflarecaptcha.com",
-        "cloudflare-dns.com",
-        "cloudflareinsights.com",
-        "digicert.com",
-        "sectigo.com",
-        "cloudflare.net",
-        "sectigo.net"
-          ]
-      },
-      {
-        "notes":"Git Domains 443",
-        "owner" : "me",
+        "notes" : "Git Domains 443",
         "action" : "allow",
         "ports" : "443",
-        "process" : "\/Applications\/VMware Fusion.app\/Contents\/MacOS\/VMware Fusion",
+        "process": "any",
         "protocol" : "tcp",
         "remote-domains" : [
-    	    "githubassets.com",
-              "gitlab.com",
-              "gitlab.dev",
-              "gitlab.io",
+          "githubassets.com",
+          "gitlab.com",
+          "gitlab.dev",
+          "gitlab.io",
            "githubusercontent.com",
            "github.com",
            "github.dev",
@@ -262,26 +189,25 @@
             ]
        },
          {
-            "notes":"Git Hosts 443",
-            "owner" : "me",
+            "notes" : "Git Hosts 443",
             "action" : "allow",
             "ports" : "443",
-            "process" : "\/Applications\/VMware Fusion.app\/Contents\/MacOS\/VMware Fusion",
+            "process" : "any",
             "protocol" : "tcp",
-            "remote-hostnames" : [
+            "remote-hosts" : [
+ 	        "individual.githubcopilot.com",
+            "avatars.githubusercontent.com",
             "raw.githubusercontent.com",
   	        "malware-filter.gitlab.io",
-            "avatars.githubusercontent.com",
             "cafe.github.com",
             "central.github.com"
                ]
           },
         {
-        "description": "Microsoft-related domains",
-        "name": "Microsoft",
+        "notes" : "Microsoft/ Office domains",
         "action": "allow",
-        "process" : "\/Applications\/VMware Fusion.app\/Contents\/MacOS\/VMware Fusion",
-        "owner": "me",
+          "ports" : "443",
+        "process": "any",
         "remote-domains": [
           "azurewebsites.net",
           "azurefed.net",
@@ -304,70 +230,25 @@
           "blob.core.windows.net"
             ]
         },
-        {
-        "description": "Reddit WWW",
-        "name": "Reddit",
-        "action": "allow",
-        "process" : "\/Applications\/VMware Fusion.app\/Contents\/MacOS\/VMware Fusion",
-        "owner": "me",
-        "remote-domains": [
-        "redditspace.com",
-        "redditstatic.com",
-        "Redditmedia.com",
-        "Reddit.com",
-        "preview.redd.it"
-          ]
-      },
       {
-      "description": "Bitdefender WWW",
+      "notes": "411 Bitdefender WWW",
       "action": "allow",
       "ports": "443",
-      "process" : "\/Applications\/VMware Fusion.app\/Contents/MacOS/VMware Fusione",
+      "process" : "any",
       "protocol": "tcp",
-      "remote-hostnames": [
+      "remote-hosts": [
         "download.bitdefender.com",
         "securepass-auth.bitdefender.com",
         "cdn.bitdefender.net",
         "nimbus.bitdefender.net",
         "us.nimbus.bitdefender.net",
         "push.bitdefender.net"
-      ]
-    },
-    {
-	"notes":"Cloudflare port 80",
-      "action": "allow",
-      "ports": "80",
-        "process" : "\/Applications\/VMware Fusion.app\/Contents\/MacOS\/VMware Fusion",
-      "protocol": "tcp",
-      "remote-domains": [
-        "cloudflare.com",
-        "cloudflare-dns.com",
-        "static.cloudflareinsights.com",
-        "digicert.com",
-        "sectigo.com",
-        "cloudflare.net",
-        "sectigo.net"
-      ]
-    },
-    {
-      "notes":"Cloudflare port 443",
-      "action": "allow",
-      "ports": "443",
-        "process" : "\/Applications\/VMware Fusion.app\/Contents\/MacOS\/VMware Fusion",
-      "protocol": "tcp",
-      "remote-domains": [
-        "cloudflare.com",
-        "cloudflare-dns.com",
-        "digicert.com",
-        "sectigo.com",
-        "cloudflare.net",
-        "sectigo.net"
-      ]
-    },
+        ]
+      },
     {
       "action": "allow",
-      "ports": "443",
-        "process" : "\/Applications\/VMware Fusion.app\/Contents\/MacOS\/VMware Fusion",
+      "ports": "443, 2083",
+      "process" : "any",
       "protocol": "tcp",
       "remote-domains": [
         "bluehost.com",
@@ -376,31 +257,43 @@
 	    "goethals.us"
       ]
     },
-        {
-     "notes":"Filen and Seedbox ",
-      "action" : "allow",
-      "ports" : "443",
-      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
-      "protocol" : "tcp",
-      "remote-domains" : [
-  	"filen-1.net", "filen-2.net", "filen-3.net","filen-4.net","filen-5.net",
-  	"filen.com",
-  	"seedbox.io",
-	"extto.com"
-  	]
-    },
-    {
+         {
+      "notes" : "511 Major Domains 443",
       "action": "allow",
       "ports": "443",
-      "process" : "\/Applications\/VMware Fusion.app\/Contents\/MacOS\/VMware Fusion",
+       "process" : "any",
       "protocol": "tcp",
       "remote-domains": [
-        "lucid.app",
-        "excalidraw.com",
-        "excalidraw.net",
-        "lucidcdn.net",
-        "lucidchart.net"
-          ]
+        "cisco.com",
+        "meraki.com",
+        "meraki.net",
+        "scroller.com",
+        "medium.com",
+        "wikipedia.com",
+        "wikihow.com",
+        "wikimedia.net",
+        "wikimedia.org",
+        "whatismyipaddress.com",
+        "iplookup.com",
+        "noip.com",
+		"check-host.net",
+        "bing.com",
+        "brave.com",
+        "bravesoftware.com",
+        "duck.ai",
+        "duckduckgo.com",
+        "dogpile.com",
+        "sentry.io",
+        "lifewire.com",
+        "supermedia.com",
+        "obdev.net",
+        "dropbox.com",
+        "costco.com",
+        "pbs.org",
+        "band.us",
+        "flickr.com",
+        "pages.dev"
+      ]
     }
   ]
 }

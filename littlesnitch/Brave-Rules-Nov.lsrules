@@ -1,5 +1,5 @@
 {
-  "name": "Brave-Rules-Nov",
+  "name": "Brave-3.21-Nov",
    "description" :
     "AnyProc + MajorDomains+Reddit+Lucid+Plex+Filen",
   "rules": [
@@ -143,6 +143,7 @@
   		"mozgcp.net",
   		  "firefox.com",
           "firefox.org",
+          "firebase.io",
           "firefox-portal-detection.com"
         ]
       },

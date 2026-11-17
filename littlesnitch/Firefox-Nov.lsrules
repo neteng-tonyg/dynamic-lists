@@ -1,5 +1,5 @@
 {
-  "name": "Firefox-Rules-Nov",
+  "name": "Firefox-3.21-Nov",
    "description" :
     "AnyProc + MajorDomains+Reddit+Lucid+Plex+Filen",
   "rules": [
@@ -17,7 +17,6 @@
     "priority" : "high",
     "action" : "deny",
     "ports" : "443",
-    "priority" : "high",
       "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
     "protocol" : "tcp",
     "remote-domains" : [
@@ -144,6 +143,7 @@
   		"mozgcp.net",
   		  "firefox.com",
           "firefox.org",
+          "firebase.io",
           "firefox-portal-detection.com"
         ]
       },
@@ -165,7 +165,8 @@
         "download.mozilla.org",
         "telemetry.mozilla.org",
         "vpn.mozilla.org",
-  		"mozilla-ohttp.fastly-edge.com",
+        "ohttp-merino.mozilla.fastly-edge.com",
+        "mozilla-ohttp.fastly-edge.com",
   		"mozilla.fastly-edge.com"
           ]
       },
@@ -267,6 +268,7 @@
         "meraki.com",
         "meraki.net",
         "scroller.com",
+        "medium.com",
         "wikipedia.com",
         "wikihow.com",
         "wikimedia.net",
@@ -275,19 +277,22 @@
         "iplookup.com",
         "noip.com",
 		"check-host.net",
+        "bing.com",
         "brave.com",
         "bravesoftware.com",
-        "bing.com",
-        "duckduckgo.com",
         "duck.ai",
+        "duckduckgo.com",
         "dogpile.com",
+        "sentry.io",
         "lifewire.com",
         "supermedia.com",
         "obdev.net",
         "dropbox.com",
         "costco.com",
         "pbs.org",
-        "ublockorigin.pages.dev"
+        "band.us",
+        "flickr.com",
+        "pages.dev"
       ]
     },
     {
