@@ -1,0 +1,128 @@
+{
+  "name": "VMware-3.22-Nov",
+  "description":
+      "Standard app traffic  WMware",
+  "rules" : [
+    {
+	"notes" : "222-Allow Cloudflare ports 80,443",
+      "action": "allow",
+      "ports": "80, 443",
+      "priority" : "high",
+      "process" : "any",
+      "protocol": "tcp",
+      "remote-domains": [
+        "cloudflare.com",
+        "cloudflare-dns.com",
+        "cloudflarecaptcha.com",
+        "cloudflareinsights.com",
+        "cloudfront.net",
+        "digicert.com",
+        "sectigo.com",
+        "cloudflare.net"
+        ]
+    },
+          {
+  	    "notes" : "333-Mozilla Domains 443",
+        "action" : "allow",
+         "ports": "80, 443",
+   		"process" : "any",
+        "protocol" : "tcp",
+        "remote-domains" : [
+        "mozilla.com",
+  		"mozilla.net",
+  		"mozgcp.net",
+  		  "firefox.com",
+          "firefox.org",
+          "firebase.io",
+          "firefox-portal-detection.com"
+        ]
+      },
+      {
+  	    "notes" : "335-Mozilla hosts 443",
+        "action" : "allow",
+        "ports": "80, 443",
+   		"process" : "any",
+        "protocol" : "tcp",
+        "remote-hosts" : [
+        "classify-services.mozilla.com",
+        "accounts.firefox.com",
+        "services.mozilla.com",
+        "telemetry.mozilla.org",
+        "aus5.mozilla.org",
+        "addons.mozilla.org",
+        "ads-img.mozilla.org",
+        "ads.mozilla.org",
+        "download.mozilla.org",
+        "telemetry.mozilla.org",
+        "vpn.mozilla.org",
+        "ohttp-merino.mozilla.fastly-edge.com",
+        "mozilla-ohttp.fastly-edge.com",
+  		"mozilla.fastly-edge.com"
+          ]
+      },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/VMware Fusion.app\/Contents\/MacOS\/VMware Fusion",
+      "protocol" : "tcp",
+      "remote-addresses" : "17.253.7.0/24"
+    },
+       {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/VMware Fusion.app\/Contents\/MacOS\/VMware Fusion",
+      "protocol" : "tcp",
+      "remote-addresses" : "23.49.5.134"
+    },
+    {
+      "action" : "allow",
+      "ports" : "4000",
+      "process" : "\/Applications\/VMware Fusion.app\/Contents\/MacOS\/VMware Fusion",
+      "protocol" : "tcp",
+      "remote-addresses" : "23.111.157.0/24"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/VMware Fusion.app\/Contents\/MacOS\/VMware Fusion",
+      "protocol" : "tcp",
+      "remote-addresses" : "23.213.26.81"
+    },
+    {
+      "action" : "allow",
+      "ports" : "4000",
+      "process" : "\/Applications\/VMware Fusion.app\/Contents\/MacOS\/VMware Fusion",
+      "protocol" : "tcp, udp",
+      "remote-addresses" : "66.165.233.194"
+    },
+     {
+      "action" : "allow",
+      "ports" : "3838",
+      "process" : "\/Applications\/VMware Fusion.app\/Contents\/MacOS\/VMware Fusion",
+      "protocol" : "udp",
+      "remote-addresses" : "239.192.0.0"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/VMware Fusion.app\/Contents\/MacOS\/VMware Fusion",
+      "protocol" : "tcp",
+      "remote-domains" :[
+         "apple-cloudkit.com",
+         "apple.news",
+         "yahoo.com"
+          ]
+        },
+    {
+      "action" : "allow",
+      "ports" : "80",
+      "process" : "\/Applications\/VMware Fusion.app\/Contents\/MacOS\/VMware Fusion",
+      "protocol" : "tcp",
+      "remote-domains" : [
+	  "connectivitycheck.gstatic.com",
+	  "gstatic.com",
+	  "akamai.net"
+	  ]
+    }
+  ]
+}
