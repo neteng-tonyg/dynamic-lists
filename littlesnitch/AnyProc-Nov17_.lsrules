@@ -1,5 +1,5 @@
 {
-  "name": "AnyProc-v3.21",
+  "name": "AnyProc-v3.22",
   "description":
      "v3.21 - Standard  traffic: Cloudflare/ Google Block/ Mozilla 443/80, GitHub, Microsoft, Bitdefender, Personal ",
   "rules": [
