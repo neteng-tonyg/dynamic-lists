@@ -189,6 +189,7 @@
         "fortinet.com",
         "chatgpt.com",
         "openai.com",
+        "platform.openai.com",
         "ubuntu.com",
         "broadcom.com",
         "literotica.com",
@@ -235,7 +236,7 @@
     {
         "notes": "Reddit WWW",
         "action": "allow",
-        "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+        "process" : "\/Applications\/VMware Fusion.app\/Contents\/MacOS\/VMware Fusion",
         "protocol": "tcp",
         "remote-domains": [
         "redditspace.com",
@@ -246,6 +247,26 @@
         "preview.redd.it",
         "redd.it"
         ]
+    },
+        {
+     "notes" : "Plex, Filen, Seedbox ",
+      "action" : "allow",
+      "ports" : "443",
+     "process" : "\/Applications\/VMware Fusion.app\/Contents\/MacOS\/VMware Fusion",
+      "protocol" : "tcp",
+      "remote-domains" : [
+        "plex.tv",
+  	    "filen-1.net",
+        "filen-2.net",
+        "filen-3.net",
+        "filen-4.net",
+        "filen-5.net",
+  	    "filen.com",
+        "filen.io",
+  	    "seedbox.io",
+        "exto.to",
+	    "extto.com"
+  	     ]
     },
     {
       "action" : "allow",
