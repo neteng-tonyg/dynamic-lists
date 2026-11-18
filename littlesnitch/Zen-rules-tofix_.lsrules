@@ -13,16 +13,8 @@
     "remote": "any"
     },
     {
-    "notes": "Allow nat-stun-UDP-3478",
-  "action" : "allow",
-    "ports" : "3478",
+    "notes" : "003-Default deny WWW/443",
     "priority" : "high",
-     "process" : "\/Applications\/Zen.app\/Contents\/MacOS\/zen",
-    "protocol" : "udp",
-    "remote" : "any"
-  },
-  {
-    "notes":"0.Default deny WWW/443",
     "action" : "deny",
     "ports" : "443",
     "process" : "\/Applications\/Zen.app\/Contents\/MacOS\/zen",
@@ -34,7 +26,7 @@
       "g.doubleclick.net",
       "static.doubleclick.net"
       ]
-  },
+    },
     {
       "notes":"111-Deny Google Analytics Subnets",
       "priority" : "high",
@@ -71,7 +63,7 @@
 	  ]
     },
         {
-      "notes" :  "211-Allow nat-stun-UDP-3478",
+        "notes" :  "211-Allow nat-stun-UDP-3478",
         "action" : "allow",
         "ports" : "3478",
         "process" : "\/Applications\/Zen.app\/Contents\/MacOS\/zen",
@@ -96,7 +88,7 @@
         ]
     },
     {
-     "notes":"Google/ Youtube Domains 443",
+     "notes" : "233-Google/ Youtube Domains 443",
      "action" : "allow",
      "ports" : "443",
      "process" : "\/Applications\/Zen.app\/Contents\/MacOS\/zen", 
@@ -104,6 +96,7 @@
       "remote-domains" : [
 		  "googlevideo.com",
 		  "www.google.com",
+          "mail.google.com",
 		  "googleapps.com",
 		  "googleusercontent.com",
 		  "googletagmanager.com",
@@ -111,6 +104,7 @@
 		  "google-analytics.com",
 		  "googlesyndication.com",
 		  "googletagservices.com",
+          "www.googleadservices.com",
 		  "googleapis.com",
 		  "withgoogle.com",
           "i.google.com",
@@ -123,7 +117,7 @@
             ]
       },
       {
-        "notes":"Google/ Youtube Hosts 443",
+      "notes" : "237-Google/ Youtube Hosts 443",
       "action" : "allow",
       "ports" : "443",
       "process" : "\/Applications\/Zen.app\/Contents\/MacOS\/zen",
@@ -173,6 +167,7 @@
         "ads-img.mozilla.org",
         "ads.mozilla.org",
         "download.mozilla.org",
+        "telemetry.mozilla.org",
         "vpn.mozilla.org",
         "ohttp-merino.mozilla.fastly-edge.com",
         "mozilla-ohttp.fastly-edge.com",
@@ -194,7 +189,8 @@
            "github.com",
            "github.dev",
            "github.io",
-           "homebrew.sh"
+           "homebrew.sh",
+           "brew.sh"
             ]
        },
          {
@@ -205,6 +201,7 @@
             "protocol" : "tcp",
             "remote-hosts" : [
  	        "individual.githubcopilot.com",
+            "api.individual.githubcopilot.com",
             "avatars.githubusercontent.com",
             "raw.githubusercontent.com",
   	        "malware-filter.gitlab.io",
@@ -221,12 +218,15 @@
           "azurewebsites.net",
           "azurefed.net",
           "azurefed.com",
+          "azure.com",
           "bing.com",
           "hockeyapp.net",
           "live.com",
           "live.net",
           "microsoft.com",
           "microsoftonline.com",
+          "onecdn.static.microsoft",
+          "amcdn.msftauth.net",
           "msedge.net",
           "oaspapps.com",
           "office.com",
@@ -238,6 +238,70 @@
           "windows.com",
           "blob.core.windows.net"
             ]
-        }
-  ]
+        },
+               {
+      "notes" : "511 Major Domains 443",
+      "action": "allow",
+      "ports": "443",
+      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "protocol": "tcp",
+      "remote-domains": [
+        "cisco.com",
+        "meraki.com",
+        "meraki.net",
+        "paloaltonetworks.com",
+        "fortinet.com",
+        "chatgpt.com",
+        "openai.com",
+        "ubuntu.com",
+        "broadcom.com",
+        "literotica.com",
+        "resilio.com",
+        "scroller.com",
+        "medium.com",
+        "wikipedia.com",
+        "wikihow.com",
+        "wikimedia.net",
+        "wikimedia.org",
+        "whatismyipaddress.com",
+        "iplookup.com",
+        "noip.com",
+		"check-host.net",
+        "bing.com",
+        "brave.com",
+        "bravesoftware.com",
+        "duck.ai",
+        "duckduckgo.com",
+        "dogpile.com",
+        "sentry.io",
+        "lifewire.com",
+        "supermedia.com",
+        "edgedl.me.gvt1.com",
+        "www.eff.org",
+        "obdev.net",
+        "obdev.at",
+        "dropbox.com",
+        "costco.com",
+        "pbs.org",
+        "band.us",
+        "flickr.com",
+        "ext.to",
+        "pages.dev"
+      ]
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "protocol": "tcp",
+      "remote-domains": [
+        "duck.ai",
+		"urboscribe.ai",
+		"factors.ai",
+		"engagement.ai",
+		"reco.ai",
+		"hybrid.ai"
+        ]
+    }
+    ]
 }
