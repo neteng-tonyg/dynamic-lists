@@ -178,7 +178,6 @@
         "process": "any",
         "protocol" : "tcp",
         "remote-domains" : [
-            "githubassets.com",
             "gitlab.com",
             "gitlab.dev",
             "gitlab.io",
@@ -238,7 +237,7 @@
       "ports": "443",
       "process" : "any",
       "protocol": "tcp",
-      "remote-hosts": [
+      "remote-domains": [
         "download.bitdefender.com",
         "securepass-auth.bitdefender.com",
         "cdn.bitdefender.net",

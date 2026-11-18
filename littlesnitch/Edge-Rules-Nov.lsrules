@@ -96,6 +96,7 @@
           "remote-domains" : [
 		  "googlevideo.com",
 		  "www.google.com",
+          "mail.google.com",
 		  "googleapps.com",
 		  "googleusercontent.com",
 		  "googletagmanager.com",
@@ -213,6 +214,7 @@
           "azurewebsites.net",
           "azurefed.net",
           "azurefed.com",
+          "azure.com",
           "bing.com",
           "hockeyapp.net",
           "live.com",
@@ -288,6 +290,7 @@
         "lifewire.com",
         "supermedia.com",
         "obdev.net",
+        "obdev.at",
         "dropbox.com",
         "costco.com",
         "pbs.org",
@@ -320,6 +323,7 @@
         "redditstatic.com",
         "Redditmedia.com",
         "reddit.com",
+        "www.reddit.com",
         "preview.redd.it",
         "redd.it"
         ]
@@ -338,33 +342,24 @@
         ]
     },
     {
-
-      "notes" : "Plex-subs-et-al",
-      "action" : "allow",
-      "ports" : "443",
-      "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
-      "protocol" : "tcp",
-      "remote-hosts" : [
-	  "clients.plex.tv",
-      "features.plex.tv",
-	  "community.plex.tv",
-	  "provider.plex.tv",
-	  "pubsub.plex.tv",
-	  "together.plex.tv"
-	    ]
-      },
-    {
-     "notes" : "Filen and Seedbox ",
+     "notes" : "Plex, Filen, Seedbox ",
       "action" : "allow",
       "ports" : "443",
       "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
       "protocol" : "tcp",
       "remote-domains" : [
-  	    "filen-1.net", "filen-2.net", "filen-3.net","filen-4.net","filen-5.net",
+        "plex.tv",
+  	    "filen-1.net",
+        "filen-2.net",
+        "filen-3.net",
+        "filen-4.net",
+        "filen-5.net",
   	    "filen.com",
+        "filen.io",
   	    "seedbox.io",
+        "exto.to",
 	    "extto.com"
-  	  ]
+  	     ]
     }
   ]
 }
