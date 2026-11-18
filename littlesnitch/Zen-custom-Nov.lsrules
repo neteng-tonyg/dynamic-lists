@@ -1,0 +1,125 @@
+{
+ "name": "Zen-3.30",
+  "description":
+  "Custom -Zen : Basic Browser + custom",
+    "rules": [
+      {
+  	    "notes" : "333-Mozilla Domains 443",
+        "action" : "allow",
+        "ports": "80, 443",
+   		"process" : "\/Applications\/Zen.app\/Contents\/MacOS\/zen",
+        "protocol" : "tcp",
+        "remote-domains" : [
+          "mozilla.com",
+  		  "mozilla.net",
+          "mozilla.org",
+  		  "mozgcp.net",
+  		  "firefox.com",
+          "firefox.org",
+          "firebase.io",
+          "firefox-portal-detection.com"
+          ]
+      },
+      {
+  	    "notes" : "335-Mozilla Hosts 443",
+        "action" : "allow",
+        "ports": "80, 443",
+   		"process" : "\/Applications\/Zen.app\/Contents\/MacOS\/zen",
+        "protocol" : "tcp",
+        "remote-hosts" : [
+        "classify-services.mozilla.com",
+        "accounts.firefox.com",
+        "services.mozilla.com",
+        "incoming.telemetry.mozilla.org",
+        "aus5.mozilla.org",
+        "addons.mozilla.org",
+        "ads-img.mozilla.org",
+        "ads.mozilla.org",
+        "download.mozilla.org",
+        "telemetry.mozilla.org",
+        "vpn.mozilla.org",
+        "ohttp-merino.mozilla.fastly-edge.com",
+        "mozilla-ohttp.fastly-edge.com",
+  		"mozilla.fastly-edge.com"
+          ]
+      },
+      {
+        "notes" : "Git Domains 443",
+        "action" : "allow",
+        "ports" : "443",
+        "process" : "\/Applications\/Zen.app\/Contents\/MacOS\/zen",
+        "protocol" : "tcp",
+        "remote-domains" : [
+            "githubassets.com",
+            "gitlab.com",
+            "gitlab.dev",
+            "gitlab.io",
+           "githubusercontent.com",
+           "github.com",
+           "github.dev",
+           "github.io",
+           "homebrew.sh",
+           "brew.sh"
+            ]
+       },
+         {
+            "notes" : "Git Hosts 443",
+            "action" : "allow",
+            "ports" : "443",
+            "process" : "\/Applications\/Zen.app\/Contents\/MacOS\/zen",
+            "protocol" : "tcp",
+            "remote-hosts" : [
+ 	        "individual.githubcopilot.com",
+            "api.individual.githubcopilot.com",
+            "avatars.githubusercontent.com",
+            "raw.githubusercontent.com",
+  	        "malware-filter.gitlab.io",
+            "cafe.github.com",
+            "central.github.com"
+               ]
+          },
+    {
+      "action": "allow",
+      "ports": "443",
+      "process" : "\/Applications\/Zen.app\/Contents\/MacOS\/zen",
+      "protocol": "tcp",
+      "remote-domains": [
+        "duck.ai",
+		"urboscribe.ai",
+		"factors.ai",
+		"engagement.ai",
+		"reco.ai",
+		"hybrid.ai"
+        ]
+    },
+          {
+        "notes": "Reddit WWW",
+        "action": "allow",
+        "process" : "\/Applications\/Zen.app\/Contents\/MacOS\/zen",
+        "protocol": "tcp",
+        "remote-domains": [
+        "redditspace.com",
+        "redditstatic.com",
+        "Redditmedia.com",
+        "reddit.com",
+        "www.reddit.com",
+        "preview.redd.it",
+        "redd.it"
+        ]
+      },
+          {
+        "notes": "Custom Zen Rules",
+        "action": "allow",
+        "process" : "\/Applications\/Zen.app\/Contents\/MacOS\/zen",
+        "protocol": "tcp",
+        "remote-domains": [
+        "updates.zen-browser.app",
+        "imageapi.same.energy",
+        "same.energy.com",
+        "yandex.com",
+        "infini.wtf",
+        "redd.it"
+        ]
+      },
+    ]
+}

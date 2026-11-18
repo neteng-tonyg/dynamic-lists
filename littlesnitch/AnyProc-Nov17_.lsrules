@@ -1,5 +1,5 @@
 {
-  "name": "AnyProc-v3.22",
+  "name": "AnyProc-v3.25",
   "description":
      "v3.21 - Standard  traffic: Cloudflare/ Google Block/ Mozilla 443/80, GitHub, Microsoft, Bitdefender, Personal ",
   "rules": [
@@ -36,7 +36,6 @@
       "protocol" : "tcp",
       "remote-addresses" : [
 	    "64.233.177.0/24",
-	    "173.194.219.0/24",
 	    "142.250.105.0/24",
 	    "142.250.9.0/24",
 	    "74.125.21.0/24"
@@ -124,12 +123,17 @@
       "remote-hosts" :[
 		  "dl.google.com",
 		  "www.google.com",
+          "chat.google.com",
+          "news.google.com",
+          "calendar.google.com",
+          "workspace.google.com",
           "i.google.com",
-		  "stun1.l.google.com",
+		  "update.googleapi.com",
 		  "accounts.google.com",
 		  "play.google.com",
 		  "fonts.gstatic.com",
 		  "c.youtube.com",
+          "m.youtube.com",
 		  "accounts.youtube.com"
             ]
       },
