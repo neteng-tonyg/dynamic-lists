@@ -2,13 +2,13 @@
   "name": "VMware-3.22-Nov",
   "description":
       "Standard app traffic  WMware",
-  "rules": [
-    {
+  "rules" : [
+      {
     "notes ": "000-Default Deny Quic",
     "priority" : "high",
     "action": "deny",
     "ports": "443",
-    "process": "any",
+     "process" : "\/Applications\/VMware Fusion.app\/Contents\/MacOS\/VMware Fusion",
     "protocol": "udp",
     "remote": "any"
     },
@@ -17,7 +17,7 @@
     "priority" : "high",
     "action" : "deny",
     "ports" : "443",
-    "process" : "any",
+    "process" : "\/Applications\/VMware Fusion.app\/Contents\/MacOS\/VMware Fusion",
     "protocol" : "tcp",
     "remote-domains" : [
     "facebook.com",
@@ -32,7 +32,7 @@
       "priority" : "high",
       "action" : "deny",
       "ports" : "any",
-      "process" : "any",
+      "process" : "\/Applications\/VMware Fusion.app\/Contents\/MacOS\/VMware Fusion",
       "protocol" : "tcp",
       "remote-addresses" : [
 	  "64.233.177.0/24",
@@ -47,7 +47,7 @@
       "action" : "deny",
       "ports" : "443",
       "priority" : "high",
-        "process" : "any",
+        "process" : "\/Applications\/VMware Fusion.app\/Contents\/MacOS\/VMware Fusion",
       "protocol" : "tcp",
       "remote-hosts" : [
 	  "i.doubleclick.net",
@@ -67,7 +67,7 @@
         "action" : "allow",
         "ports" : "3478",
         "priority" : "high",
-        "process" : "any",
+        "process" : "\/Applications\/VMware Fusion.app\/Contents\/MacOS\/VMware Fusion",
         "protocol" : "udp",
         "remote" : "any"
     },
@@ -76,7 +76,7 @@
       "action": "allow",
       "ports": "80, 443",
       "priority" : "high",
-      "process" : "any",
+      "process" : "\/Applications\/VMware Fusion.app\/Contents\/MacOS\/VMware Fusion",
       "protocol": "tcp",
       "remote-domains": [
         "cloudflare.com",
@@ -89,53 +89,11 @@
         "cloudflare.net"
         ]
     },
-    {
-     "notes" : "233-Google/ Youtube Domains 443",
-     "action" : "allow",
-     "ports" : "443",
-     "process" : "any",
-          "protocol" : "tcp",
-          "remote-domains" : [
-		  "googlevideo.com",
-		  "www.google.com",
-		  "googleapps.com",
-		  "googleusercontent.com",
-		  "googletagmanager.com",
-		  "gogleanalytics.com",
-		  "google-analytics.com",
-		  "googlesyndication.com",
-		  "googletagservices.com",
-		  "googleapis.com",
-		  "withgoogle.com",
-		  "www.gstatic.com",
-		  "gstatic.com",
-			"youtube.com",
-			"youtube.be"
-            ]
-      },
-      {
-      "notes" : "237-Google/ Youtube Hosts 443",
-      "action" : "allow",
-      "ports" : "443",
-      "process" : "any",
-      "protocol" : "tcp",
-      "remote-hosts" :[
-		  "dl.google.com",
-		  "www.google.com",
-          "i.google.com",
-		  "stun1.l.google.com",
-		  "accounts.google.com",
-		  "play.google.com",
-		  "fonts.gstatic.com",
-		  "c.youtube.com",
-		  "accounts.youtube.com"
-            ]
-      },
-      {
+          {
   	    "notes" : "333-Mozilla Domains 443",
         "action" : "allow",
          "ports": "80, 443",
-   		"process" : "any",
+   	    "process" : "\/Applications\/VMware Fusion.app\/Contents\/MacOS\/VMware Fusion",
         "protocol" : "tcp",
         "remote-domains" : [
         "mozilla.com",
@@ -151,7 +109,7 @@
   	    "notes" : "335-Mozilla hosts 443",
         "action" : "allow",
         "ports": "80, 443",
-   		"process" : "any",
+   		 "process" : "\/Applications\/VMware Fusion.app\/Contents\/MacOS\/VMware Fusion",
         "protocol" : "tcp",
         "remote-hosts" : [
         "classify-services.mozilla.com",
@@ -170,103 +128,24 @@
   		"mozilla.fastly-edge.com"
           ]
       },
-      {
-        "notes" : "Git Domains 443",
-        "action" : "allow",
-        "ports" : "443",
-        "process": "any",
-        "protocol" : "tcp",
-        "remote-domains" : [
-          "githubassets.com",
-          "gitlab.com",
-          "gitlab.dev",
-          "gitlab.io",
-           "githubusercontent.com",
-           "github.com",
-           "github.dev",
-           "github.io",
-           "homebrew.sh"
-            ]
-       },
-         {
-            "notes" : "Git Hosts 443",
-            "action" : "allow",
-            "ports" : "443",
-            "process" : "any",
-            "protocol" : "tcp",
-            "remote-hosts" : [
- 	        "individual.githubcopilot.com",
-            "avatars.githubusercontent.com",
-            "raw.githubusercontent.com",
-  	        "malware-filter.gitlab.io",
-            "cafe.github.com",
-            "central.github.com"
-               ]
-          },
-        {
-        "notes" : "Microsoft/ Office domains",
-        "action": "allow",
-          "ports" : "443",
-        "process": "any",
-        "remote-domains": [
-          "azurewebsites.net",
-          "azurefed.net",
-          "azurefed.com",
-          "bing.com",
-          "hockeyapp.net",
-          "live.com",
-          "live.net",
-          "microsoft.com",
-          "microsoftonline.com",
-          "msedge.net",
-          "oaspapps.com",
-          "office.com",
-          "office.net",
-          "office365.com",
-          "onedrive.com",
-          "outlook.com",
-          "skype.com",
-          "windows.com",
-          "blob.core.windows.net"
-            ]
-        },
-      {
-      "notes": "411 Bitdefender WWW",
-      "action": "allow",
-      "ports": "443",
-      "process" : "any",
-      "protocol": "tcp",
-      "remote-hosts": [
-        "download.bitdefender.com",
-        "securepass-auth.bitdefender.com",
-        "cdn.bitdefender.net",
-        "nimbus.bitdefender.net",
-        "us.nimbus.bitdefender.net",
-        "push.bitdefender.net"
-        ]
-      },
     {
-      "action": "allow",
-      "ports": "443, 2083",
-      "process" : "any",
-      "protocol": "tcp",
-      "remote-domains": [
-        "bluehost.com",
-	    "nixihost.com",
-	    "audaxum.me",
-	    "goethals.us"
-      ]
-    },
-         {
-      "notes" : "511 Major Domains 443",
+      "notes": "511 Major Domains 443",
       "action": "allow",
       "ports": "443",
-       "process" : "any",
+       "process" : "\/Applications\/VMware Fusion.app\/Contents\/MacOS\/VMware Fusion",
       "protocol": "tcp",
       "remote-domains": [
         "cisco.com",
         "meraki.com",
         "meraki.net",
+        "paloaltonetworks.com",
+        "fortinet.com",
+        "chatgpt.com",
+        "openai.com",
+        "ubuntu.com",
+        "broadcom.com",
+        "literotica.com",
+        "resilio.com",
         "scroller.com",
         "medium.com",
         "wikipedia.com",
@@ -276,7 +155,7 @@
         "whatismyipaddress.com",
         "iplookup.com",
         "noip.com",
-		"check-host.net",
+        "check-host.net",
         "bing.com",
         "brave.com",
         "bravesoftware.com",
@@ -292,8 +171,73 @@
         "pbs.org",
         "band.us",
         "flickr.com",
+        "ext.to",
         "pages.dev"
       ]
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/VMware Fusion.app\/Contents\/MacOS\/VMware Fusion",
+      "protocol" : "tcp",
+      "remote-addresses" : "17.253.7.0/24"
+    },
+       {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/VMware Fusion.app\/Contents\/MacOS\/VMware Fusion",
+      "protocol" : "tcp",
+      "remote-addresses" : "23.49.5.134"
+    },
+    {
+      "action" : "allow",
+      "ports" : "4000",
+      "process" : "\/Applications\/VMware Fusion.app\/Contents\/MacOS\/VMware Fusion",
+      "protocol" : "tcp, udp",
+      "remote-addresses" : "23.111.157.0/24"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/VMware Fusion.app\/Contents\/MacOS\/VMware Fusion",
+       "protocol" : "tcp, udp",
+      "remote-addresses" : "23.213.26.81"
+    },
+    {
+      "action" : "allow",
+      "ports" : "4000",
+      "process" : "\/Applications\/VMware Fusion.app\/Contents\/MacOS\/VMware Fusion",
+      "protocol" : "tcp, udp",
+      "remote-addresses" : "66.165.233.194"
+    },
+     {
+      "action" : "allow",
+      "ports" : "3838",
+      "process" : "\/Applications\/VMware Fusion.app\/Contents\/MacOS\/VMware Fusion",
+      "protocol" : "udp",
+      "remote-addresses" : "239.192.0.0"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/VMware Fusion.app\/Contents\/MacOS\/VMware Fusion",
+      "protocol" : "tcp",
+      "remote-domains" :[
+         "apple-cloudkit.com",
+         "apple.news",
+         "yahoo.com"
+          ]
+        },
+    {
+      "action" : "allow",
+      "ports" : "80",
+      "process" : "\/Applications\/VMware Fusion.app\/Contents\/MacOS\/VMware Fusion",
+      "protocol" : "tcp",
+      "remote-domains" : [
+	  "connectivitycheck.gstatic.com",
+	  "gstatic.com",
+	  "akamai.net"
+	  ]
     }
   ]
 }

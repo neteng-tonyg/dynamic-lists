@@ -104,6 +104,7 @@
 		  "google-analytics.com",
 		  "googlesyndication.com",
 		  "googletagservices.com",
+          "www.googleadservices.com",
 		  "googleapis.com",
 		  "withgoogle.com",
           "i.google.com",
@@ -187,7 +188,8 @@
            "github.com",
            "github.dev",
            "github.io",
-           "homebrew.sh"
+           "homebrew.sh",
+           "brew.sh"
             ]
        },
          {
@@ -198,6 +200,7 @@
             "protocol" : "tcp",
             "remote-hosts" : [
  	        "individual.githubcopilot.com",
+            "api.individual.githubcopilot.com",
             "avatars.githubusercontent.com",
             "raw.githubusercontent.com",
   	        "malware-filter.gitlab.io",
@@ -221,6 +224,8 @@
           "live.net",
           "microsoft.com",
           "microsoftonline.com",
+          "onecdn.static.microsoft",
+          "amcdn.msftauth.net",
           "msedge.net",
           "oaspapps.com",
           "office.com",
@@ -239,7 +244,7 @@
       "ports": "443",
       "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
       "protocol": "tcp",
-      "remote-hosts": [
+      "remote-domains": [
         "download.bitdefender.com",
         "securepass-auth.bitdefender.com",
         "cdn.bitdefender.net",
@@ -289,6 +294,8 @@
         "sentry.io",
         "lifewire.com",
         "supermedia.com",
+        "edgedl.me.gvt1.com",
+        "www.eff.org",
         "obdev.net",
         "obdev.at",
         "dropbox.com",
