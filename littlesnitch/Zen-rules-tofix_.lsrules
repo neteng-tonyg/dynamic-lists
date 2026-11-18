@@ -243,7 +243,7 @@
       "notes" : "511 Major Domains 443",
       "action": "allow",
       "ports": "443",
-      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "process" : "\/Applications\/Zen.app\/Contents\/MacOS\/zen",,
       "protocol": "tcp",
       "remote-domains": [
         "cisco.com",
@@ -292,7 +292,7 @@
     {
       "action": "allow",
       "ports": "443",
-      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "process" : "\/Applications\/Zen.app\/Contents\/MacOS\/zen",
       "protocol": "tcp",
       "remote-domains": [
         "duck.ai",
