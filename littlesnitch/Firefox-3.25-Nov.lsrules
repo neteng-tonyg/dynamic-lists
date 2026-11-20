@@ -15,7 +15,8 @@
 		"factors.ai",
 		"engagement.ai",
 		"reco.ai",
-		"hybrid.ai"
+		"hybrid.ai",
+        "huggingface.co"
         ]
     },
     {
