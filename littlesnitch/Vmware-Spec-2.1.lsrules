@@ -92,7 +92,7 @@
      "notes" : "233-Google/ Youtube Domains 443",
      "action" : "allow",
      "ports" : "443",
-      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "process" : "\/Applications\/VMware Fusion.app\/Contents\/MacOS\/VMware Fusion",
           "protocol" : "tcp",
           "remote-domains" : [
 		  "googlevideo.com",
@@ -121,13 +121,17 @@
       "notes" : "237-Google/ Youtube Hosts 443",
       "action" : "allow",
       "ports" : "443",
-      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "process" : "\/Applications\/VMware Fusion.app\/Contents\/MacOS\/VMware Fusion",
       "protocol" : "tcp",
       "remote-hosts" :[
 		  "dl.google.com",
 		  "www.google.com",
+          "chat.google.com",
+          "news.google.com",
+          "calendar.google.com",
+          "workspace.google.com",
           "i.google.com",
-		  "stun1.l.google.com",
+		  "update.googleapi.com",
 		  "accounts.google.com",
 		  "play.google.com",
 		  "fonts.gstatic.com",
@@ -150,10 +154,10 @@
           "firefox.org",
           "firebase.io",
           "firefox-portal-detection.com"
-        ]
+          ]
       },
       {
-  	    "notes" : "335-Mozilla hosts 443",
+  	    "notes" : "335-Mozilla Hosts 443",
         "action" : "allow",
         "ports": "80, 443",
    		 "process" : "\/Applications\/VMware Fusion.app\/Contents\/MacOS\/VMware Fusion",
@@ -174,6 +178,88 @@
         "mozilla-ohttp.fastly-edge.com",
   		"mozilla.fastly-edge.com"
           ]
+      },
+      {
+        "notes" : "Git Domains 443",
+        "action" : "allow",
+        "ports" : "443",
+        "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
+        "protocol" : "tcp",
+        "remote-domains" : [
+            "githubassets.com",
+            "gitlab.com",
+            "gitlab.dev",
+            "gitlab.io",
+           "githubusercontent.com",
+           "github.com",
+           "github.dev",
+           "github.io",
+           "homebrew.sh",
+           "brew.sh"
+            ]
+       },
+         {
+            "notes" : "Git Hosts 443",
+            "action" : "allow",
+            "ports" : "443",
+            "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
+            "protocol" : "tcp",
+            "remote-hosts" : [
+ 	        "individual.githubcopilot.com",
+            "api.individual.githubcopilot.com",
+            "avatars.githubusercontent.com",
+            "raw.githubusercontent.com",
+  	        "malware-filter.gitlab.io",
+            "cafe.github.com",
+            "central.github.com"
+               ]
+          },
+        {
+        "notes" : "Microsoft/ Office domains",
+        "action": "allow",
+          "ports" : "443",
+          "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
+          "remote-domains": [
+          "azurewebsites.net",
+          "azurefed.net",
+          "azurefed.com",
+          "azure.com",
+          "bing.com",
+          "hockeyapp.net",
+          "live.com",
+          "live.net",
+          "microsoft.com",
+          "microsoftonline.com",
+          "onecdn.static.microsoft",
+          "amcdn.msftauth.net",
+          "msedge.net",
+          "wac-dc-msedge.net",
+          "oaspapps.com",
+          "office.com",
+          "office.net",
+          "online.office.com",
+          "office365.com",
+          "onedrive.com",
+          "outlook.com",
+          "skype.com",
+          "windows.com",
+          "blob.core.windows.net"
+            ]
+        },
+      {
+      "notes": "411 Bitdefender WWW",
+      "action": "allow",
+      "ports": "443",
+      "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
+      "protocol": "tcp",
+      "remote-hosts": [
+        "download.bitdefender.com",
+        "securepass-auth.bitdefender.com",
+        "cdn.bitdefender.net",
+        "nimbus.bitdefender.net",
+        "us.nimbus.bitdefender.net",
+        "push.bitdefender.net"
+        ]
       },
     {
       "notes": "511 Major Domains 443",
@@ -196,6 +282,7 @@
         "resilio.com",
         "scroller.com",
         "medium.com",
+        "blogger.com",
         "wikipedia.com",
         "wikihow.com",
         "wikimedia.net",
