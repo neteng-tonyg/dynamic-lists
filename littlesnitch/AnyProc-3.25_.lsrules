@@ -266,7 +266,7 @@
         ]
       },
     {
-      "notes": "Plex, Filen, Seedbox ",
+      "notes": "Plex, Filen",
       "action": "allow",
       "ports": "443",
       "process": "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
@@ -290,6 +290,7 @@
       "protocol": "tcp",
       "remote-domains": [
         "seedbox.io",
+		"psb30682.seedbox.io",
         "nl.seedbox.io",
         "de.seedbox.io",
         "us.seedbox.io",
