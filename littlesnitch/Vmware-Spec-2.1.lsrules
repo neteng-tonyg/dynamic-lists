@@ -136,6 +136,7 @@
 		  "play.google.com",
 		  "fonts.gstatic.com",
 		  "c.youtube.com",
+          "m.youtube.com",
 		  "accounts.youtube.com"
             ]
       },
@@ -153,7 +154,9 @@
   		  "firefox.com",
           "firefox.org",
           "firebase.io",
-          "firefox-portal-detection.com"
+          "firefox-portal-detection.com",
+          "thunderbird.net",
+          "addons.thunderbird.net"
           ]
       },
       {
@@ -209,6 +212,7 @@
             "api.individual.githubcopilot.com",
             "avatars.githubusercontent.com",
             "raw.githubusercontent.com",
+            "codeload.github.com",
   	        "malware-filter.gitlab.io",
             "cafe.github.com",
             "central.github.com"
@@ -234,6 +238,7 @@
           "amcdn.msftauth.net",
           "msedge.net",
           "wac-dc-msedge.net",
+          "edgesuite.net",
           "oaspapps.com",
           "office.com",
           "office.net",
@@ -241,6 +246,7 @@
           "office365.com",
           "onedrive.com",
           "outlook.com",
+          "outlook.live.com",
           "skype.com",
           "windows.com",
           "blob.core.windows.net"
@@ -294,9 +300,15 @@
         "bing.com",
         "brave.com",
         "bravesoftware.com",
+        "librewolf.com",
         "duck.ai",
         "duckduckgo.com",
         "dogpile.com",
+        "dice.com",
+        "indeed.com",
+        "linkedin.com",
+        "licdn.com",
+        "btloader.com",
         "sentry.io",
         "lifewire.com",
         "supermedia.com",

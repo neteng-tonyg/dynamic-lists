@@ -173,6 +173,7 @@
         "ads-img.mozilla.org",
         "ads.mozilla.org",
         "download.mozilla.org",
+        "telemetry.mozilla.org",
         "vpn.mozilla.org",
         "ohttp-merino.mozilla.fastly-edge.com",
         "mozilla-ohttp.fastly-edge.com",
@@ -191,7 +192,6 @@
             "gitlab.dev",
             "gitlab.io",
            "githubusercontent.com",
-           "\"\\/Applications\\/Safari.app\\/Contents\\/MacOS\\/Safari\",",
            "github.com",
            "github.dev",
            "github.io",
@@ -324,8 +324,13 @@
         "meraki.net",
         "paloaltonetworks.com",
         "fortinet.com",
-        "zscaler.com",
-        "zscaleracademyhub.zscaler.com",
+        "chatgpt.com",
+        "openai.com",
+        "platform.openai.com",
+        "ubuntu.com",
+        "broadcom.com",
+        "literotica.com",
+        "resilio.com",
         "scroller.com",
         "medium.com",
         "blogger.com",
@@ -360,7 +365,9 @@
         "pbs.org",
         "band.us",
         "flickr.com",
-        "pages.dev"
+        "ext.to",
+        "pages.dev",
+        "huggingface.co"
       ]
     }
   ]
