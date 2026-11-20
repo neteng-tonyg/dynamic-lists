@@ -3,7 +3,6 @@
    "description":
   "AnyProc + MajorDomains+Reddit+Lucid+Plex+Filen",
   "rules": [
-
     {
       "notes" : "Random AI domains",
       "action": "allow",
