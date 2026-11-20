@@ -91,7 +91,7 @@
      "notes" : "233-Google/ Youtube Domains 443",
      "action" : "allow",
      "ports" : "443",
-      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
           "protocol" : "tcp",
           "remote-domains" : [
 		  "googlevideo.com",
