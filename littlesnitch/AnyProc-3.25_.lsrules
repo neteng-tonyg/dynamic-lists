@@ -191,7 +191,6 @@
             "gitlab.dev",
             "gitlab.io",
            "githubusercontent.com",
-           "\"\\/Applications\\/Safari.app\\/Contents\\/MacOS\\/Safari\",",
            "github.com",
            "github.dev",
            "github.io",
@@ -269,7 +268,7 @@
       "notes": "Plex, Filen",
       "action": "allow",
       "ports": "443",
-      "process": "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
+      "process": "any",
       "protocol": "tcp",
       "remote-domains": [
         "plex.tv",
@@ -286,7 +285,7 @@
       "notes": "Seedbox & P2P ",
       "action": "allow",
       "ports": "443",
-      "process": "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
+      "process": "any",
       "protocol": "tcp",
       "remote-domains": [
         "seedbox.io",
