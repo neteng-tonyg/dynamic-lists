@@ -5,6 +5,7 @@
   "rules": [
 
     {
+      "notes" : "Random AI domains",
       "action": "allow",
       "ports": "443",
       "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
@@ -17,6 +18,21 @@
 		"reco.ai",
 		"hybrid.ai",
         "huggingface.co"
+        ]
+    },
+        {
+      "notes" : "Random Top Domains",
+      "action": "allow",
+      "ports": "443",
+      "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
+      "protocol": "tcp",
+      "remote-domains": [
+        "nmap.com",
+		"nmap.org",
+		"videolan.org",
+		"mail.com",
+		"reco.ai",
+		"hybrid.ai"
         ]
     },
     {

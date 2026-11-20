@@ -95,6 +95,7 @@
       "remote-domains" : [
 		  "googlevideo.com",
 		  "www.google.com",
+          "mail.google.com",
 		  "googleapps.com",
 		  "googleusercontent.com",
 		  "googletagmanager.com",
@@ -151,7 +152,9 @@
   		  "firefox.com",
           "firefox.org",
           "firebase.io",
-          "firefox-portal-detection.com"
+          "firefox-portal-detection.com",
+          "thunderbird.net",
+          "addons.thunderbird.net"
           ]
       },
       {
@@ -183,6 +186,7 @@
         "process": "any",
         "protocol" : "tcp",
         "remote-domains" : [
+            "githubassets.com",
             "gitlab.com",
             "gitlab.dev",
             "gitlab.io",
@@ -206,6 +210,7 @@
             "api.individual.githubcopilot.com",
             "avatars.githubusercontent.com",
             "raw.githubusercontent.com",
+            "codeload.github.com",
   	        "malware-filter.gitlab.io",
             "cafe.github.com",
             "central.github.com"
@@ -230,12 +235,15 @@
           "onecdn.static.microsoft",
           "amcdn.msftauth.net",
           "msedge.net",
+          "wac-dc-msedge.net",
           "oaspapps.com",
           "office.com",
           "office.net",
+          "online.office.com",
           "office365.com",
           "onedrive.com",
           "outlook.com",
+          "outlook.live.com",
           "skype.com",
           "windows.com",
           "blob.core.windows.net"
@@ -265,7 +273,8 @@
         "bluehost.com",
 	    "nixihost.com",
 	    "audaxum.me",
-	    "goethals.us"
+	    "goethals.us",
+        "mail.com"
           ]
     },
          {
@@ -281,6 +290,7 @@
         "paloaltonetworks.com",
         "fortinet.com",
         "zscaler.com",
+        "zscaleracademyhub.zscaler.com",
         "scroller.com",
         "medium.com",
         "blogger.com",
@@ -295,6 +305,7 @@
         "bing.com",
         "brave.com",
         "bravesoftware.com",
+        "librewolf.com",
         "duck.ai",
         "duckduckgo.com",
         "dogpile.com",
