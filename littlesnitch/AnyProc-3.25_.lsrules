@@ -236,6 +236,7 @@
           "amcdn.msftauth.net",
           "msedge.net",
           "wac-dc-msedge.net",
+          "edgesuite.net",
           "oaspapps.com",
           "office.com",
           "office.net",
@@ -265,6 +266,40 @@
         ]
       },
     {
+      "notes": "Plex, Filen, Seedbox ",
+      "action": "allow",
+      "ports": "443",
+      "process": "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
+      "protocol": "tcp",
+      "remote-domains": [
+        "plex.tv",
+        "filen-1.net",
+        "filen-2.net",
+        "filen-3.net",
+        "filen-4.net",
+        "filen-5.net",
+        "filen.com",
+        "filen.io"
+      ]
+    },
+        {
+      "notes": "Seedbox & P2P ",
+      "action": "allow",
+      "ports": "443",
+      "process": "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
+      "protocol": "tcp",
+      "remote-domains": [
+        "seedbox.io",
+        "nl.seedbox.io",
+        "de.seedbox.io",
+        "us.seedbox.io",
+        "ca.seedbox.io",
+        "exto.to",
+        "extto.com"
+      ]
+    },
+    {
+      "notes" : "425 Mail Servers",
       "action": "allow",
       "ports": "443, 2083",
       "process" : "any",
@@ -309,6 +344,10 @@
         "duck.ai",
         "duckduckgo.com",
         "dogpile.com",
+        "dice.com",
+        "indeed.com",
+        "linkedin.com",
+        "licdn.com",
         "sentry.io",
         "lifewire.com",
         "supermedia.com",
