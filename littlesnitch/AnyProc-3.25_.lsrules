@@ -1,7 +1,7 @@
 {
-  "name": "AnyProc-v3.25",
+  "name": "AnyProc-v3.30",
   "description":
-     "v3.21 - Standard  traffic: Cloudflare/ Google Block/ Mozilla 443/80, GitHub, Microsoft, Bitdefender, Personal ",
+     "v3.30 - Standard  traffic: Cloudflare/ Google Block/ Mozilla 443/80, GitHub, Microsoft, Bitdefender, Personal ",
   "rules": [
     {
     "notes ": "000-Default Deny Quic",
