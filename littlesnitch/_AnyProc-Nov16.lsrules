@@ -212,12 +212,17 @@
           "azurewebsites.net",
           "azurefed.net",
           "azurefed.com",
+          "azureedge.net",
           "bing.com",
+          "mm.bing.net",
           "hockeyapp.net",
           "live.com",
           "live.net",
           "microsoft.com",
+          "edge.microsoft.com",
           "microsoftonline.com",
+          "word.cloud.microsoft",
+          "svc.cloud.microsoft",
           "msedge.net",
           "oaspapps.com",
           "office.com",
@@ -292,6 +297,7 @@
         "pbs.org",
         "band.us",
         "flickr.com",
+        "stripe.com",
         "pages.dev"
       ]
     }
