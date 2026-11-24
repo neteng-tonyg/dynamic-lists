@@ -366,7 +366,7 @@
         "band.us",
         "flickr.com",
         "ext.to",
-        "pages.dev",
+        "pages.dev"
       ]
     },
              {
@@ -391,15 +391,15 @@
         "www.whatismyipaddress.com",
         "iplookup.com",
         "noip.com",
-		"check-host.net",
+		"check-host.net"
 
       ]
     },
-        {
-      "notes" : "513 Major Domains 443",
+    {
+      "notes": "513 Major Domains 443",
       "action": "allow",
       "ports": "443",
-       "process" : "any",
+      "process": "any",
       "protocol": "tcp",
       "remote-domains": [
         "bing.com",
@@ -422,4 +422,6 @@
         "ext.to",
         "huggingface.co"
       ]
+    }
+    ]
 }
