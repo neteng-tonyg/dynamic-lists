@@ -20,12 +20,12 @@
     "process" : "any",
     "protocol" : "tcp",
     "remote-domains" : [
-    "facebook.com",
-    "facebook.net",
-    "tiktokcdn.com",
-    "g.doubleclick.net",
-    "static.doubleclick.net"
-    ]
+      "facebook.com",
+      "facebook.net",
+      "tiktokcdn.com",
+      "g.doubleclick.net",
+      "static.doubleclick.net"
+      ]
   },
     {
       "notes":"111-Deny Google Analytics Subnets",
@@ -35,11 +35,10 @@
       "process" : "any",
       "protocol" : "tcp",
       "remote-addresses" : [
-	  "64.233.177.0/24",
-	  "173.194.219.0/24",
-	  "142.250.105.0/24",
-	  "142.250.9.0/24",
-	  "74.125.21.0/24"
+	    "64.233.177.0/24",
+	    "142.250.105.0/24",
+	    "142.250.9.0/24",
+	    "74.125.21.0/24"
 	  ]
     },
         {
@@ -54,12 +53,12 @@
 	  "g.doubleclick.net",
         "ad.doubleclick.net",
 		"fls.doubleclick.net",
-	  "pubads.g.doubleclick.net",
-	  "pagead2.googlesyndication.com",
-	  "googleads4.g.doubleclick.net",
-	  "ep1.adtrafficquality.google",
-      "adservice.google.com",
-      "adtrafficquality.google.com"
+	    "pubads.g.doubleclick.net",
+	    "pagead2.googlesyndication.com",
+	    "googleads4.g.doubleclick.net",
+	    "ep1.adtrafficquality.google",
+        "adservice.google.com",
+        "adtrafficquality.google.com"
 	  ]
     },
         {
@@ -98,6 +97,7 @@
           "remote-domains" : [
 		  "googlevideo.com",
 		  "www.google.com",
+          "mail.google.com",
 		  "googleapps.com",
 		  "googleusercontent.com",
 		  "googletagmanager.com",
@@ -105,8 +105,12 @@
 		  "google-analytics.com",
 		  "googlesyndication.com",
 		  "googletagservices.com",
+          "www.googleadservices.com",
 		  "googleapis.com",
 		  "withgoogle.com",
+          "i.google.com",
+		  "stun1.l.google.com",
+		  "accounts.google.com",
 		  "www.gstatic.com",
 		  "gstatic.com",
 			"youtube.com",
@@ -122,12 +126,17 @@
       "remote-hosts" :[
 		  "dl.google.com",
 		  "www.google.com",
+          "chat.google.com",
+          "news.google.com",
+          "calendar.google.com",
+          "workspace.google.com",
           "i.google.com",
-		  "stun1.l.google.com",
+		  "update.googleapi.com",
 		  "accounts.google.com",
 		  "play.google.com",
 		  "fonts.gstatic.com",
 		  "c.youtube.com",
+          "m.youtube.com",
 		  "accounts.youtube.com"
             ]
       },
@@ -138,14 +147,17 @@
    		"process" : "any",
         "protocol" : "tcp",
         "remote-domains" : [
-        "mozilla.com",
-  		"mozilla.net",
-  		"mozgcp.net",
+          "mozilla.com",
+  		  "mozilla.net",
+          "mozilla.org",
+  		  "mozgcp.net",
   		  "firefox.com",
           "firefox.org",
           "firebase.io",
-          "firefox-portal-detection.com"
-        ]
+          "firefox-portal-detection.com",
+          "thunderbird.net",
+          "addons.thunderbird.net"
+          ]
       },
       {
   	    "notes" : "335-Mozilla hosts 443",
@@ -157,7 +169,7 @@
         "classify-services.mozilla.com",
         "accounts.firefox.com",
         "services.mozilla.com",
-        "telemetry.mozilla.org",
+        "incoming.telemetry.mozilla.org",
         "aus5.mozilla.org",
         "addons.mozilla.org",
         "ads-img.mozilla.org",
@@ -177,15 +189,16 @@
         "process": "any",
         "protocol" : "tcp",
         "remote-domains" : [
-          "githubassets.com",
-          "gitlab.com",
-          "gitlab.dev",
-          "gitlab.io",
+            "githubassets.com",
+            "gitlab.com",
+            "gitlab.dev",
+            "gitlab.io",
            "githubusercontent.com",
            "github.com",
            "github.dev",
            "github.io",
-           "homebrew.sh"
+           "homebrew.sh",
+           "brew.sh"
             ]
        },
          {
@@ -196,8 +209,10 @@
             "protocol" : "tcp",
             "remote-hosts" : [
  	        "individual.githubcopilot.com",
+            "api.individual.githubcopilot.com",
             "avatars.githubusercontent.com",
             "raw.githubusercontent.com",
+            "codeload.github.com",
   	        "malware-filter.gitlab.io",
             "cafe.github.com",
             "central.github.com"
@@ -212,19 +227,29 @@
           "azurewebsites.net",
           "azurefed.net",
           "azurefed.com",
+          "azureedge.net",
           "bing.com",
+          "mm.bing.net",
           "hockeyapp.net",
           "live.com",
           "live.net",
           "microsoft.com",
+          "microsoft.com",
+          "edge.microsoft.com",
           "microsoftonline.com",
+          "word.cloud.microsoft",
+          "svc.cloud.microsoft",
           "msedge.net",
+          "wac-dc-msedge.net",
+          "edgesuite.net",
           "oaspapps.com",
           "office.com",
           "office.net",
+          "online.office.com",
           "office365.com",
           "onedrive.com",
           "outlook.com",
+          "outlook.live.com",
           "skype.com",
           "windows.com",
           "blob.core.windows.net"
@@ -292,6 +317,7 @@
         "pbs.org",
         "band.us",
         "flickr.com",
+        "stripe.com",
         "pages.dev"
       ]
     }
