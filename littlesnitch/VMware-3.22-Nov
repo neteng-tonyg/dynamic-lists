@@ -188,7 +188,7 @@
         "notes" : "Git Domains 443",
         "action" : "allow",
         "ports" : "443",
-        "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
+        "process" : "\/Applications\/VMware Fusion.app\/Contents\/MacOS\/VMware Fusion",
         "protocol" : "tcp",
         "remote-domains" : [
             "githubassets.com",
@@ -207,7 +207,7 @@
             "notes" : "Git Hosts 443",
             "action" : "allow",
             "ports" : "443",
-            "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
+            "process" : "\/Applications\/VMware Fusion.app\/Contents\/MacOS\/VMware Fusion",
             "protocol" : "tcp",
             "remote-hosts" : [
  	        "individual.githubcopilot.com",
@@ -224,7 +224,7 @@
         "notes" : "Microsoft/ Office domains",
         "action": "allow",
           "ports" : "443",
-          "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
+          "process" : "\/Applications\/VMware Fusion.app\/Contents\/MacOS\/VMware Fusion",
           "remote-domains": [
           "azurewebsites.net",
           "azurefed.net",
@@ -276,7 +276,7 @@
       "notes": "411 Bitdefender WWW",
       "action": "allow",
       "ports": "443",
-      "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
+      "process" : "\/Applications\/VMware Fusion.app\/Contents\/MacOS\/VMware Fusion",
       "protocol": "tcp",
       "remote-hosts": [
         "download.bitdefender.com",
@@ -291,7 +291,7 @@
       "notes": "Plex, Filen",
       "action": "allow",
       "ports": "443",
-      "process": "any",
+      "process": ""process" : "\/Applications\/VMware Fusion.app\/Contents\/MacOS\/VMware Fusion",",
       "protocol": "tcp",
       "remote-domains": [
         "plex.tv",
@@ -308,7 +308,7 @@
       "notes": "Seedbox & P2P ",
       "action": "allow",
       "ports": "443",
-      "process": "any",
+      "process": ""process" : "\/Applications\/VMware Fusion.app\/Contents\/MacOS\/VMware Fusion",",
       "protocol": "tcp",
       "remote-domains": [
         "seedbox.io",
@@ -375,7 +375,7 @@
       "notes" : "513 Major Domains 443",
       "action": "allow",
       "ports": "443",
-       "process" : "any",
+       "process" : ""process" : "\/Applications\/VMware Fusion.app\/Contents\/MacOS\/VMware Fusion",",
       "protocol": "tcp",
       "remote-domains": [
         "bing.com",
