@@ -156,6 +156,7 @@
           "firefox.org",
           "firebase.io",
           "firefox-portal-detection.com",
+          "fastly-edge.com",
           "thunderbird.net",
           "addons.thunderbird.net"
           ]
@@ -361,9 +362,12 @@
         "wikimedia.net",
         "wikimedia.org",
         "whatismyipaddress.com",
+        "wireshark.com",
         "iplookup.com",
         "noip.com",
 		"check-host.net",
+	    "proton.me",
+	    "protonvpn.com"
 
       ]
     },
