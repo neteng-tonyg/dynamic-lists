@@ -224,6 +224,7 @@
         "action": "allow",
           "ports" : "443",
         "process": "any",
+          "protocol" : "tcp",
         "remote-domains": [
           "azurewebsites.net",
           "azurefed.net",
