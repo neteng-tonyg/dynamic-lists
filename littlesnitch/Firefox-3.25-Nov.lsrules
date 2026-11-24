@@ -29,8 +29,11 @@
       "remote-domains": [
         "nmap.com",
 		"nmap.org",
+        "wireshark.com",
 		"videolan.org",
 		"mail.com",
+        "okta.com",
+        "sentry.io",
 		"reco.ai",
 		"hybrid.ai"
         ]
@@ -62,6 +65,26 @@
         "lucidcdn.net",
         "lucidchart.net"
         ]
+    },
+    {
+     "notes" : "Plex, Filen, Seedbox ",
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "protocol" : "tcp",
+      "remote-domains" : [
+        "plex.tv",
+  	    "filen-1.net",
+        "filen-2.net",
+        "filen-3.net",
+        "filen-4.net",
+        "filen-5.net",
+  	    "filen.com",
+        "filen.io",
+  	    "seedbox.io",
+        "exto.to",
+	    "extto.com"
+  	     ]
     }
   ]
 }

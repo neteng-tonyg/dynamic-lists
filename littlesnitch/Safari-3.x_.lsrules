@@ -5,6 +5,7 @@
   "rules": [
 
     {
+      "notes" : "Random AI domains",
       "action": "allow",
       "ports": "443",
       "process" : "\/Applications\/Safari.app\/Contents\/MacOS\/Safari",
@@ -17,6 +18,24 @@
 		"reco.ai",
 		"hybrid.ai",
         "huggingface.co"
+        ]
+    },
+        {
+      "notes" : "Random Top Domains",
+      "action": "allow",
+      "ports": "443",
+      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "protocol": "tcp",
+      "remote-domains": [
+        "nmap.com",
+		"nmap.org",
+        "wireshark.com",
+		"videolan.org",
+		"mail.com",
+        "okta.com",
+        "sentry.io",
+		"reco.ai",
+		"hybrid.ai"
         ]
     },
     {

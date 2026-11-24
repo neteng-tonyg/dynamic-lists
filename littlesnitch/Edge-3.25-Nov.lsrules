@@ -29,8 +29,11 @@
       "remote-domains": [
         "nmap.com",
 		"nmap.org",
+        "wireshark.com",
 		"videolan.org",
 		"mail.com",
+        "okta.com",
+        "sentry.io",
 		"reco.ai",
 		"hybrid.ai"
         ]

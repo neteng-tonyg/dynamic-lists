@@ -26,7 +26,7 @@
       "g.doubleclick.net",
       "static.doubleclick.net"
       ]
-  },
+    },
     {
       "notes":"111-Deny Google Analytics Subnets",
       "priority" : "high",
@@ -58,6 +58,7 @@
 	    "googleads4.g.doubleclick.net",
 	    "ep1.adtrafficquality.google",
         "adservice.google.com",
+        "googletagmanager.com",
         "adtrafficquality.google.com"
 	  ]
     },
@@ -104,6 +105,7 @@
 		  "googlesyndication.com",
 		  "googletagservices.com",
           "www.googleadservices.com",
+          "clients6.google.com",
 		  "googleapis.com",
 		  "withgoogle.com",
           "i.google.com",
@@ -250,6 +252,24 @@
           "blob.core.windows.net"
             ]
         },
+          {
+      "notes": "401 Stripe",
+      "action": "allow",
+      "ports": "443",
+      "process" : "any",
+      "protocol": "tcp",
+      "remote-hostnames": [
+        "js.stripe.com",
+        "m.stripe.com",
+        "r.stripe.com",
+        "q.stripe.com",
+        "pay.stripe.com",
+        "dashboard.stripe.com",
+        "checkout.stripe.com",
+        "js.stripe.network",
+        "api.stripe.com"
+        ]
+      },
       {
       "notes": "411 Bitdefender WWW",
       "action": "allow",
@@ -340,9 +360,20 @@
         "wikimedia.net",
         "wikimedia.org",
         "whatismyipaddress.com",
+        "www.whatismyipaddress.com",
         "iplookup.com",
         "noip.com",
 		"check-host.net",
+
+      ]
+    },
+        {
+      "notes" : "513 Major Domains 443",
+      "action": "allow",
+      "ports": "443",
+       "process" : "any",
+      "protocol": "tcp",
+      "remote-domains": [
         "bing.com",
         "brave.com",
         "bravesoftware.com",
@@ -354,6 +385,7 @@
         "indeed.com",
         "linkedin.com",
         "licdn.com",
+        "btloader.com",
         "sentry.io",
         "lifewire.com",
         "supermedia.com",
@@ -370,6 +402,4 @@
         "pages.dev",
         "huggingface.co"
       ]
-    }
-  ]
 }

@@ -36,7 +36,6 @@
       "protocol" : "tcp",
       "remote-addresses" : [
 	    "64.233.177.0/24",
-	    "173.194.219.0/24",
 	    "142.250.105.0/24",
 	    "142.250.9.0/24",
 	    "74.125.21.0/24"
@@ -59,6 +58,7 @@
 	    "googleads4.g.doubleclick.net",
 	    "ep1.adtrafficquality.google",
         "adservice.google.com",
+        "googletagmanager.com",
         "adtrafficquality.google.com"
 	  ]
     },
@@ -71,7 +71,7 @@
         "remote" : "any"
     },
        {
-	"notes" : "222-Allow Cloudflare ports 80,443",
+	  "notes" : "222-Allow Cloudflare ports 80,443",
       "action": "allow",
       "ports": "80, 443",
       "priority" : "high",
@@ -106,6 +106,7 @@
 		  "googlesyndication.com",
 		  "googletagservices.com",
           "www.googleadservices.com",
+          "clients6.google.com",
 		  "googleapis.com",
 		  "withgoogle.com",
           "i.google.com",
@@ -252,6 +253,24 @@
           "blob.core.windows.net"
             ]
         },
+          {
+      "notes": "401 Stripe",
+      "action": "allow",
+      "ports": "443",
+      "process" : "any",
+      "protocol": "tcp",
+      "remote-hostnames": [
+        "js.stripe.com",
+        "m.stripe.com",
+        "r.stripe.com",
+        "q.stripe.com",
+        "pay.stripe.com",
+        "dashboard.stripe.com",
+        "checkout.stripe.com",
+        "js.stripe.network",
+        "api.stripe.com"
+        ]
+      },
       {
       "notes": "411 Bitdefender WWW",
       "action": "allow",
@@ -268,7 +287,55 @@
         ]
       },
     {
-      "notes": "511 Major Domains 443",
+      "notes": "Plex, Filen",
+      "action": "allow",
+      "ports": "443",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": [
+        "plex.tv",
+        "filen-1.net",
+        "filen-2.net",
+        "filen-3.net",
+        "filen-4.net",
+        "filen-5.net",
+        "filen.com",
+        "filen.io"
+      ]
+    },
+        {
+      "notes": "Seedbox & P2P ",
+      "action": "allow",
+      "ports": "443",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": [
+        "seedbox.io",
+		"psb30682.seedbox.io",
+        "nl.seedbox.io",
+        "de.seedbox.io",
+        "us.seedbox.io",
+        "ca.seedbox.io",
+        "exto.to",
+        "extto.com"
+      ]
+    },
+    {
+      "notes" : "425 Mail Servers",
+      "action": "allow",
+      "ports": "443, 2083",
+      "process" : "any",
+      "protocol": "tcp",
+      "remote-domains": [
+        "bluehost.com",
+	    "nixihost.com",
+	    "audaxum.me",
+	    "goethals.us",
+        "mail.com"
+          ]
+    },
+         {
+      "notes" : "511 Major Domains 443",
       "action": "allow",
       "ports": "443",
        "process" : "\/Applications\/VMware Fusion.app\/Contents\/MacOS\/VMware Fusion",
@@ -297,6 +364,16 @@
         "iplookup.com",
         "noip.com",
 		"check-host.net",
+
+      ]
+    },
+        {
+      "notes" : "513 Major Domains 443",
+      "action": "allow",
+      "ports": "443",
+       "process" : "any",
+      "protocol": "tcp",
+      "remote-domains": [
         "bing.com",
         "brave.com",
         "bravesoftware.com",
