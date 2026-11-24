@@ -110,6 +110,7 @@
 		  "googleapis.com",
 		  "withgoogle.com",
           "i.google.com",
+		  "stun.google.com",
 		  "stun1.l.google.com",
 		  "accounts.google.com",
 		  "www.gstatic.com",
