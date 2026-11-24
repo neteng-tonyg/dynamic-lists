@@ -257,24 +257,7 @@
           "blob.core.windows.net"
             ]
         },
-          {
-      "notes": "401 Stripe",
-      "action": "allow",
-      "ports": "443",
-      "process" : "any",
-      "protocol": "tcp",
-      "remote-hostnames": [
-        "js.stripe.com",
-        "m.stripe.com",
-        "r.stripe.com",
-        "q.stripe.com",
-        "pay.stripe.com",
-        "dashboard.stripe.com",
-        "checkout.stripe.com",
-        "js.stripe.network",
-        "api.stripe.com"
-        ]
-      },
+
       {
       "notes": "411 Bitdefender WWW",
       "action": "allow",
