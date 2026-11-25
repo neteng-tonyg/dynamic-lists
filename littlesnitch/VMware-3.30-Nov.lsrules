@@ -291,7 +291,7 @@
       "notes": "Plex, Filen",
       "action": "allow",
       "ports": "443",
-      "process": ""process" : "\/Applications\/VMware Fusion.app\/Contents\/MacOS\/VMware Fusion",",
+      "process" : "\/Applications\/VMware Fusion.app\/Contents\/MacOS\/VMware Fusion",
       "protocol": "tcp",
       "remote-domains": [
         "plex.tv",
@@ -308,7 +308,7 @@
       "notes": "Seedbox & P2P ",
       "action": "allow",
       "ports": "443",
-      "process": ""process" : "\/Applications\/VMware Fusion.app\/Contents\/MacOS\/VMware Fusion",",
+      "process" : "\/Applications\/VMware Fusion.app\/Contents\/MacOS\/VMware Fusion",
       "protocol": "tcp",
       "remote-domains": [
         "seedbox.io",
@@ -375,7 +375,7 @@
       "notes" : "513 Major Domains 443",
       "action": "allow",
       "ports": "443",
-       "process" : ""process" : "\/Applications\/VMware Fusion.app\/Contents\/MacOS\/VMware Fusion",",
+          "process" : "\/Applications\/VMware Fusion.app\/Contents\/MacOS\/VMware Fusion",
       "protocol": "tcp",
       "remote-domains": [
         "bing.com",
