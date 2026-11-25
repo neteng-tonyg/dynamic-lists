@@ -24,7 +24,7 @@
       "notes" : "Random Top Domains",
       "action": "allow",
       "ports": "443",
-      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "process" : "\/Applications\/Safari.app\/Contents\/MacOS\/Safari",
       "protocol": "tcp",
       "remote-domains": [
         "nmap.com",
