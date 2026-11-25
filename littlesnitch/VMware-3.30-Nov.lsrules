@@ -224,6 +224,7 @@
         "notes" : "Microsoft/ Office domains",
         "action": "allow",
           "ports" : "443",
+          "protocol" : "tcp",
           "process" : "\/Applications\/VMware Fusion.app\/Contents\/MacOS\/VMware Fusion",
           "remote-domains": [
           "azurewebsites.net",
