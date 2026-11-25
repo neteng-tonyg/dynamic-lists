@@ -259,7 +259,7 @@
       "notes": "401 Stripe",
       "action": "allow",
       "ports": "443",
-      "process" : "any",
+      "process" : "\/Applications\/VMware Fusion.app\/Contents\/MacOS\/VMware Fusion",
       "protocol": "tcp",
       "remote-hostnames": [
         "js.stripe.com",
