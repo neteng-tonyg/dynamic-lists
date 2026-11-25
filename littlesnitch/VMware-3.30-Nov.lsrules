@@ -417,7 +417,7 @@
     {
         "notes": "Reddit WWW",
         "action": "allow",
-        "ports" :"443" '
+        "ports" :"443",
         "process" : "\/Applications\/VMware Fusion.app\/Contents\/MacOS\/VMware Fusion",
         "protocol": "tcp",
         "remote-domains": [
